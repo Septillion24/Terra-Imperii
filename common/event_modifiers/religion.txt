@@ -1,0 +1,13 @@
+harmonized_confucianism = {
+	stability_cost_modifier = -0.10
+	religion = yes
+}
+harmonized_tengri = {
+	cavalry_power = 0.10
+	religion = yes
+}
+
+harmonized_nangchos = {
+	technology_cost = -0.05
+	religion = yes
+}

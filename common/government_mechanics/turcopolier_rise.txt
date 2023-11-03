@@ -1,0 +1,71 @@
+turcopolier_rise = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+		OR = {
+			tag = TUR
+			has_reform = turkopolier_monarchy
+		}
+	}
+
+	powers = {
+		turcopolier_rise = {
+			max = 100
+			scaled_modifier = {
+				modifier = {
+					discipline = 0.05
+					global_unrest = -2
+					land_maintenance_modifier = -0.2
+					monthly_turcopolier_rise = -0.1
+				}
+			}
+		}
+	}
+	
+	interactions = {
+		boost_militarization = {
+			gui = prussian_militarization_gov_mech_1_2
+			cost_type = turcopolier_rise
+			center = no
+			trigger = {
+				mil_power = 50
+				not = {
+					has_government_power = {
+						mechanic_type = turcopolier_rise
+						power_type = turcopolier_rise
+						value = 100
+					}
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = turcopolier_rise
+					power_type = turcopolier_rise
+					value = 10
+				}
+				add_mil_power = -50
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_government_power = {
+						mechanic_type = turcopolier_rise
+						power_type = turcopolier_rise
+						value = 90
+					}
+				}
+				modifier = {
+					factor = 0
+					not = { mil_power = 600 }
+				}
+				modifier = {
+					factor = 0
+					not = { mil = 4 }
+				}
+			}
+		}
+	}
+}

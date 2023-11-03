@@ -1,0 +1,46 @@
+unify_poland = {
+	type = superiority	
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 0.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			OR = {
+				owned_by = MAZ
+				owned_by = KRA
+				owned_by = SIL
+				owned_by = PLN
+				owned_by = POL
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			OR = {
+				owned_by = MAZ
+				owned_by = KRA
+				owned_by = SIL
+				owned_by = PLN
+				owned_by = POL
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+	}
+	
+	war_name = polish_unification 
+}

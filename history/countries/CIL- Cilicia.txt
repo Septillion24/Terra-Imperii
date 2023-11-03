@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = eastern
+religion = apostolic
+primary_culture = armenian
+add_historical_rival = ARM
+capital = 332

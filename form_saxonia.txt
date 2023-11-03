@@ -1,0 +1,27 @@
+country_decisions = {
+form_saxonia = {
+	potential = {
+		ai = no
+	}
+	effect = {
+	
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						culture = saxon 
+						culture = anglosaxon
+						culture = jute_saxon
+						culture = lower_saxon
+					}
+				}
+				cede_province = HSA
+				add_core = HSA
+				}
+			}
+			HSA = {
+				change_tag = SXA
+			}						
+		}
+	}
+}

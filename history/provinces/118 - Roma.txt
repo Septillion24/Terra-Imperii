@@ -1,0 +1,46 @@
+capital = "Roma"
+owner = PAP
+controller = PAP
+add_core = PAP
+culture = umbrian
+religion = catholic
+hre = yes
+base_tax = 9
+base_production = 9
+base_manpower = 7
+trade_goods = paper
+fort_15th = yes
+center_of_trade = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+add_province_triggered_modifier = religious_center
+add_province_triggered_modifier = non_catholic_rome
+extra_cost = 8
+1408.1.1 = {
+	owner = NAP
+	controller = NAP
+	add_core = NAP
+}
+1414.8.6 = {
+	owner = PAP
+	controller = PAP
+	remove_core = NAP
+}
+1750.1.1 = {
+	add_core = ITA
+}
+1809.4.10 = {
+	controller = FRA
+}
+1809.10.14 = {
+	owner = FRA
+	add_core = FRA
+}
+1814.4.11 = {
+	owner = PAP
+	controller = PAP
+	remove_core = FRA
+}

@@ -1,0 +1,32 @@
+turkopolier_monarchy = {
+	spriteType = {
+		name = "government_reform_turcopolier_kingdom"
+		icon = "gfx/interface/government_reform_icons/turcopolier_kingdom.dds" #gfx/interface/government_reform_icons/
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		religion = orthodox
+		primary_culture = turkish
+	}
+	nation_designer_trigger = {
+		religion = orthodox
+		primary_culture = turkish
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		governing_capacity = 150 
+		num_accepted_cultures = 2
+			core_creation = -0.1
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+	government_abilities = {
+		turcopolier_rise
+	}
+	ai = {
+		factor = 100
+	}
+}
