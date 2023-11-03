@@ -1,7 +1,7 @@
 143 = "Valona"
 148 = "Solun"
 149 = "Odrin"
-151 = "Tsargrad"
+151 = "Tsarigrad"
 316 = "Kodzhaeli"
 317 = "Prousa"
 1766 = "Prishtina"

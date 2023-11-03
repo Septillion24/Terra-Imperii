@@ -1,4 +1,4 @@
-capital = "Dag
+capital = "Dagö"
 is_city = yes
 
 

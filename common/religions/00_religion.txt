@@ -614,6 +614,7 @@ christian = {
 		country_as_secondary = {
 			heir_chance = 0.5
 			stability_cost_modifier = -0.1
+			
 		}
 		
 			
