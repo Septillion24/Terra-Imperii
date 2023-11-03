@@ -1,0 +1,32 @@
+capital = "Chio"
+owner = CRT
+controller = CRT
+add_core = CRT
+add_core = BYZ
+culture = south_greek
+religion = orthodox
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = wine
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1555.1.1 = {
+	unrest = 5
+}
+1556.1.1 = {
+	unrest = 0
+}
+1566.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+}
+1740.1.1 = {
+	base_tax = 1
+	base_production = 1
+}

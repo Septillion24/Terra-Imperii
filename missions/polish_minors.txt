@@ -1,0 +1,120 @@
+polish_minors_1 = {
+	slot = 3 
+	generic = no
+	ai = yes 
+	
+	
+	potential = {
+        OR = {
+			tag = PLN
+			tag = SIL
+			tag = KRA
+			tag = MAZ
+		}
+    }
+	has_country_shield = yes
+	
+	prepare_conquest_poland = {
+		required_missions = {  } #None
+		trigger = {
+			army_size_percentage = 0.5
+			num_of_generals = 1
+			
+		}
+		effect = { 				
+			add_ruler_modifier = {
+				name = torwads_united_poland_1
+				duration = -1
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							TAG = KRA
+							PLN = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							SIL = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							MAZ = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							
+						}
+						AND = {
+							TAG = MAZ
+							PLN = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							SIL = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							KRA = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							
+						}
+						AND = {
+							TAG = SIL
+							PLN = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							MAZ = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							KRA = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							
+						}
+						AND = {
+							TAG = PLN
+							MAZ = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							SIL = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							KRA = {
+								NOT = { mission_completed = prepare_conquest_poland }
+							}
+							
+						}
+					}
+				}
+				add_ruler_modifier = {
+					name = torwads_united_poland_2
+					duration = -1
+				}
+			}
+		}
+	}
+	prepare_western_poland_conquest = { 
+		required_missions = { prepare_conquest_poland  }
+		trigger = {
+			capital_scope = {
+				fort_level = 3
+				area_for_scope_province = {
+					type = all
+					owned_by = ROOT
+				}
+			}		
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						TAG = SIL
+					}
+					exists = SIL
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = SIL
+				}
+				else = {
+					
+	}
+}

@@ -1,0 +1,35 @@
+capital = "Aalborg"
+owner = DAN
+controller = DAN
+add_core = DAN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 1
+trade_goods = fish
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1534.8.15 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 1
+	}
+	controller = REB
+}
+1534.11.2 = {
+	controller = DAN
+}
+1536.1.1 = {
+	religion = protestant
+}
+1644.1.25 = {
+	controller = SWE
+}
+1645.8.13 = {
+	controller = DAN
+}

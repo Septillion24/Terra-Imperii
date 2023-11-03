@@ -1,0 +1,40 @@
+capital = "Sassari"
+owner = SAR
+controller = SAR
+add_core = SAR
+culture = sardinian
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = fish
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1516.1.23 = {
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	remove_core = ARA
+}
+1713.4.12 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = SPA
+}
+1720.1.1 = {
+	owner = SPI
+	controller = SPI
+	add_core = SPI
+	remove_core = HAB
+}
+1796.1.1 = {
+	controller = FRA
+}
+1796.4.16 = {
+	controller = SPI
+}

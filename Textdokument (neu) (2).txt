@@ -1,0 +1,58 @@
+country_decisions = {
+	form_rus = {
+		potential = { 
+			ai = no
+		}
+		effect = {
+			UKR = {
+				change_tag = RUS
+			}
+			every_province = { 
+				limit = {
+					culture = ruthenian 
+				}
+				cede_province = RUS
+
+				add_core = RUS
+			}
+			
+			every_province = {
+			if = {
+				limit = {
+					OR = {
+						culture = russian 
+						culture = ryazanian
+					}
+				}
+				cede_province = RUS
+
+				add_core = RUS
+				}
+			}
+			
+			every_province = {
+				limit = {
+					OR = {
+						culture = byelorussian 
+						area = outer_lithuania
+					}
+				}
+				cede_province = RUS
+
+				add_core = RUS
+			}
+			
+			every_province = {
+				limit = {
+					OR = {
+						culture = novgorodian 
+						culture = karelian
+					}
+				}
+				cede_province = RUS
+
+				add_core = RUS
+			}
+		}
+	}
+}

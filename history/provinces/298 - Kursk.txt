@@ -1,0 +1,10 @@
+capital = "Kursk"
+owner = CHR
+controller = CHR
+add_core = CHR
+culture = ryazanian
+religion = orthodox
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1

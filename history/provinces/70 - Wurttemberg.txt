@@ -1,0 +1,43 @@
+capital = "Stuttgart"
+owner = WUR
+controller = WUR
+add_core = WUR
+culture = swabian
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = grain
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1519.1.1 = {
+	controller = HAB
+	owner = HAB
+	add_core = HAB
+	unrest = 8
+}
+1534.1.1 = {
+	unrest = 0
+	owner = WUR
+	controller = WUR
+	religion = protestant
+}
+1724.1.1 = {
+	capital = Ludwigsburg
+}
+1733.1.1 = {
+	capital = Stuttgart
+	unrest = 2
+	base_tax = 5
+	base_production = 5
+}
+1737.3.12 = {
+	unrest = 0
+}
+1806.7.12 = {
+	hre = no
+}

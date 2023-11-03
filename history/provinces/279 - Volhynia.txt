@@ -1,0 +1,10 @@
+capital = "Volhynia"
+owner = VOL
+controller = VOL
+add_core = VOL
+culture = volhynian
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1

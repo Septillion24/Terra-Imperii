@@ -1,0 +1,21 @@
+capital = "Msila"
+owner = TUN
+controller = TUN
+add_core = TUN
+add_core = KBA
+culture = algerian
+religion = kharijite
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = salt
+discovered_by = western
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1521.1.1 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+}

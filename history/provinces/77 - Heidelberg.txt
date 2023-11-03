@@ -1,0 +1,47 @@
+capital = "Heidelberg"
+owner = PAL
+controller = PAL
+add_core = PAL
+culture = palatinean
+religion = catholic
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = wine
+fort_15th = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1546.4.19 = {
+	religion = protestant
+}
+1689.8.1 = {
+	base_tax = 5
+	base_production = 5
+	controller = FRA
+}
+1697.4.19 = {
+	owner = PAL
+	controller = PAL
+}
+1720.1.1 = {
+	capital = Mannheim
+	change_province_name = Mannheim
+}
+1777.12.30 = {
+	owner = BAV
+	controller = BAV
+	add_core = BAV
+}
+1803.4.27 = {
+	owner = BAD
+	controller = BAD
+	add_core = BAD
+	remove_core = BAV
+}
+1806.7.12 = {
+	hre = no
+}

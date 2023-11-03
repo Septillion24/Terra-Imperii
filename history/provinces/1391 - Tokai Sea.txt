@@ -1,0 +1,8 @@
+discovered_by = chinese
+discovered_by = mch
+discovered_by = kha
+discovered_by = oir
+discovered_by = qng
+1542.1.1 = {
+	discovered_by = POR
+}

@@ -1,0 +1,42 @@
+capital = "Halmstad"
+owner = SCN
+controller = SCN
+add_core = SCN
+culture = scanian
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = livestock
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1534.8.15 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 1
+	}
+	controller = REB
+}
+1534.11.15 = {
+	controller = DAN
+}
+1536.1.1 = {
+	religion = protestant
+}
+1565.9.15 = {
+	controller = SWE
+}
+1569.12.4 = {
+	controller = DAN
+}
+1645.8.13 = {
+	owner = SWE
+	add_core = SWE
+}
+1680.1.1 = {
+	culture = swedish
+}

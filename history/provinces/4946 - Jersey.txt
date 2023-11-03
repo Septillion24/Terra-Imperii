@@ -1,0 +1,50 @@
+capital = "Jrri"
+owner = NRM
+controller = NRM
+add_core = NRM
+culture = normand
+religion = catholic
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = naval_supplies
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+extra_cost = 8
+1465.8.15 = {
+	owner = NRM
+	controller = NRM
+}
+1466.3.6 = {
+	owner = FRA
+	controller = FRA
+}
+1475.8.29 = {
+	remove_core = ENG
+}
+1588.12.1 = {
+	unrest = 5
+}
+1594.1.1 = {
+	unrest = 0
+}
+1631.1.1 = {
+	unrest = 3
+}
+1633.1.1 = {
+	unrest = 0
+}
+1639.1.1 = {
+	unrest = 3
+}
+1641.1.1 = {
+	unrest = 0
+}
+1786.1.1 = {
+	base_tax = 5
+	base_production = 5
+}

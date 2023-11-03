@@ -1,0 +1,17 @@
+﻿l_english:
+
+#Turcopolier
+turkopolier_monarchy:0 "Turcopolish Monarchy"
+turkopolier_monarchy_desc:0 "Description here"
+turcopolier_rise:0 "Turcopolish Administration" 
+ability_turcopolier_rise:0 "Turcopolish Administration"
+BEYLIK:0 "Princedom"
+SULTANATE:0 "Kralligi"
+EMPIRE:0 "Empire"
+BEY:0 "Prince"
+SULTAN:0 "Kral"
+PADISHAH:0 "Great Kral"
+HATUN_fem:0 "Princess"
+SULTAN_fem:0 "Kralice"
+PADISHAH_fem:0 "Great Kralice"
+VALI_AHAD1:0 "Heir"

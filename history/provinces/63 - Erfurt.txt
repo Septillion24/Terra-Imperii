@@ -1,0 +1,34 @@
+capital = "Erfurt"
+owner = SAX
+controller = SAX
+add_core = SAX
+culture = saxon
+religion = catholic
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 3
+trade_goods = dyes
+fort_15th = yes
+center_of_trade = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1531.1.1 = {
+	religion = protestant
+}
+1665.1.1 = {
+	fort_15th = no
+	fort_17th = yes
+}
+1790.8.1 = {
+	unrest = 5
+}
+1791.1.1 = {
+	unrest = 0
+}
+1806.7.12 = {
+	hre = no
+}

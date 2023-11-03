@@ -1,0 +1,59 @@
+capital = "Rouen"
+owner = NRM
+controller = NRM
+add_core = NRM
+culture = normand
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = glass
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+extra_cost = 10
+
+1465.8.15 = {
+	owner = NRM
+	controller = NRM
+}
+1466.3.6 = {
+	owner = FRA
+	controller = FRA
+}
+1467.6.15 = {
+	add_core = BUR
+}
+1471.1.1 = {
+	controller = BUR
+}
+1471.8.1 = {
+	controller = FRA
+}
+1475.8.29 = {
+	remove_core = ENG
+}
+1477.1.5 = {
+	remove_core = BUR
+}
+1571.1.1 = {
+	unrest = 5
+}
+1574.4.1 = {
+	unrest = 0
+}
+1588.12.1 = {
+	unrest = 5
+}
+1594.1.1 = {
+	unrest = 0
+}
+1631.1.1 = {
+	unrest = 5
+}
+1641.1.1 = {
+	unrest = 0
+}

@@ -1,0 +1,78 @@
+capital = "Naklo"
+owner = PLN
+controller = PLN
+add_core = PLN
+culture = polish_g
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = livestock
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+discovered_by = kaz
+discovered_by = cri
+discovered_by = gol
+discovered_by = ast
+discovered_by = qas
+is_city = yes
+1569.7.1 = {
+	owner = PLC
+	controller = PLC
+	remove_core = POL
+	add_core = PLC
+}
+1588.1.1 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 0
+	}
+	controller = REB
+}
+1589.1.1 = {
+	controller = PLC
+}
+1655.1.1 = {
+	controller = SWE
+}
+1660.1.1 = {
+	controller = PLC
+}
+1733.1.1 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 2
+	}
+	controller = REB
+}
+1735.1.1 = {
+	controller = PLC
+}
+1772.2.17 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+}
+1806.11.3 = {
+	revolt = {
+		type = nationalist_rebels
+		size = 2
+	}
+	controller = REB
+}
+1807.7.9 = {
+	owner = POL
+	controller = POL
+	add_core = POL
+	remove_core = PRU
+}
+1813.3.17 = {
+	controller = PRU
+}
+1814.4.11 = {
+	owner = PRU
+	add_core = PRU
+}

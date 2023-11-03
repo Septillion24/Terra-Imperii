@@ -1,0 +1,10 @@
+discovered_by = ottoman
+discovered_by = muslim
+discovered_by = mal
+discovered_by = sof
+discovered_by = ash
+discovered_by = son
+discovered_by = hau
+discovered_by = kbo
+discovered_by = oyo
+discovered_by = ben

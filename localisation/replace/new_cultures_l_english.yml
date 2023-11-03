@@ -1,0 +1,91 @@
+﻿l_english:
+
+ germanic:0 "West-Germanic"
+ latin:0 "Italian"
+ 
+ #scandinavian
+ scanian:0 "Scanian"
+ norwegian:0 "Norsk"
+ norn:0 "Norn"
+ icelandic:0 "Íslandic"
+ #Baltic
+ pruthenian:0 "Pruthenian"
+ 
+ #West-Slavic
+ polish_g:0 "Polan"
+ polish_l:0 "Vistulan"
+ polabian:0 "Polabian"
+ mazovian:0 "Mazovian"
+ pomeranian_s:0 "Kashubian"
+ moravian:0 "Moravian"
+ czech:0 "Bohemian"
+ 
+ #Iberian
+ mozarabic:0 "Mozarabic"
+ asturian:0 "Asturian"
+ portugese:0 "Lusitanian"
+ 
+ #German
+ grazer:0 "Styrian"
+ east_hannoveria:0 "Eastphalian"
+ jute_saxon:0 "Jute-Saxon"
+ saxon:0 "Upper Saxon"
+ alemannic:0 "Low Alemannic"
+ swiss:0 "High Alemannic"
+ ger_silesian:0 "Lusatian-Silesian"
+ ger_bohemian:0 "Bohemian" 
+ baltic_german:0 "Baltic German" 
+ koelsch:0 "Ripuarian"
+ palatinean:0 "Palatinean"
+ moselle:0 "Moselle Franconian"
+ markish:0 "Markish"
+ tirolisch:0 "Tyrolean"
+ upper_bavarian:0 "Upper Bavarian"
+ bavarian:0 "Lower Bavarian" 
+ scottish:0 "Anglo-Scots"
+ 
+ #french
+ outremer:0 "Outremer"
+ picard:0 "Picardian"
+ lorrain:0 "Lorraine"
+ 
+ #Gaelic
+ manx:0 "Manx"
+ gaelic_norse:0 "Norse-Gael"
+ english:0 "Brythonic"
+ 
+ #Carpathian
+ wallachian:0 "Wallachian"
+ moldavian:0 "Moldavian"
+ hungarian:0 "Magyar"
+ 
+ #Byzantine
+ south_greek:0 "Aegean"
+ italic_greek:0 "Griko"
+ peloponnesian_greek:0 "Peloponnesian"
+ greek:0 "Thessalonikian"
+ epirote:0 "Epirote"
+ #Arabic
+ aramic:0 "Assyrian"
+ tripoler:0 "Libyan"
+ 
+ #Chinese 
+ altaic_new:0 "Yuan"
+ thai_new:0 "Taiguo" 
+ japanese_new:0 "Yuyokan"
+ tibet_new:0 "Tsangkai"
+ vietnamese_new:0 "Zorinian"
+ korean_new:0 "Koryo"
+ 
+ #East Slavic
+ volhynian:0 "Galician-Volhynian "
+ byelorussian:0 "Belarusian"
+ zaporozhian:0 "Zaporozhian"
+ tverian:0 "Tverite"
+ nizhny_novgorodian:0 "Nizhny-Novgorodian"
+ #japanse
+ ainu:0 "Hokkaido"
+ #Need to be done
+ 
+ #Mongolian
+ moghul:0 "Moghul"

@@ -1,0 +1,6 @@
+ :0 ""
+ _ADJ:0 ""
+ _ADJ2:0 ""
+ _ideas:0 " Ideas"
+ _ideas_start:0 " Tradition"
+ _ideas_bonus:0 " Ambitions"

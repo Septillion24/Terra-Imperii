@@ -1,0 +1,42 @@
+capital = "Narva"
+owner = EST
+controller = EST
+add_core = EST
+culture = estonian
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = grain
+discovered_by = western
+discovered_by = eastern
+discovered_by = kaz
+discovered_by = cri
+discovered_by = gol
+discovered_by = ast
+discovered_by = qas
+is_city = yes
+1542.1.1 = {
+	religion = protestant
+}
+1558.5.11 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = LIV
+}
+1581.1.1 = {
+	owner = SWE
+	controller = SWE
+	add_core = SWE
+	remove_core = RUS
+}
+1704.8.9 = {
+	controller = RUS
+}
+1721.8.30 = {
+	owner = RUS
+	add_core = RUS
+	remove_core = SWE
+}

@@ -1,0 +1,46 @@
+capital = "Kln"
+owner = BRG
+controller = BRG
+add_core = BRG
+culture = koelsch
+religion = catholic
+hre = yes
+base_tax = 6
+base_production = 6
+base_manpower = 3
+trade_goods = paper
+fort_15th = yes
+center_of_trade = 2
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+extra_cost = 16
+1583.12.17 = {
+	fort_15th = no
+}
+1638.1.1 = {
+	base_tax = 10
+	base_production = 10
+}
+1716.1.1 = {
+	base_tax = 12
+	base_production = 12
+}
+1798.1.1 = {
+	controller = FRA
+}
+1801.2.9 = {
+	owner = FRA
+	add_core = FRA
+}
+1806.7.12 = {
+	hre = no
+}
+1815.6.9 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+	remove_core = FRA
+}
