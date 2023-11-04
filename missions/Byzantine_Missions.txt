@@ -37,8 +37,8 @@ byz_column_1 = {
 				duration = 5475
 			}
 			add_country_modifier = {
-				land_morale = 0.10
-				duration = 1825
+				name = "byz_morale"
+				duration = -1
 			}
 			thrace_area = {
 				limit = {
@@ -57,7 +57,7 @@ byz_column_1 = {
 					
 		}
 		ai_weight = {
-			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
+			factor = 1000	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
 	
@@ -88,6 +88,52 @@ byz_column_1 = {
 				months = 120
 			}
 			add_stability = 1
+		}
+		ai_weight = {
+			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
+		}
+	}
+	reimpose_bulgaria_vassal = {
+		icon = reimpose_bulgaria_vassal
+		required_missions {secure_homeland}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = rascia_area
+				area = bulgaria_area
+				area = silistria_area
+				area = albania_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 14 
+				OR = {
+					area = rascia_area
+					area = bulgaria_area
+					area = silistria_area
+					area = albania_area
+					area = macedonia_area
+					area = thrace_area
+				}
+			}
+		}
+		effect = {
+		if = {
+				limit = { has_reform = byzantine_autocracy_reform }
+				add_government_reform = reformed_byzantine_monarchy_reform
+			}
+			balkan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
 }
