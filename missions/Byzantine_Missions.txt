@@ -1,0 +1,133 @@
+
+byz_column_1 = {
+	slot = 1 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	reclaim_epirus = {
+		icon = reclaim_epirus
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 143
+				province_id = 144
+				province_id = 142
+				province_id = 4699
+				province_id = 147
+				province_id = 1853
+				province_id = 4698
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "byzantium_resurgent"
+				duration = 5475
+			}
+			add_country_modifier = {
+				land_morale = 0.10
+				duration = 1825
+			}
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			macedonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+					
+		}
+		ai_weight = {
+			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
+		}
+	}
+	
+	secure_homeland = {
+		icon = secure_homeland
+		required_missions {reclaim_epirus}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 149
+				province_id = 4705
+				province_id = 148
+				province_id = 4702
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = { 
+			owns_core_province = 149
+			owns_core_province = 4705
+			owns_core_province = 148
+			owns_core_province = 4702
+		
+		}
+		effect = {
+			add_casus_belli = {
+				target = BUL
+				type = cb_disloyal_vassal
+				months = 120
+			}
+			add_stability = 1
+		}
+	}
+}
+
+byz_column_2 = {
+	slot = 2 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+}
+
+byz_column_3 = {
+	slot = 3 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+}
+
+byz_column_4 = {
+	slot = 4 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+}
+
+byz_column_5 = {
+	slot = 5 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+}
