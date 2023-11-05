@@ -9,3 +9,7 @@ byz_annex_pontus = {
 byz_city = {
 	diplomatic_reputation = 2
 }
+byz_legit = {
+	core_creation = -0.1
+	legitimacy = 1
+}
