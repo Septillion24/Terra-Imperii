@@ -1,5 +1,5 @@
 #2327 - Petra
-
+capital = "Petra"
 owner = SYR
 controller = SYR
 culture = bedouin_arabic
