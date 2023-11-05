@@ -1,0 +1,7 @@
+byz_morale = {
+	land_morale = 0.10
+	recover_army_morale_speed = 0.10
+}
+byz_annex_pontus = {
+	diplomatic_reputation = -3
+}
