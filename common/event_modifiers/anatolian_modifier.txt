@@ -1,3 +1,0 @@
-rise_turcopolier = {
-	monthly_turcopolier_rise = 0.5
-}
