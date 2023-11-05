@@ -4,5 +4,5 @@ tags={
 	"Missions And Decisions"
 	"Military"
 }
-name="1234"
-supported_version="1.35"
+name="Terra Imperii (MID DEV)"
+supported_version="1.35.6.0"
