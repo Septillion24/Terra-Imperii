@@ -6,6 +6,7 @@ religion = orthodox
 capital = 150	# Sofia
 historical_rival = CRO
 historical_rival = TUR
+historical_rival = BYZ
 add_ruler_personality = babbling_buffoon_personality
 add_heir_personality = silver_tongue_personality
 add_queen_personality = greedy_personality

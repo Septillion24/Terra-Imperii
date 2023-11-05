@@ -1,7 +1,7 @@
 capital = "Al Karak"
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = SYR
+controller = SYR
+add_core = SYR
 culture = bedouin_arabic
 religion = sunni
 hre = no
