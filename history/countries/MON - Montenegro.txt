@@ -1,0 +1,45 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+primary_culture = serbian
+religion = orthodox
+capital = 138
+historical_rival = SER
+historical_friend = venice
+
+1420.11.10 = {
+	monarch = {
+		name = "Bojan"
+		dynasty = "Grigorich"
+		birth_date = 1420.1.5
+		dip = 5
+		adm = 4
+		mil = 1
+	}
+}
+
+1444.11.10 = {
+	heir = {
+		name = "Ilhan"
+		dynasty = "Grigorich
+		birth_date = 1435.11.2
+		death_date = 1471.3.2
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+1444.1.1 = {
+queen = {
+		name = "Eva"
+		dynasty = "Grigorich"
+		birth_date = 1425.3.1
+		death_date = 1471.2.22
+		female = yes
+		adm = 5
+		dip = 2
+		mil = 0
+		}
+}
