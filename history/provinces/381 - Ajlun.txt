@@ -1,7 +1,7 @@
 capital = "Ajlun"
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = SYR
+controller = SYR
+add_core = SYR
 culture = al_suryah_arabic
 religion = sunni
 hre = no
