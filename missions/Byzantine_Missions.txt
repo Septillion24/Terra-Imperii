@@ -226,13 +226,24 @@ byz_column_4 = {
 		}
 	trigger = {
 		151 = {
-			owned_by = ROOT
-			development = 40
+			OR {
+				AND {
+				owned_by = ROOT
+				development = 40
+				}
+				NOT = { current_age = age_of_discovery }
+				}
 			}
 		}
 	effect = {
+		if {
+		limit = {
+			 current_age = age_of_discovery 
+			}
 		add_country_modifier = {
 				name = "byz_city"
+				duration = -1
+				desc = until_end_of_age_of_discovery_desc
 			}
 		151 = {
 			add_center_of_trade_level = 1
@@ -242,9 +253,15 @@ byz_column_4 = {
 			add_prosperity = 100
 			}
 		}
+		if {
+			limit = {
+				NOT = { current_age = age_of_discovery }
+				}
+			add_prestige = -10
+			}
+		}
 	}
 }
-
 byz_column_5 = {
 	slot = 5 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.

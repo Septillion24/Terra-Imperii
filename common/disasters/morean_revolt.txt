@@ -1,0 +1,64 @@
+morean_revolt_disaster = {
+
+	potential = {
+		NOT = { has_country_flag = morea_revolt_flag }
+		NOT = { is_year = 1470 }
+		BYZ = {}
+			}
+	
+	can_start = {
+		has_any_disaster = no
+        is_year = 1470
+		northern_greece_area = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			exists = MOE
+			is_year = 1500
+		}
+	}
+	
+	progress = {	
+		# progress happens as a result of tensions that actually exist in your country
+		modifier = {
+			factor = 1
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 10
+			NOT = { stability = -3 }
+		}
+	}
+	
+	can_end = {
+		is_year = 1500
+	}
+	
+	modifier = {
+		stability_cost_modifier = 0.25
+	}
+	
+	
+}
