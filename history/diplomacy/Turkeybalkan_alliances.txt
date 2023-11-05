@@ -1,6 +1,0 @@
-alliance= {
-	first = HUN
-	second = CRO
-	start_date = 1400.5.1
-	end_date = 1764.6.1
-}

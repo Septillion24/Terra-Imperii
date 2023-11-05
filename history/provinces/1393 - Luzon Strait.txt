@@ -1,8 +1,0 @@
-discovered_by = chinese
-discovered_by = mch
-discovered_by = kha
-discovered_by = oir
-discovered_by = qng
-1521.1.1 = {
-	discovered_by = SPA
-}
