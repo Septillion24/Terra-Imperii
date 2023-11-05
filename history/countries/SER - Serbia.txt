@@ -7,6 +7,7 @@ capital = 4176	# Krusevac
 historical_friend = MON
 government_rank = 1
 clear_scripted_personalities = yes
+historical_rival = MON
 add_ruler_personality = loose_lips_personality
 add_ruler_personality = naive_personality
 add_heir_personality = reformist_personality

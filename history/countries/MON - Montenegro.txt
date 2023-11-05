@@ -7,7 +7,9 @@ religion = orthodox
 capital = 138
 historical_rival = SER
 historical_friend = venice
-
+add_ruler_personality = silver_tongue_personality
+add_heir_personality = strict_personality
+add_queen_personality = sinner_personality
 1420.11.10 = {
 	monarch = {
 		name = "Bojan"
