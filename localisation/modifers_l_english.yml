@@ -2368,3 +2368,10 @@
  
  #custom byz mods
  byz_morale:0 "Revitalized Byzantine Army"
+
+ #custom Armenian missions
+ reclaim_fuckin_theodoro:0 "Reclaim Theodoro"
+ 
+ #custom Armenian modifiers
+ is_gay:0 "This nation is extremely homosexual"
+ desc_is_gay:0 "they took theodoro what can I say?"
