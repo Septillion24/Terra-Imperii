@@ -169,6 +169,11 @@ spriteTypes = {
 		name = "reimpose_bulgaria_vassal"
 		texturefile = "gfx//interface//missions//reimpose_bulgaria_vassal.dds"
 	}
+	
+	spriteType = {
+		name = "claim_pontus"
+		texturefile = "gfx//interface//missions//claim_pontus.dds"
+	}
 
 	spriteType = {
 		name = "mission_alliances"
