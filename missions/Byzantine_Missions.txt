@@ -180,15 +180,18 @@ byz_column_3 = {
 	required_missions = {build_army_byz}
 	position = 2
 	trigger = { 
-		OR {
-			AND {
-				reverse_has_opinion = {
-					who = TRE
-					value = 200
+		AND {
+				is_year = 1460
+			OR {
+				AND {
+					reverse_has_opinion = {
+						who = TRE
+						value = 200
+					}
+					alliance_with = TRE
 				}
-				alliance_with = TRE
+			is_rival = TRE
 			}
-		is_rival = TRE
 		}
 	}
 	effect = {
@@ -208,6 +211,37 @@ byz_column_4 = {
 	potential = {
 		tag = BYZ
 		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	dev_city = {
+	icon = dev_city
+	required_missions {}
+	position = 1
+	provinces_to_highlight = {
+			province_id = 151 
+			OR = {
+				NOT = {	owned_by = ROOT } 
+				NOT = {	development = 40 }
+			}
+		}
+	trigger = {
+		151 = {
+			owned_by = ROOT
+			development = 40
+			}
+		}
+	effect = {
+		add_country_modifier = {
+				name = "byz_city"
+			}
+		151 = {
+			add_center_of_trade_level = 1
+			change_trade_goods = gems
+			}
+		thrace_area = {
+			add_prosperity = 100
+			}
+		}
 	}
 }
 

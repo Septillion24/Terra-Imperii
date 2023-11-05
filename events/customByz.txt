@@ -13,12 +13,17 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		AND {
-		BYZ = {
-			remove_core = TRE
+			TRE = {
+				every_core_province = {
+					remove_core = ROOT
+				}
 			}
-		add_prestige -100
-		}
+			if {
+			limit = {
+				is_rival = TRE
+				}
+			add_prestige = -100
+			}
 	}
 	option = {
 		name = "custom_byz_events.1.b"
@@ -36,6 +41,7 @@ country_event = {
 				prestige = 50
 			}
 		}
+			vassalize = TRE
 			inherit = TRE
 			add_country_modifier = {
 				name = "byz_annex_pontus"
