@@ -11,8 +11,8 @@ byz_column_1 = {
 	
 	reclaim_epirus = {
 		icon = reclaim_epirus
-		required_missions = {  } #None
-		position = 1
+		required_missions = {build_army_byz  } #None
+		position = 2
 		provinces_to_highlight = {
 			OR = {
 				province_id = 143
@@ -57,14 +57,14 @@ byz_column_1 = {
 					
 		}
 		ai_weight = {
-			factor = 1000	#Byzantium is basically Ottomans in its conquest behavior
-		}
+			factor = 400	#Byzantium is basically Ottomans in its conquest behavior
+		} 
 	}
 	
 	secure_homeland = {
 		icon = secure_homeland
 		required_missions {reclaim_epirus}
-		position = 2
+		position = 3
 		provinces_to_highlight = {
 			OR = {
 				province_id = 149
@@ -96,13 +96,15 @@ byz_column_1 = {
 	reimpose_bulgaria_vassal = {
 		icon = reimpose_bulgaria_vassal
 		required_missions {secure_homeland}
-		position = 3
+		position = 4
 		provinces_to_highlight = {
 			OR = {
 				area = rascia_area
 				area = bulgaria_area
 				area = silistria_area
 				area = albania_area
+				area = macedonia_area
+				area = thrace_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -133,7 +135,7 @@ byz_column_1 = {
 			}
 		}
 		ai_weight = {
-			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
+			factor = 300	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
 }
@@ -146,6 +148,22 @@ byz_column_2 = {
 		tag = BYZ
 		NOT = { map_setup = map_setup_random }
 	}
+	build_army_byz = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		trigger = {
+			army_size_percentage = 1 #What you need to complete the mission, displayed for mission tooltip
+		}
+		effect = { #This is what you get after you finished your mission.
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+		ai_weight = {
+			factor = 10 # AI will go (up to) this many percent above army budget in order to reach the army size needed
+		}
+	}
 }
 
 byz_column_3 = {
@@ -156,7 +174,32 @@ byz_column_3 = {
 		tag = BYZ
 		NOT = { map_setup = map_setup_random }
 	}
+	has_country_shield = yes
+	claim_to_pontus = {
+	icon = claim_pontus
+	required_missions = {build_army_byz}
+	position = 2
+	trigger = { 
+		OR {
+			AND {
+				reverse_has_opinion = {
+					who = TRE
+					value = 200
+				}
+				alliance_with = TRE
+			}
+		is_rival = TRE
+		}
+	}
+	effect = {
+		country_event = {id = custom_byz_events.1}
+		}
+	ai_weight = {
+		factor= 300
+		}
+	}
 }
+	
 
 byz_column_4 = {
 	slot = 4 #upper left column
