@@ -1,11 +1,12 @@
-#2327 - Maan
+#2327 - Petra
 
 owner = SYR
 controller = SYR
 culture = bedouin_arabic
 religion = sunni
-capital = "Maan"
+capital = "Petra"
 trade_goods = livestock
+center_of_trade = 1
 hre = no
 base_tax = 3
 base_production = 3
