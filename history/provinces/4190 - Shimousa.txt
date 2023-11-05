@@ -1,0 +1,36 @@
+capital = "Sakura"
+owner = CBA
+controller = CBA
+add_core = CBA
+culture = togoku
+religion = shinto
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = fish
+discovered_by = chinese
+discovered_by = mch
+discovered_by = kha
+discovered_by = oir
+discovered_by = qng
+discovered_by = anu
+is_city = yes
+1542.1.1 = {
+	discovered_by = POR
+}
+1570.1.1 = {
+	add_core = HJO
+}
+1585.1.1 = {
+	owner = HJO
+	controller = HJO
+	add_core = HJO
+	remove_core = CBA
+}
+1590.8.10 = {
+	remove_core = HJO
+	add_core = TKG
+	owner = TKG
+	controller = TKG
+}

@@ -1,0 +1,25 @@
+capital = "Bejaia"
+owner = TUN
+controller = TUN
+add_core = TUN
+add_core = KBA
+culture = berber
+religion = kharijite
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = iron
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1510.1.1 = {
+	owner = KBA
+	controller = KBA
+	capital = Kala
+}
+1600.1.1 = {
+	capital = Medjana
+}

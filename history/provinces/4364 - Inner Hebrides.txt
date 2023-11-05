@@ -1,0 +1,28 @@
+capital = "Skye"
+owner = LOI
+controller = LOI
+add_core = LOI
+culture = gaelic_norse
+religion = insular
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = grain
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1493.1.1 = {
+	owner = SCO
+	controller = SCO
+}
+1560.8.1 = {
+	religion = reformed
+}
+1707.5.12 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+}

@@ -1,0 +1,59 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = polish_g
+religion = catholic
+technology_group = eastern
+capital = 254 # Posen
+add_historical_rival = SIL
+add_historical_rival = KRA
+add_historical_rival = MAZ
+1399.7.12 = {
+	monarch = {
+		name = "Henryk IX"
+		dynasty = "Piast"
+		birth_date = 1369.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1399.7.12 = {
+	heir = {
+		name = "Ruprecht"
+		monarch_name = "Ruprecht II"
+		dynasty = "Piast"
+		birth_date = 1396.1.1
+		death_date = 1431.8.24
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 0
+	}
+}
+
+1420.7.11 = {
+	monarch = {
+		name = "Ruprecht II"
+		dynasty = "Piast"
+		birth_date = 1396.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+		death_date = 1441.6.18 
+	}
+}
+
+1441.6.18  = {
+	monarch = {
+		name = "Kazimierz IV"
+		dynasty = "Piast"
+		birth_date = 1427.11.30
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+}
+

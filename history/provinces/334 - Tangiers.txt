@@ -1,0 +1,41 @@
+capital = "Tangier"
+owner = MOR
+controller = MOR
+add_core = MOR
+culture = moroccan
+religion = kharijite
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+trade_goods = cloth
+fort_15th = yes
+center_of_trade = 2
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+extra_cost = 16
+1471.1.1 = {
+	controller = POR
+	add_core = POR
+}
+1471.12.30 = {
+	owner = POR
+}
+1662.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+	remove_core = POR
+}
+1679.1.1 = {
+	unrest = 4
+}
+1684.1.1 = {
+	owner = MOR
+	controller = MOR
+	remove_core = ENG
+	unrest = 0
+}

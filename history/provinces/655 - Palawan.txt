@@ -1,0 +1,26 @@
+capital = "Palawan"
+owner = BEI
+controller = BEI
+add_core = BEI
+culture = filipino
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = sugar
+add_local_autonomy = 25
+discovered_by = chinese
+is_city = yes
+1521.1.1 = {
+	discovered_by = SPA
+}
+1749.1.1 = {
+	owner = SPA
+	controller = SPA
+	culture = castillian
+	religion = catholic
+}
+1774.1.1 = {
+	add_core = SPA
+}

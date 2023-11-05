@@ -1,0 +1,36 @@
+capital = "Wien"
+owner = HAB
+controller = HAB
+add_core = HAB
+culture = austrian
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 4
+base_manpower = 3
+trade_goods = wine
+fort_15th = yes
+center_of_trade = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+discovered_by = kaz
+discovered_by = cri
+discovered_by = gol
+discovered_by = ast
+discovered_by = qas
+is_city = yes
+extra_cost = 16
+1545.1.1 = {
+	base_manpower = 3
+}
+1650.1.1 = {
+	base_manpower = 4
+}
+1700.1.1 = {
+	base_manpower = 6
+}
+1806.7.12 = {
+	hre = no
+}

@@ -1,0 +1,66 @@
+﻿l_english:
+ #Christian
+ bogomilism:0 "Bogomilist"
+ bogomilism_rebels_demand:0 "Convert $COUNTRYNAME$"
+ bogomilism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ bogomilism_rebels_title:0 "Religious"
+ bogomilism_rebels_name:0 "$RELIGION$ Zealots"
+ bogomilism_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ bogomilism_rebels_army:0 "$RELIGION$ Army"
+ 
+ insular:0 "Insular"
+ insular_rebels_demand:0 "Convert $COUNTRYNAME$"
+ insular_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ insular_rebels_title:0 "Religious"
+ insular_rebels_name:0 "$RELIGION$ Zealots"
+ insular_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ insular_rebels_army:0 "$RELIGION$ Army"
+ 
+ mozarabism:0 "Mozarabic"
+ mozarabism_rebels_demand:0 "Convert $COUNTRYNAME$"
+ mozarabism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ mozarabism_rebels_title:0 "Religious"
+ mozarabism_rebels_name:0 "$RELIGION$ Zealots"
+ mozarabism_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mozarabism_rebels_army:0 "$RELIGION$ Army"
+ 
+ apostolic:0 "Apostolic"
+ apostolic_rebels_demand:0 "Convert $COUNTRYNAME$"
+ apostolic_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ apostolic_rebels_title:0 "Religious"
+ apostolic_rebels_name:0 "$RELIGION$ Zealots"
+ apostolic_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ apostolic_rebels_army:0 "$RELIGION$ Army"
+ apostolic_blessings:0 "Pick Blessing"
+ pick_apostolic_blessing:0 "Patriarchal Blessings"
+ legitimize_government1:0 "Convert Churches into Fortresses"
+ encourage_warriors_of_the_faith1:0 "Collect Church Taxes"
+ promote_territorial_rights1:0 "Promote Local Talents"
+ 
+ coptic:0 "Miaphysite"
+ 
+ #Islam
+ kharijite:0 "Kharijite"
+ kharijite_rebels_demand:0 "Convert $COUNTRYNAME$"
+ kharijite_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ kharijite_rebels_title:0 "Religious"
+ kharijite_rebels_name:0 "$RELIGION$ Zealots"
+ kharijite_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ kharijite_rebels_army:0 "$RELIGION$ Army"
+ 
+ #Eastern
+ harmonized_confucianism:0 "Harmonized with the Confucian Faith"
+ desc_harmonized_confucian:0 "We have incorporated the Confucian faith in our country and national ethos."
+ harmonized_tengri:0 "Harmonized with the Tengri Faith"
+ desc_harmonized_tengri:0 "We have incorporated the Tengri faith in our country and national ethos."
+ 
+ nangchos:0 "Nangchos"
+ nangchos_rebels_demand:0 "Convert $COUNTRYNAME$"
+ nangchos_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ nangchos_rebels_title:0 "Religious"
+ nangchos_rebels_name:0 "$RELIGION$ Zealots"
+ nangchos_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ nangchos_rebels_army:0 "$RELIGION$ Army"
+ harmonized_nangchos:0 "Harmonized with the Nangchos Faith"
+ desc_harmonized_nangchos:0"We have incorporated the Nangchos faith in our country and national ethos."
+ 

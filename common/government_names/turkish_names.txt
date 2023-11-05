@@ -1,0 +1,48 @@
+turkish_monarchy = {
+	rank = {
+		1 = BEYLIK
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = BEY
+		2 = SULTAN
+		3 = PADISHAH
+	}
+
+	ruler_female = {
+		1 = HATUN_fem
+		2 = SULTAN_fem
+		3 = PADISHAH_fem
+	}
+	
+	heir_male = {
+		1 = VALI_AHAD
+		2 = VALI_AHAD
+		3 = VALI_AHAD
+	}
+	heir_female = {
+		1 = VALI_AHAD
+		2 = VALI_AHAD
+		3 = VALI_AHAD
+	}
+	
+	consort_male = {
+		1 = BEY
+		2 = SULTAN
+		3 = PADISHAH
+	}
+	consort_female = {
+		1 = HATUN_fem
+		2 = SULTAN_fem
+		3 = PADISHAH_fem
+	}
+
+	trigger = {
+		government = monarchy
+		primary_culture = turkish
+		religion = orthodox
+	}
+}
+	

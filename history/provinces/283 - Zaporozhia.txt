@@ -1,0 +1,45 @@
+capital = "Sich"
+owner = ZAZ
+controller = ZAZ
+add_core = ZAZ
+culture = zaporozhian
+religion = orthodox
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = livestock
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+discovered_by = nomad_group
+is_city = yes
+1555.1.1 = {
+	owner = ZAZ
+	controller = ZAZ
+	remove_core = CRI
+	culture = ruthenian
+	religion = orthodox
+	base_manpower = 4
+}
+1709.7.8 = {
+	unrest = 6
+}
+1734.1.1 = {
+	unrest = 0
+}
+1764.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+}
+1768.1.1 = {
+	unrest = 8
+}
+1769.1.1 = {
+	unrest = 0
+}
+1775.5.7 = {
+	remove_core = ZAZ
+}

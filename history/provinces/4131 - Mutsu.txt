@@ -1,0 +1,24 @@
+capital = "Sannohe"
+owner = RFR
+controller = RFR
+add_core = RFR
+culture = togoku
+religion = shinto
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = livestock
+discovered_by = chinese
+discovered_by = mch
+discovered_by = kha
+discovered_by = oir
+discovered_by = qng
+discovered_by = anu
+is_city = yes
+1542.1.1 = {
+	discovered_by = POR
+}
+1576.1.1 = {
+	capital = Morioka
+}

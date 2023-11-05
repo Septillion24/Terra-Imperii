@@ -1,0 +1,4 @@
+torwads_united_poland = {
+	discipline = 0.05
+	land_maintenance_modifier = -0.20
+}

@@ -1,0 +1,16 @@
+capital = "Mahafaly"
+owner = MFY
+controller = MFY
+add_core = MFY
+culture = madagasque
+religion = shamanism
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = slaves
+discovered_by = east_african
+is_city = yes
+1500.8.20 = {
+	discovered_by = POR
+}

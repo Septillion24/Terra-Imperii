@@ -1,0 +1,32 @@
+capital = "Oujda"
+owner = TLC
+controller = TLC
+add_core = TLC
+culture = berber
+religion = kharijite
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+trade_goods = wool
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1549.1.1 = {
+	owner = MOR
+	controller = MOR
+	add_core = MOR
+}
+1603.8.1 = {
+	unrest = 5
+}
+1638.1.1 = {
+	owner = ALG
+	controller = ALG
+}
+1692.1.1 = {
+	owner = MOR
+	controller = MOR
+}

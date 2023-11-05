@@ -1,0 +1,83 @@
+country_decisions = {
+	make_constantinople_capital1 = {
+		major = yes
+		potential = {
+			tag = BUL
+			primary_culture = bulgarian
+			NOT = { has_country_flag = relocated_capital_constantinople }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			is_at_war = no			
+			controls = 151
+			owns = 149		# Edirne
+			owns = 4705
+			owns = 4779
+			151 = {
+				is_state = yes
+			}
+			owns = 151
+		}
+		effect = {
+			set_country_flag = relocated_capital_constantinople
+			set_global_flag = greek_need_restore_constantinople
+			set_country_flag = new_bulgarian_reform
+			add_stability = 1
+			add_core = 151
+			151 = {
+				move_capital_effect = yes
+				rename_capital = Tsargrad
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = constantinople_restored }
+				}
+				151 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+			every_owned_province = {
+				limit = {
+					area = thrace_area
+				}
+				change_culture = bulgarian
+				change_religion = ROOT
+			}
+			override_country_name = bulgarian_empire
+			add_government_reform = bulgarian_tsardom_reform
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		do_not_core = 151 # Constantinople
+	}
+	prepare_conquest_constantinople = {
+		potential = {
+			tag = BUL
+			NOT = { has_country_flag = prepare_conquest_constantinople_1 }
+		}
+		allow = {
+			tag = BUL
+		}
+		effect = {
+			set_country_flag = prepare_conquest_constantinople_1
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					area = thrace_area
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+}
+			
+}

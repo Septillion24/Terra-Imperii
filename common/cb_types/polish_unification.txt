@@ -1,0 +1,23 @@
+cb_polish_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_free_or_tributary_trigger = yes
+		mission_completed = prepare_conquest_poland
+		
+		FROM = { #Applies against other powers in China unless they have the Mandate of Heaven
+			NOT = { is_subject_of = ROOT }			
+		}
+		AND = {
+			OR = {
+				tag = SIL
+				tag = MAZ
+				tag = PLN
+				tag = KRA
+				tag = POL
+			}
+			is_neighbor_of = FROM
+		}
+	}
+	war_goal = unify_poland
+}

@@ -1,0 +1,36 @@
+capital = "Dnaburg"
+owner = LTG
+controller = LTG
+add_core = LTG
+culture = latvian
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = livestock
+fort_15th = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = kaz
+discovered_by = cri
+discovered_by = gol
+discovered_by = ast
+discovered_by = qas
+is_city = yes
+1561.1.1 = {
+	owner = LIT
+	controller = LIT
+	add_core = LIT
+	remove_core = LIV
+}
+1569.7.1 = {
+	owner = PLC
+	controller = PLC
+	add_core = PLC
+}
+1772.9.22 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+}

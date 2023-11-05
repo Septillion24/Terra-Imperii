@@ -1,0 +1,22 @@
+capital = "Barus"
+owner = BRS
+controller = BRS
+add_core = BRS
+culture = sumatran
+religion = hinduism
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = spices
+discovered_by = ottoman
+discovered_by = muslim
+discovered_by = indian
+discovered_by = chinese
+is_city = yes
+1405.1.1 = {
+	discovered_by = MNG
+}
+1509.1.1 = {
+	discovered_by = POR
+}

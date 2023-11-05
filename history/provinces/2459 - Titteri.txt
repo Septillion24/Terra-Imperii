@@ -1,0 +1,21 @@
+capital = "Medea"
+owner = TLC
+controller = TLC
+add_core = TLC
+add_core = ALG
+culture = algerian
+religion = kharijite
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = grain
+discovered_by = western
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1517.1.1 = {
+	owner = ALG
+	controller = ALG
+	remove_core = TLC
+}

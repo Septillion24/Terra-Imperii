@@ -1,0 +1,32 @@
+capital = "Vannes"
+owner = BRI
+controller = BRI
+add_core = BRI
+culture = breton
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = fish
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1453.1.1 = {
+	add_core = FRA
+}
+1532.8.4 = {
+	owner = FRA
+	controller = FRA
+}
+1588.12.1 = {
+	unrest = 5
+}
+1594.1.1 = {
+	unrest = 0
+}
+1650.1.1 = {
+	capital = Lorient
+}

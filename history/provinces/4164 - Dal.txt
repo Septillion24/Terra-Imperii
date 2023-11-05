@@ -1,0 +1,31 @@
+capital = "Dalaborg"
+owner = SWE
+controller = SWE
+add_core = SWE
+culture = swedish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = naval_supplies
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1497.3.13 = {
+	controller = DAN
+}
+1497.10.6 = {
+	controller = SWE
+}
+1501.8.1 = {
+	controller = DAN
+}
+1502.3.15 = {
+	controller = SWE
+}
+1527.6.1 = {
+	religion = protestant
+}

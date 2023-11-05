@@ -1,0 +1,51 @@
+capital = "Saint-Malo"
+owner = BRI
+controller = BRI
+add_core = BRI
+culture = breton
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 4
+trade_goods = cloth
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1453.1.1 = {
+	add_core = FRA
+}
+1532.8.4 = {
+	owner = FRA
+	controller = FRA
+}
+1560.1.1 = {
+	religion = reformed
+}
+1588.12.1 = {
+	unrest = 5
+}
+1594.1.1 = {
+	unrest = 0
+}
+1636.1.1 = {
+	unrest = 3
+}
+1638.1.1 = {
+	unrest = 0
+}
+1639.1.1 = {
+	unrest = 3
+}
+1641.1.1 = {
+	unrest = 0
+}
+1686.1.17 = {
+	religion = catholic
+}
+1786.1.1 = {
+	base_tax = 6
+	base_production = 6
+}

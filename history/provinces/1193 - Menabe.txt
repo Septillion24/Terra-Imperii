@@ -1,0 +1,18 @@
+capital = "Morondava"
+owner = SKA
+controller = SKA
+add_core = SKA
+culture = madagasque
+religion = shamanism
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = slaves
+center_of_trade = 1
+discovered_by = east_african
+is_city = yes
+extra_cost = 8
+1500.8.20 = {
+	discovered_by = POR
+}

@@ -1,0 +1,22 @@
+capital = "Thubaqt"
+owner = TUN
+controller = TUN
+add_core = TUN
+add_core = TRP
+culture = tripoler
+religion = kharijite
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = cloth
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1558.1.1 = {
+	owner = TRP
+	controller = TRP
+	add_core = TRP
+}

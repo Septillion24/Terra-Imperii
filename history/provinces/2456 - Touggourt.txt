@@ -1,0 +1,15 @@
+capital = "Touggourt"
+owner = TGT
+controller = TGT
+add_core = TGT
+culture = algerian
+religion = kharijite
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = spices
+discovered_by = western
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes

@@ -1,0 +1,28 @@
+capital = "Coburg"
+owner = ROT
+controller = ROT
+add_core = ROT
+culture = franconian
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 2
+base_manpower = 1
+trade_goods = livestock
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1531.1.1 = {
+	religion = protestant
+}
+1790.8.1 = {
+	unrest = 5
+}
+1791.1.1 = {
+	unrest = 0
+}
+1806.7.12 = {
+	hre = no
+}

@@ -1,0 +1,14 @@
+capital = "Ingil"
+owner = ZAZ
+controller = ZAZ
+add_core = ZAZ
+culture = zaporozhian
+religion = orthodox
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim

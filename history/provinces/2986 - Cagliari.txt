@@ -1,0 +1,19 @@
+capital = "Cagliari"
+owner = SAR
+controller = SAR
+add_core = SAR
+culture = sardinian
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 3
+base_manpower = 1
+trade_goods = copper
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+latent_trade_goods = {
+	coal 
+}
+is_city = yes

@@ -1,0 +1,57 @@
+capital = "Visby"
+owner = GOT
+controller = GOT
+add_core = GOT
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = wool
+fort_15th = yes
+center_of_trade = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+extra_cost = 8
+1449.1.1 = {
+	controller = DAN
+	owner = DAN
+}
+1523.4.14 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 1
+	}
+	controller = REB
+}
+1525.6.1 = {
+	controller = DAN
+}
+1536.1.1 = {
+	religion = protestant
+}
+1644.7.1 = {
+	controller = SWE
+}
+1645.8.13 = {
+	owner = SWE
+	fort_15th = no
+}
+1676.5.1 = {
+	owner = DAN
+	controller = DAN
+}
+1679.9.23 = {
+	owner = SWE
+	controller = SWE
+}
+1808.3.1 = {
+	controller = RUS
+}
+1808.5.1 = {
+	controller = SWE
+}

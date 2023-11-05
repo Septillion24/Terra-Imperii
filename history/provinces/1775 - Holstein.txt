@@ -1,0 +1,57 @@
+capital = "Kiel"
+owner = SHL
+controller = SHL
+add_core = SHL
+culture = jute_saxon
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = livestock
+center_of_trade = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+extra_cost = 8
+1460.3.5 = {
+	owner = DAN
+	controller = DAN
+	add_core = DAN
+}
+1529.1.1 = {
+	religion = protestant
+}
+1544.1.1 = {
+	owner = SHL
+	controller = SHL
+}
+1550.1.1 = {
+	base_tax = 5
+	base_production = 5
+}
+1627.5.1 = {
+	controller = HAB
+}
+1629.5.22 = {
+	controller = SHL
+}
+1773.1.1 = {
+	owner = DAN
+	controller = DAN
+}
+1806.7.12 = {
+	hre = no
+}
+1810.12.13 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+}
+1814.4.11 = {
+	owner = DAN
+	controller = DAN
+	remove_core = FRA
+}

@@ -1,0 +1,49 @@
+capital = "Ronneby"
+owner = SCN
+controller = SCN
+add_core = SCN
+culture = scanian
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = naval_supplies
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+1525.1.1 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 1
+	}
+	controller = REB
+}
+1525.5.10 = {
+	controller = DAN
+}
+1534.8.15 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 1
+	}
+	controller = REB
+}
+1536.3.15 = {
+	controller = DAN
+}
+1536.3.15 = {
+	religion = protestant
+}
+1658.2.26 = {
+	controller = SWE
+	owner = SWE
+	add_core = SWE
+}
+1680.1.1 = {
+	capital = Karlskrona
+	culture = swedish
+	shipyard = yes
+}

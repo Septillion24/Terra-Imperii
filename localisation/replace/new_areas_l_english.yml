@@ -1,0 +1,28 @@
+﻿l_english:
+
+ #Western-Europe:
+ northern_saxony_area:0 "Middle Saxony"
+ south_saxony_area:0 "Upper Saxony"
+ 
+ #Eastern-Europe
+ poland_region:0 "Slavia"
+ vorpommern_area:0 "Pòmòrskô"
+ west_prussia_area:0 "Podlaski"
+ east_prussia_area:0 "Pruthenia"
+ baltic_region:0 "Baltics"
+ neumark_area:0 "Lubusz Land"
+ mittelmark_area:0 "Brani Boru"
+ mecklenburg_area:0 "Veligrad"
+ northern_saxony_area:0 "Middle Saxony"
+ erzgebirge_area:0 "Krušné hory"
+ outer_lithuania:0 "Nova-Lithuania"
+ minsk_area:0 "Ula"
+ #Balkans
+ rascia_area:0 "Western Bulgaria"
+ bulgaria_area:0 "Eastern Bulgaria"
+ 
+ #japan
+ sakhalin_area:"Karafuto"
+ 
+ #Scandinavia
+ schleswig_area:0 "Schleswig"

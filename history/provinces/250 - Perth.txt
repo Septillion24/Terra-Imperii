@@ -1,0 +1,31 @@
+capital = "Perth"
+owner = HSC
+controller = HSC
+add_core = HSC
+culture = highland_scottish
+religion = insular
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = livestock
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+is_city = yes
+
+1645.9.13 = {
+	controller = SCO
+}
+1651.8.2 = {
+	controller = ENG
+}
+1652.4.21 = {
+	controller = SCO
+}
+1707.5.12 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+}

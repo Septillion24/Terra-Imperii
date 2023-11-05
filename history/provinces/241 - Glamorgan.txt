@@ -1,0 +1,20 @@
+capital = "Swansea"
+owner = WLS
+controller = WLS
+add_core = WLS
+culture = welsh
+religion = insular
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = iron
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+latent_trade_goods = {
+	coal 
+}
+is_city = yes
+

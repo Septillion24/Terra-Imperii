@@ -1,0 +1,86 @@
+capital = "Krakw"
+owner = KRA
+controller = KRA
+add_core = KRA
+culture = polish_l
+religion = catholic
+hre = no
+base_tax = 7
+base_production = 7
+base_manpower = 6
+trade_goods = salt
+fort_15th = yes
+center_of_trade = 2
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim
+discovered_by = kaz
+discovered_by = cri
+discovered_by = gol
+discovered_by = ast
+discovered_by = qas
+latent_trade_goods = {
+	coal 
+}
+is_city = yes
+extra_cost = 16
+1569.7.1 = {
+	owner = PLC
+	controller = PLC
+	remove_core = POL
+	add_core = PLC
+}
+1587.1.1 = {
+	unrest = 6
+}
+1587.2.14 = {
+	unrest = 0
+}
+1588.1.1 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 3
+	}
+	controller = REB
+}
+1589.1.1 = {
+	controller = PLC
+}
+1733.1.1 = {
+	revolt = {
+		type = revolutionary_rebels
+		size = 2
+	}
+	controller = REB
+}
+1735.1.1 = {
+	controller = PLC
+}
+1768.2.28 = {
+	unrest = 8
+}
+1772.8.18 = {
+	unrest = 0
+}
+1794.3.24 = {
+	unrest = 5
+}
+1794.11.16 = {
+	unrest = 0
+}
+1795.10.24 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+}
+1807.7.9 = {
+	owner = POL
+	controller = POL
+	add_core = POL
+	remove_core = HAB
+}
+1815.5.3 = {
+	owner = KRA
+	controller = KRA
+}
