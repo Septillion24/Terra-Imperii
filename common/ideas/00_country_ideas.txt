@@ -49,6 +49,48 @@ TUR_ideas = {
 	}
 }
 
+SYR_ideas = {
+    start = {
+        defensiveness = 0.25 
+        shock_damage_received = -0.05
+        diplomatic_reputation = 1
+    }
+
+    bonus = {
+        military_tactics = 0.1
+    }
+
+    trigger = {
+        tag = SYR
+    }
+    free = yes        #will be added at load.
+
+    plcd1 = {
+        morale_damage_received = -0.075    
+        shock_damage_received = -0.025
+    }
+    plcd2 = {
+        global_trade_power = 0.15
+        caravan_power = 0.2
+
+    }    
+    plcd3 = {
+        advisor_cost = -0.25
+    }
+    pldc4 = {
+        prestige = 0.3
+    }
+    pldc5 = {
+        global_prosperity_growth = 0.1    
+        monthly_reform_progress = -0.1
+    }    
+    pldc6 = {
+        global_tax_modifier = 0.1
+    }
+    pldc7 = {
+        autonomy_change_time = -0.25
+    }
+}
 
 
 

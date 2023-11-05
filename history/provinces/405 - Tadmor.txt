@@ -1,8 +1,7 @@
 capital = "Tadmuriyah"
-owner = FAD
-controller = FAD
+owner = SYR
+controller = SYR
 add_core = SYR
-add_core = FAD
 culture = bedouin_arabic
 religion = sunni
 hre = no
