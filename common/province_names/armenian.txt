@@ -10,3 +10,4 @@
 4298 = "Gaziantep"
 377 = "Halep"
 2313 = "Antiok"
+330 = "Trapizon
