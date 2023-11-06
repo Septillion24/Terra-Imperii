@@ -33,10 +33,6 @@ byz_column_1 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "byzantium_resurgent"
-				duration = 5475
-			}
-			add_country_modifier = {
 				name = "byz_morale"
 				duration = -1
 			}
@@ -148,6 +144,7 @@ byz_column_2 = {
 		tag = BYZ
 		NOT = { map_setup = map_setup_random }
 	}
+	has_country_shield = yes
 	build_army_byz = { #Localized as reclaim_maine_title and reclaim_maine_desc
 		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
@@ -162,6 +159,32 @@ byz_column_2 = {
 		}
 		ai_weight = {
 			factor = 10 # AI will go (up to) this many percent above army budget in order to reach the army size needed
+		}
+	}
+	
+	deal_crusaders = {
+		icon = deal_crusaders
+		required_missions = {claim_to_pontus, reclaim_epirus}
+		position = 3
+		provinces_to_highlight = {
+			area = aegean_archipelago_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aegean_archipelago_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "byzantium_resurgent"
+				duration = 5475
+			}
+			add_country_modifier = {
+				name = "byz_legit"
+				duration = -1
+			}
 		}
 	}
 }
@@ -214,10 +237,10 @@ byz_column_4 = {
 	}
 	has_country_shield = yes
 	dev_city = {
-	icon = dev_city
-	required_missions {}
-	position = 1
-	provinces_to_highlight = {
+		icon = dev_city
+		required_missions {}
+		position = 1
+		provinces_to_highlight = {
 			province_id = 151 
 			OR = {
 				NOT = {	owned_by = ROOT } 
@@ -261,6 +284,30 @@ byz_column_4 = {
 			}
 		}
 	}
+	reclaim_coast = {
+		icon = reclaim_coast
+		required_missions {claim_to_pontus}
+		position = 3
+		provinces_to_highlight = {
+			AND {
+				owned_by = TUR
+				has_port = yes
+				}
+		}
+	trigger = {
+		TUR = {
+			NOT = {num_of_ports = 1}
+			}
+		}
+	effect = {
+		TUR = { 
+			every_owned_province = { 
+				add_permanent_claim = ROOT 
+				} 
+			}
+		}
+	}
+	
 }
 byz_column_5 = {
 	slot = 5 #upper left column

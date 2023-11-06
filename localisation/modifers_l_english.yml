@@ -2369,3 +2369,5 @@
  #custom byz mods
  byz_morale:0 "Revitalized Byzantine Army"
  byz_city:0 "Reputation of a City"
+ byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
+ byz_legit:0 "Legacy of the Romans"
