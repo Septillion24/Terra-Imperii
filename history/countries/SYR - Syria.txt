@@ -21,3 +21,10 @@ add_ruler_personality = strict_personality
         mil = 4
     }
 }
+}
+
+1444.10.1 = {
+	set_estate_privilege = estate_noble_emirate_of_petra
+	set_estate_privilege = estate_noble_emirate_of_jazirah
+	set_estate_privilege = estate_noble_emirate_of_tabuk
+}
