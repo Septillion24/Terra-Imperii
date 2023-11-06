@@ -9,4 +9,4 @@
 2308 = "Urha"
 4298 = "Gaziantep"
 377 = "Halep"
-2313 = "Antiok'"
+2313 = "Antiok"
