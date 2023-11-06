@@ -25,6 +25,10 @@ add_ruler_personality = strict_personality
 
 1444.10.1 = {
 	set_estate_privilege = estate_noble_emirate_of_petra
+}
+1444.10.1 = {
 	set_estate_privilege = estate_noble_emirate_of_jazirah
+}
+1444.10.1 = {
 	set_estate_privilege = estate_noble_emirate_of_tabuk
 }
