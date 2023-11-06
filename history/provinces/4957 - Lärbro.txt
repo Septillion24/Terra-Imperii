@@ -1,10 +1,17 @@
-capital = "Dag
+capital = "Dag 2"
 is_city = yes
-
-
-
 discovered_by = western
 discovered_by = eastern
+owner = GOT
+controller = GOT
+add_core = GOT
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = naval
 
 
 1542.1.1 = { religion = protestant} # Unknown date
@@ -28,13 +35,3 @@ discovered_by = eastern
 	add_core = RUS 
 	remove_core = SWE
 } # The Peace of Nystad"
-owner = GOT
-controller = GOT
-add_core = GOT
-culture = swedish
-religion = catholic
-hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
-trade_goods = naval
