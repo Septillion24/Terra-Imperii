@@ -375,8 +375,12 @@
 
 
  #custom Armenian missions
- reclaim_fuckin_theodoro:0 "Reclaim Theodoro"
+ uar_core_trebizond_title:0 "Secure The Port"
+ uar_core_trebizond_desc:0 "After the end of the war with the Greeks, we have finally secured a route to the Mediterranian for our people, and now must secure it to ensure continued access to the sea."
 
+
+
+ #Byz missions
  claim_to_pontus_title:0 "A Claim to Pontus"
  claim_to_pontus_desc:0 "Pontus have broken free from our reign far too long, it is time we decide what to do with them"
  dev_city_title:0 "Develop the City"

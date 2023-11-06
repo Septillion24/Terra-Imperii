@@ -3,13 +3,18 @@ mlk_column_1 = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
+	has_country_shield = yes
+
 	potential = {
-		tag = MLK
+		OR = {
+			tag = MLK
+			was_tag = MLK
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	reclaim_fuckin_theodoro = {
+	uar_core_trebizond = {
 		icon = reclaim_epirus
 		required_missions = {  } #None
 		position = 1
@@ -20,15 +25,29 @@ mlk_column_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			northern_greece_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			AND = {
+				owns_core_province = 330 #Trebizond
+				fort level = 1
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "is_gay"
-				duration = 5475
+			add_unit_construction = {
+				type = light_ship
+				amount = 20
+				speed = 0.5
+				cost = 0
+			}
+			add_unit_construction = {
+				type = light_ship
+				amount = 20
+				speed = 0.5
+				cost = 0
+			}
+			add_unit_construction = {
+				type = light_ship
+				amount = 20
+				speed = 0.5
+				cost = 0
 			}
 			
 			thrace_area = {
@@ -51,32 +70,57 @@ mlk_column_1 = {
 			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
+
+	uar_defend_homeland = {
+		icon = reclaim_epirus
+		required_missions = { uar_core_trebizond } 
+		position = 2
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				fort_level = 1
+				has_terrain  = mountain
+			}
+		}
+
+
+	}
 	
 }
-mlk_column_5 = {
+mlk_column_2 = {
 	slot = 2 
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
-		tag = MLK
+		OR = {
+			tag = MLK
+			was_tag = MLK
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 }
-mlk_column_5 = {
+mlk_column_3 = {
 	slot = 3 
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
-		tag = MLK
+		OR = {
+			tag = MLK
+			was_tag = MLK
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 }
-mlk_column_5 = {
+mlk_column_4 = {
 	slot = 4 
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
-		tag = MLK
+		OR = {
+			tag = MLK
+			was_tag = MLK
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 }
@@ -85,7 +129,10 @@ mlk_column_5 = {
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
-		tag = MLK
+		OR = {
+			tag = MLK
+			was_tag = MLK
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 }
