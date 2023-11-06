@@ -1,9 +1,8 @@
 capital = "Kotor"
-owner = VEN
-controller = VEN
+owner = MON
+controller = MON
 add_core = MON
 add_core = SER
-add_core = VEN
 culture = serbian
 religion = orthodox
 hre = no
@@ -21,30 +20,3 @@ discovered_by = gol
 discovered_by = ast
 discovered_by = qas
 is_city = yes
-1797.10.18 = {
-	owner = HAB
-	controller = HAB
-	add_core = HAB
-	remove_core = VEN
-}
-1805.12.27 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
-	remove_core = HAB
-}
-1810.1.1 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
-	remove_core = ITA
-}
-1814.1.5 = {
-	controller = GBR
-}
-1814.4.6 = {
-	owner = HAB
-	controller = HAB
-	add_core = HAB
-	remove_core = FRA
-}

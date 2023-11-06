@@ -30,3 +30,44 @@ turkopolier_monarchy = {
 		factor = 100
 	}
 }
+
+Levantine_Emirates_government = {
+	icon = "mamluk_government"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+		OR = {
+			AND = {
+				tag = SYR
+				NOT = { map_setup = map_setup_random }
+			}
+			have_had_reform = Levantine_Emirates_government
+		}
+	}
+	legacy_equivalent = Levantine_Emirates_government
+	queen = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+
+	nation_designer_trigger = {
+		religion_group = muslim
+	}
+
+	modifiers = {
+		
+		global_autonomy = +0.025
+		monarch_military_power = 1
+		governing_capacity = 50
+		nobles_influence_modifier = 0.1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			mamluk_mechanic
+		}
+		heir = no
+		foreign_slave_rulers = yes
+	}
+}

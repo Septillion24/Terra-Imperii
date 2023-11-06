@@ -17,11 +17,7 @@ discovered_by = indian
 discovered_by = east_african
 discovered_by = nomad_group
 is_city = yes
-1402.1.1 = {
-	owner = AKK
-	controller = AKK
-	add_core = AKK
-}
+
 1507.1.1 = {
 	owner = PER
 	controller = PER

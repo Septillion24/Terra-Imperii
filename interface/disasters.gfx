@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_disaster_morean_revolt_disaster"
+		texturefile = "gfx//interface//disasters//morean_revolt_disaster.dds"
+		noOfFrames = 3
+ 		loadType = "INGAME"
+	}
+}

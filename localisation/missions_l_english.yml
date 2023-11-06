@@ -376,3 +376,13 @@
 
  #custom Armenian missions
  reclaim_fuckin_theodoro:0 "Reclaim Theodoro"
+
+ claim_to_pontus_title:0 "A Claim to Pontus"
+ claim_to_pontus_desc:0 "Pontus have broken free from our reign far too long, it is time we decide what to do with them"
+ dev_city_title:0 "Develop the City"
+ dev_city_desc:0 "The city of the world's desire has fallen under repair but now we shall renew the walls and hold on to it for another century."
+ deal_crusaders_title:0 "Deal with the Crusaders"
+ deal_crusaders_desc:0 "At our weakest moments the crusaders and merchants have swept in stealing islands for their own benefit. We will show them who they're dealing with, the Romans."
+ reclaim_coast_title:0 "Deny the Coast"
+ reclaim_coast_desc:0 "The Turcopoles have struck us at our weakest moment and granted themselves a coastline. This effectively made them a major player in the Mediterranean, we have made a major error in trying to save them from hell."
+  

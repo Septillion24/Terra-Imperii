@@ -4,4 +4,12 @@ byz_morale = {
 }
 byz_annex_pontus = {
 	diplomatic_reputation = -3
+	change_dip = -2
+}
+byz_city = {
+	diplomatic_reputation = 2
+}
+byz_legit = {
+	core_creation = -0.1
+	legitimacy = 1
 }

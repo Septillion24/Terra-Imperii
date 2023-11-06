@@ -5064,7 +5064,7 @@
 # custom Byzantine
 
 custom_byz_events.1.t:0 "Fate of Pontus"
-custom_byz_events.1.d:0 "test"
-custom_byz_events.1.a:0 "we give up"
+custom_byz_events.1.d:0 "Pontus long believed that they can control their own destiny. With the return of the Roman diplomats and army, it is only natural we decide what will happen to Pontus."
+custom_byz_events.1.a:0 "Pontus will remain sovereign for now..."
 custom_byz_events.1.b:0 "Pontus is a natural part of the Roman Empire"
-custom_byz_events.1.c:0 "They will return as a vassal"
+custom_byz_events.1.c:0 "We will have them return under the Empire as an autonomous vassal"
