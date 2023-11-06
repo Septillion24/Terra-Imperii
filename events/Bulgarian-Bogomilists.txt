@@ -1,0 +1,51 @@
+namespace = custom_byz_events
+
+#claim to pontus
+country_event = {
+	id = the_bogomilist_question
+	title = the_bogomilist_question.1.t
+	desc = the_bogomilist_question.1.d
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "the_bogomilist_question.1.a"
+		ai_chance = {
+			factor = 5
+		}
+			  TRE = {
+				every_core_province = {
+					remove_core = ROOT
+				}
+			}
+			if {
+			limit = {
+				is_rival = TRE
+				}
+			add_prestige = -100
+			}
+	}
+	option = {
+		name = "the_bogomilist_question.1.b"
+		ai_chance = {
+			factor = 35
+		}
+{{{
+			}
+		}
+			vassalize = TRE
+			inherit = TRE
+			add_country_modifier = {
+				name = "byz_annex_pontus"
+				duration = 1826
+			}
+		
+	}
+	option = {
+		name = "the_bogomilist_question.1.c"
+		ai_chance = {
+			factor = 60
+		}
+		}
+	}
+}
