@@ -1,5 +1,5 @@
 
-arm_column_1 = {
+mlk_column_1 = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
@@ -53,7 +53,7 @@ arm_column_1 = {
 	}
 	
 }
-byz_column_5 = {
+mlk_column_5 = {
 	slot = 2 
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
@@ -62,7 +62,7 @@ byz_column_5 = {
 		NOT = { map_setup = map_setup_random }
 	}
 }
-byz_column_5 = {
+mlk_column_5 = {
 	slot = 3 
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
@@ -71,7 +71,7 @@ byz_column_5 = {
 		NOT = { map_setup = map_setup_random }
 	}
 }
-byz_column_5 = {
+mlk_column_5 = {
 	slot = 4 
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
@@ -80,7 +80,7 @@ byz_column_5 = {
 		NOT = { map_setup = map_setup_random }
 	}
 }
-byz_column_5 = {
+mlk_column_5 = {
 	slot = 5
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
