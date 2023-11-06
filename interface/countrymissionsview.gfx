@@ -169,21 +169,6 @@ spriteTypes = {
 		name = "reimpose_bulgaria_vassal"
 		texturefile = "gfx//interface//missions//reimpose_bulgaria_vassal.dds"
 	}
-	
-	spriteType = {
-		name = "claim_pontus"
-		texturefile = "gfx//interface//missions//claim_pontus.dds"
-	}
-	
-	spriteType = {
-		name = "dev_city"
-		texturefile = "gfx//interface//missions//dev_city.dds"
-	}
-	
-	spriteType = {
-		name = "deal_crusaders"
-		texturefile = "gfx//interface//missions//deal_crusaders.dds"
-	}
 
 	spriteType = {
 		name = "mission_alliances"
@@ -617,5 +602,12 @@ spriteTypes = {
 	spriteType = {
 		name = "mission_unknown_mission"
 		texturefile = "gfx/interface/missions/mission_unknown_mission.dds"
+	}	
+# custom missions
+ #bulgaria
+	spriteType = {
+		name = "the_bogomilist_question"
+		texturefile = "gfx//interface//missions//the_bogomilist_question.dds"
 	}
+	
 }
