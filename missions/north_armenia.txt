@@ -1,0 +1,55 @@
+
+arm_column_1 = {
+	slot = 1 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = MLK
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	reclaim_fuckin_theodoro = {
+		icon = reclaim_epirus
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2410
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "is_gay"
+				duration = 5475
+			}
+			
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			macedonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+					
+		}
+		ai_weight = {
+			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
+		}
+	}
+	
+}

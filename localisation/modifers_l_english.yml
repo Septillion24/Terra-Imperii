@@ -2371,3 +2371,9 @@
  byz_city:0 "Reputation of a City"
  byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
  byz_legit:0 "Legacy of the Romans"
+
+ 
+ #custom Armenian modifiers
+ is_gay:0 "This nation is extremely homosexual"
+ desc_is_gay:0 "they took theodoro what can I say?"
+

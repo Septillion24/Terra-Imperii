@@ -1,0 +1,3 @@
+is_gay = {
+	artillery_level_modifier = 1
+}
