@@ -5060,9 +5060,14 @@
  totemism_flavor.18.b:0 "We must ask the gods for help in this difficult times."
  tot_great_famine:0 "Great Famine"
  desc_tot_great_famine:0 "A great famine caused by war has increased the unrest in our capital."
-
-# custom Byzantine
-
+#custom
+ #custom Bulgaria
+ the_bogomilist_question.1.t:0 "Bogomilists in Macedonia"
+ the_bogomilist_question.1.d:0 "The Bogomilists have lived peacefully under our nation for the past few decades, now we need to decide what to do with them."
+ the_bogomilist_question.1.a:0 "Convert them by force"
+ the_bogomilist_question.1.b:0 "Convert them peacefully"
+ the_bogomilist_question.1.c:0 "Let them stay"
+ # custom Byzantine
 custom_byz_events.1.t:0 "Fate of Pontus"
 custom_byz_events.1.d:0 "Pontus long believed that they can control their own destiny. With the return of the Roman diplomats and army, it is only natural we decide what will happen to Pontus."
 custom_byz_events.1.a:0 "Pontus will remain sovereign for now..."
