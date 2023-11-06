@@ -1,0 +1,39 @@
+name = "1st Armenian conquest of Trebazond"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 330 # Trebazond
+}
+
+1442.2.23 = {
+	add_attacker = MLK
+	add_defender = TRE
+}
+
+1443.11.11 = {
+	battle = {
+		name = "Chapakchur"
+		location = 330
+		attacker = {
+			commander = "Uzun Hasan"	# Uzun Hasan
+			infantry = 7000
+			cavalry = 3000
+			losses = 10	# percent
+			country = MLK
+		}
+		defender = {
+			commander = "Ioannes IV Komnenos"	# Jahân Shâh
+			infantry = 4000
+			cavalry = 2000
+			losses = 45	# percent
+			country = TRE
+		}
+		result = yes	#Qara Koyunlu routed, Jahân Shâh killed
+	}
+}
+
+1443.11.11 = {
+	rem_attacker = MLK
+	rem_defender = TRE
+}
