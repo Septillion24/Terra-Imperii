@@ -1,8 +1,0 @@
-# Savoy and Geneva
-vassal = {
-	first = SAV
-	second = GNV
-	start_date = 1444.1.1
-	end_date = 1526.1.1
-}
-
