@@ -1,4 +1,4 @@
-namespace = custom_byz_events
+namespace = custom_leon_event_namespace
 
 #claim to pontus
 country_event = {
@@ -7,45 +7,57 @@ country_event = {
 	desc = the_bogomilist_question.1.d
 	picture = ADVISOR_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
-		name = "the_bogomilist_question.1.a"
-		ai_chance = {
+			name = "the_bogomilist_question.1.b"
+			ai_chance = {
 			factor = 5
+			}
+			change_religion = bogomilism
 		}
-			  TRE = {
-				every_core_province = {
-					remove_core = ROOT
+	option = {
+			name = "the_bogomilist_question.1.a"
+			ai_chance = {
+				factor = 5
+			}
+			release = RAG
+			add_truce_with = RAG
+		}
+	option = {
+			name = "the_bogomilist_question.1.c"
+			ai_chance = {
+			factor = 90
+			}
+			148 = { 
+			add_province_modifier = {
+                name = estate_dhimmi_guaranteed_autonomy_mod
+                duration = -1
+				}
+				}
+				3001 = { 
+			add_province_modifier = {
+                name = estate_dhimmi_guaranteed_autonomy_mod
+                duration = -1
+				}
+				}
+				4702 = { 
+			add_province_modifier = {
+                name = estate_dhimmi_guaranteed_autonomy_mod
+                duration = -1
+				}
+				}
+				4703 = { 
+			add_province_modifier = {
+                name = estate_dhimmi_guaranteed_autonomy_mod
+                duration = -1
+				}
+				}
+				4780 = { 
+			add_province_modifier = {
+                name = estate_dhimmi_guaranteed_autonomy_mod
+                duration = -1
 				}
 			}
-			if {
-			limit = {
-				is_rival = TRE
-				}
-			add_prestige = -100
-			}
-	}
-	option = {
-		name = "the_bogomilist_question.1.b"
-		ai_chance = {
-			factor = 35
 		}
-{{{
-			}
-		}
-			vassalize = TRE
-			inherit = TRE
-			add_country_modifier = {
-				name = "byz_annex_pontus"
-				duration = 1826
-			}
-		
-	}
-	option = {
-		name = "the_bogomilist_question.1.c"
-		ai_chance = {
-			factor = 60
-		}
-		}
-	}
 }
+	
