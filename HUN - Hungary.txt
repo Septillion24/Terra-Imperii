@@ -1,0 +1,37 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+religion = catholic
+technology_group = eastern
+capital = 153 # Buda
+historical_friend = CRO
+add_heir_personality = lawgiver_personality
+change_estate_land_share = {
+	estate = estate_church
+	share = -5
+}
+
+1444.11.10 = {
+	monarch = {
+		adm = 2
+		mil = 3
+		dip = 4
+		regent = yes
+	}
+}
+
+
+1444.11.10 = {
+	heir = {
+		name = "Vladislav"
+		dynasty = "Trpimirovic"
+		birth_date = 1438.2.22 		
+		death_date = 1471.2.22
+		claim = 74
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
