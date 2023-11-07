@@ -2,6 +2,7 @@ owner =  VEN
 controller = VEN
 add_core = VEN
 add_core = DAL
+add_core = MON
 culture = dalmatian
 religion = catholic
 hre = no

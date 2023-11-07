@@ -1,0 +1,31 @@
+﻿l_english:
+#missions
+ build_army_byz_title:0 "Build up our Armies"
+ build_army_byz_desc:0 "We must seek to return to power and not show any form of weakness"
+ reclaim_epirus_title:0 "Reclaim Epirus"
+ reclaim_epirus_desc:0 "Epirus shocked us when they attacked us and seized our lands. We today shall return this favor and the balkans shall see the ripples of our very actions."
+ secure_homeland_title:0 "Secure our Homeland"
+ secure_homeland_desc:0 "Our homes were ravaged by these Bulgarians since that day but now we shall retake it and return it to its former glory. The Bulgarians must simply be put back in their place."
+ reimpose_bulgaria_vassal_title:0 "Subjugate Bulgaria"
+ reimpose_bulgaria_vassal_desc:0 "We have reestablished our control of the balkans again and have set these Bulgarians back in their place. The Phoenix will rise again."
+ claim_to_pontus_title:0 "Claim to Pontus"
+ claim_to_pontus_desc:0 "Pontus have broken free from our reign far too long, it is time we decide what to do with them"
+ dev_city_title:0 "Develop the City"
+ dev_city_desc:0 "The city of the world's desire has fallen under repair but now we shall renew the walls and hold on to it for another century."
+ deny_coast_title:0 "Deny the Coast"
+ deny_coast_desc:0 "The Turks have struck us at our weakest moments and have taken large parts of our coast. This effectively transformed them into a major power in the Mediterranean. We must deny them the chance to ascend any further."
+ deal_crusaders_title:0 "Deal with the Crusaders"
+ deal_crusaders_desc:0 "These so called warriors of God have taken up arms against us and taken away many of our domains. The merchant republics of Venice and Genoa have exploited our people for long enough. These frauds must simply be put back in place."
+ 
+ #custom byz mods
+ byz_morale:0 "Revitalized Byzantine Army"
+ byz_city:0 "Reputation of a City"
+ byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
+ byz_legit:0 "Legacy of the Romans"
+ 
+#events 
+custom_byz_events.1.t:0 "Fate of Pontus"
+custom_byz_events.1.d:0 "Pontus long believed that they can control their own destiny. With the return of the Roman diplomats and army, it is only natural we decide what will happen to Pontus."
+custom_byz_events.1.a:0 "Pontus will remain sovereign for now..."
+custom_byz_events.1.b:0 "Pontus is a natural part of the Roman Empire"
+custom_byz_events.1.c:0 "We will have them return under the Empire as an autonomous vassal"

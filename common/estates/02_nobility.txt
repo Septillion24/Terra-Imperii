@@ -470,6 +470,9 @@ estate_nobles = {
 		estate_nobles_force_conscription
 		estate_nobles_noble_officer_right
 		estate_nobles_expedition_rights
+		estate_noble_emirate_of_tabuk
+		estate_noble_emirate_of_jazirah
+		estate_noble_emirate_of_petra
 	}
 
 	agendas = {
