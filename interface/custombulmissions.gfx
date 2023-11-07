@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "the_bogomilist_question"
+		texturefile = "gfx//interface//missions//the_bogomilist_question.dds"
+	}
+
+	}

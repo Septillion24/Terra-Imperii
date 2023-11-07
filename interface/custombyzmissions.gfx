@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "reclaim_epirus"
+		texturefile = "gfx//interface//missions//reclaim_epirus.dds"
+	}
+	
+	spriteType = {
+		name = "secure_homeland"
+		texturefile = "gfx//interface//missions//secure_homeland.dds"
+	}
+
+	spriteType = {
+		name = "reimpose_bulgaria_vassal"
+		texturefile = "gfx//interface//missions//reimpose_bulgaria_vassal.dds"
+	}
+	spriteType = {
+		name = "claim_pontus"
+		texturefile = "gfx//interface//missions//claim_pontus.dds"
+	}
+
+	spriteType = {
+		name = "deal_crusaders"
+		texturefile = "gfx//interface//missions//deal_crusaders.dds"
+	}
+
+	spriteType = {
+		name = "deny_coast"
+		texturefile = "gfx//interface//missions//deny_coast.dds"
+	}
+
+	spriteType = {
+		name = "dev_city"
+		texturefile = "gfx//interface//missions//dev_city.dds"
+	}
+
+	}
