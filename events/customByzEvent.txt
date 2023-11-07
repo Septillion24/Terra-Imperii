@@ -13,17 +13,19 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+		if {
+			limit = {
+				is_rival = TRE
+				}
+			add_prestige = -5
+			}
+		else {
 			TRE = {
 				every_core_province = {
 					remove_core = ROOT
 				}
 			}
-			if {
-			limit = {
-				is_rival = TRE
-				}
-			add_prestige = -100
-			}
+		}
 	}
 	option = {
 		name = "custom_byz_events.1.b"
@@ -41,8 +43,13 @@ country_event = {
 				prestige = 50
 			}
 		}
+		custom_tooltip = byz_annex
+		
+		
+		hidden_effect = {
 			vassalize = TRE
 			inherit = TRE
+			}
 			add_country_modifier = {
 				name = "byz_annex_pontus"
 				duration = 1826
@@ -67,3 +74,46 @@ country_event = {
 		vassalize = TRE
 	}
 }
+
+#sack of constantinople
+country_event = {
+	id = custom_byz_events.2
+	title = custom_byz_events.2.t
+	desc = custom_byz_events.2.d
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		tag = BYZ
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		151 = {
+			add_devastation =50
+		}
+	}
+	
+	option = {
+		name = "custom_byz_events.2.a"
+		custom_tooltip = " "
+		
+	}
+	option = {
+		name = "custom_byz_events.2.b"
+		custom_tooltip = " "
+		
+	}
+	option = {
+		name = "custom_byz_events.2.c"
+		custom_tooltip = " "
+		
+	}
+}
+

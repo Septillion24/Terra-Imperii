@@ -30,8 +30,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "dev_city"
-		texturefile = "gfx//interface//missions//dev_city.dds"
+		name = "repair_city"
+		texturefile = "gfx//interface//missions//repair_city.dds"
+	}
+
+	spriteType = {
+		name = "corinth_hexa"
+		texturefile = "gfx//interface//missions//pacify_the_albanian_lands.dds"
+	}
+
+	spriteType = {
+		name = "constantinople_theo"
+		texturefile = "gfx//interface//missions//byz_reinforce_constantinople.dds"
 	}
 
 	}

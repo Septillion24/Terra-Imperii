@@ -10,14 +10,18 @@
  reimpose_bulgaria_vassal_desc:0 "We have reestablished our control of the balkans again and have set these Bulgarians back in their place. The Phoenix will rise again."
  claim_to_pontus_title:0 "Claim to Pontus"
  claim_to_pontus_desc:0 "Pontus have broken free from our reign far too long, it is time we decide what to do with them"
- dev_city_title:0 "Develop the City"
- dev_city_desc:0 "The city of the world's desire has fallen under repair but now we shall renew the walls and hold on to it for another century."
+ repair_city_title:0 "Repair Constantinople"
+ repair_city_desc:0 "The sack of Constantinople was brutal and was not expected, to prevent any similar actions that can be taken by other nations we must rebuild our walls"
  deny_coast_title:0 "Deny the Coast"
  deny_coast_desc:0 "The Turks have struck us at our weakest moments and have taken large parts of our coast. This effectively transformed them into a major power in the Mediterranean. We must deny them the chance to ascend any further."
  deal_crusaders_title:0 "Deal with the Crusaders"
  deal_crusaders_desc:0 "These so called warriors of God have taken up arms against us and taken away many of our domains. The merchant republics of Venice and Genoa have exploited our people for long enough. These frauds must simply be put back in place."
+ corinth_hexa_title:0 "Hexamilion of Corinth"
+ corinth_hexa_desc:0 "The hexamilion walls have long been neglicted. It had served no purpose in the Empire but now it may prove its worth."
+ constantinople_theo_title:0 "Theodosian of Constantinople"
+ constantinople_theo_desc:0 "The Theodosian walls are barely on today's standards, it is high time we focus up and elevate our forefather's walls and make it shine once more."
  
- #custom byz mods
+ #modifiers
  byz_morale:0 "Revitalized Byzantine Army"
  byz_city:0 "Reputation of a City"
  byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
@@ -29,3 +33,13 @@ custom_byz_events.1.d:0 "Pontus long believed that they can control their own de
 custom_byz_events.1.a:0 "Pontus will remain sovereign for now..."
 custom_byz_events.1.b:0 "Pontus is a natural part of the Roman Empire"
 custom_byz_events.1.c:0 "We will have them return under the Empire as an autonomous vassal"
+custom_byz_events.2.t:0 "Sack of Constantinople"
+custom_byz_events.2.d:0 "Our enemies have sacked Constantinople, the city with a so called impregnable wall. Now we must deal with the horrid aftermaths."
+custom_byz_events.2.a:0 "There is nothing we can do"
+custom_byz_events.2.b:0 "Repair the city at all costs"
+custom_byz_events.2.c:0 "We must seek vengence"
+
+#custom tooltips
+ #custom_byz_events.1
+  byz_pontus_fate:0 "Event Insights"
+  byz_annex:0 "Integrate §YPontus§! as a part of the Empire"
