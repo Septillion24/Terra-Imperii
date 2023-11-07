@@ -20,7 +20,7 @@ mlk_column_1 = {
 		position = 1
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2410
+				province_id = 330
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
