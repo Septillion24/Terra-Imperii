@@ -22,33 +22,24 @@ mlk_column_1 = {
 			OR = {
 				province_id = 330
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
 		}
 		trigger = {
 			AND = {
 				owns_core_province = 330 #Trebizond
-				fort level = 1
+				fort level = 2
 			}
 		}
 		effect = {
-			add_unit_construction = {
-				type = light_ship
-				amount = 20
-				speed = 0.5
-				cost = 0
+			330 = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 5
+					speed = 0.5
+					cost = 0
+				}
 			}
-			add_unit_construction = {
-				type = light_ship
-				amount = 20
-				speed = 0.5
-				cost = 0
-			}
-			add_unit_construction = {
-				type = light_ship
-				amount = 20
-				speed = 0.5
-				cost = 0
-			}
+			
 			
 					
 		}
