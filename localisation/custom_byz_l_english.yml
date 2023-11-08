@@ -26,20 +26,56 @@
  byz_city:0 "Reputation of a City"
  byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
  byz_legit:0 "Legacy of the Romans"
+ byz_constantinople_fort_cost:0 "Theodosian Focus"
  
 #events 
 custom_byz_events.1.t:0 "Fate of Pontus"
 custom_byz_events.1.d:0 "Pontus long believed that they can control their own destiny. With the return of the Roman diplomats and army, it is only natural we decide what will happen to Pontus."
 custom_byz_events.1.a:0 "Pontus will remain sovereign for now..."
-custom_byz_events.1.b:0 "Pontus is a natural part of the Roman Empire"
-custom_byz_events.1.c:0 "We will have them return under the Empire as an autonomous vassal"
+custom_byz_events.1.b:0 "We will have them return under the Empire as an autonomous vassal"
+custom_byz_events.1.c:0 "Pontus is a natural part of the Roman Empire"
 custom_byz_events.2.t:0 "Sack of Constantinople"
 custom_byz_events.2.d:0 "Our enemies have sacked Constantinople, the city with a so called impregnable wall. Now we must deal with the horrid aftermaths."
 custom_byz_events.2.a:0 "There is nothing we can do"
 custom_byz_events.2.b:0 "Repair the city at all costs"
 custom_byz_events.2.c:0 "We must seek vengence"
+custom_byz_events.3.t:0 "Hexmillion Walls"
+custom_byz_events.3.d:0 "The hexamilion walls have long been neglicted. It had served no purpose in the Empire but now it may prove its worth."
+custom_byz_events.3.a:0 "Reinstate the walls"
+custom_byz_events.3.b:0 "Let us focus on the Theodosian Walls"
+custom_byz_events.4.t:0 "Theodosian of Constantinople"
+custom_byz_events.4.d:0 "These walls have lasted a millennia, erected during the time of Theodosius II have long protected us. It is time for us to determine whether we still need these walls for protection or show that we have stopped cowering behind our walls "
+custom_byz_events.4.a:0 "Call the Architects, these Walls must be upgraded"
+custom_byz_events.4.b:0 "Perhaps we make the city more Majestic"
+
+
 
 #custom tooltips
+ #mission tooltips
+ byz_event_insights:0 "§GEvent Insights:§!"
+ byz_event_option_a:0 "§MOption 1§!"
+ byz_event_option_b:0 "§MOption 2§!"
+ byz_event_option_c:0 "§MOption 3§!"
+ byz_event_option_d:0 "§MOption 4§!"
+ 
+    #deny_coast 
+    byz_claims_turk:0 "[Root.GetName] gain claims on all §YTurkish§! cultured provinces"
+ 
  #custom_byz_events.1
-  byz_pontus_fate:0 "Event Insights"
   byz_annex:0 "Integrate §YPontus§! as a part of the Empire"
+  byz_event1_opta:0 "§RLose all Cores§! on §YPontus§!"
+  byz_event1_opta2:0 "If we are §Rrivaled§! against §YPontus§!, we instead §Rlose 5 prestige§! "
+  byz_event1_optb:0 "If we are §Gallied§! to §YPontus§! and they have §G200 opinion§! of us "
+  byz_event1_optb2:0 "§YPontus§! can return to us as a vassal"
+  byz_event1_optc:0 "If we are allied to §YPontus§!, they have §G200 opinion§! of us and have at least §G50 prestige§!"
+  byz_event1_optc2:0 "We can immediately integrate §YPontus§! and receive §YAggressive Byzantine Manuevers§!, §R-3 diplomatic reputation§! for §Y10 years§!"
+  
+ #custom_byz_events.3
+ byz_event3_opta:0 "Gain §YCastle§! in §YMorea§!, lose §YCastle§! in §YCorinth§!"
+ byz_event3_optb:0 "Gain §YTheodosian Focus§!, giving local fort maintenance §G-50%§! in §YConstantinople§!"
+ #custom_byz-events.4
+ byz_event4_opta:0 "Starts construction of §YBastion§! for 125% of the time and 50% of the cost"
+ byz_event4_opta_desc:0 "Starts the construction of §YBastion§! in Constantinople"
+ byz_event4_opta_desc2:0 "§R-100 Ducats§!"
+ byz_event4_optb:0 "Gain §YReputation of a City§! until §YAge of Discovery§! ends"
+ 

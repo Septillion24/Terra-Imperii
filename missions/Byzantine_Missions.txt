@@ -59,7 +59,7 @@ potential = {
 					
 		}
 		ai_weight = {
-			factor = 400	#Byzantium is basically Ottomans in its conquest behavior
+			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		} 
 	}
 }
@@ -133,7 +133,24 @@ potential = {
 		}
 	}
 	effect = {
-		country_event = {id = custom_byz_events.1}
+		country_event = {
+			id = custom_byz_events.1
+			}
+		custom_tooltip = " "
+		custom_tooltip = byz_event_insights
+		custom_tooltip = " "
+		custom_tooltip = byz_event_option_a
+		custom_tooltip = byz_event1_opta
+		custom_tooltip = " "
+		custom_tooltip = byz_event1_opta2
+		custom_tooltip = byz_event_option_b
+		custom_tooltip = byz_event1_optb
+		custom_tooltip = " "
+		custom_tooltip = byz_event1_optb2
+		custom_tooltip = byz_event_option_c
+		custom_tooltip = byz_event1_optc
+		custom_tooltip = " "
+		custom_tooltip = byz_event1_optc2
 		}
 	ai_weight = {
 		factor= 300
@@ -224,8 +241,17 @@ potential = {
 		}
 		effect = {
 			country_event = {
-				id = MEE_Byzantine_Events.11
+				id = custom_byz_events.3
 			}
+			custom_tooltip = " "
+			custom_tooltip = byz_event_insights
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_a
+			custom_tooltip = byz_event3_opta
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_b
+			custom_tooltip = byz_event3_optb
+			custom_tooltip = " "
 		}
 	}
 	constantinople_theo = {
@@ -240,24 +266,30 @@ potential = {
 				}
 			}
 		trigger = {
-			151 = {
-				num_of_times_improved_by_owner = 10
-			}
+			AND {
+				151 = {
+					num_of_times_improved_by_owner = 10
+				}
+				treasury = 100
+				}
 		}
 		effect = {
+			custom_tooltip = " "
 			thrace_area = {
 				add_prosperity = 50
-			}
-			if {
-			limit = {
-			 current_age = age_of_discovery 
-			}
-			add_country_modifier = {
-				name = "byz_city"
-				duration = -1
-				desc = until_end_of_age_of_discovery_desc
-			}
-			}	
+				}
+			custom_tooltip = " "
+			country_event = {id = custom_byz_events.4}
+			custom_tooltip = " "
+			custom_tooltip = byz_event_insights
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_a
+			custom_tooltip = byz_event4_opta
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_b
+			custom_tooltip = byz_event4_optb
+			custom_tooltip = " "
+			
 		}
 	}
 }
@@ -446,11 +478,14 @@ potential = {
 			}
 		}
 	effect = {
-		TUR = { 
-			every_owned_province = { 
-				add_permanent_claim = ROOT 
-				} 
+		hidden_effect = {
+			TUR = { 
+				every_owned_province = { 
+					add_permanent_claim = ROOT 
+					} 
+				}
 			}
+		custom_tooltip = byz_claims_turk
 		}
 	}
 }
