@@ -1,0 +1,12 @@
+﻿l_english:
+#missions
+
+ uar_core_trebizond_title:0 "Secure The Port"
+ uar_core_trebizond_desc:0 "After the end of the war with the Greeks, we have finally secured a route to th	e Mediterranian for our people, and now must secure it to ensure continued access to the sea."
+
+
+#modifiers
+ is_gay:0 "This nation is extremely homosexual"
+ desc_is_gay:0 "they took theodoro what can I say?"s"
+ 
+#events 
