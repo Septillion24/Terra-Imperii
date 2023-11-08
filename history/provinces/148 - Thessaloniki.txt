@@ -2,6 +2,7 @@ capital = "Thessaloniki"
 owner = BUL
 controller = BUL
 add_core = BUL
+add_core = RAG
 add_core = BYZ
 culture = greek
 religion = bogomilism

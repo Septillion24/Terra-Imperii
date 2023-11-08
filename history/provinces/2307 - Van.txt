@@ -2,6 +2,7 @@ capital = "Van"
 owner = MLK
 controller = MLK
 add_core = MLK
+add_core = CIL
 culture = armenian
 religion = apostolic
 hre = no
