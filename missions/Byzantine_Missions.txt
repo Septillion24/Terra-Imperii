@@ -1,17 +1,23 @@
 
-byz_column_1 = {
-	slot = 1 #upper left column
-	generic = no #if a mission without generic = yes wants this slot then it overrides this.
-	ai = yes
-	potential = {
-		tag = BYZ
+byz_start_1 = {
+slot = 1
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
 		NOT = { map_setup = map_setup_random }
 	}
-	has_country_shield = yes
-	
 	reclaim_epirus = {
 		icon = reclaim_epirus
-		required_missions = {build_army_byz  } #None
+		required_missions = {build_army_byz} 
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -53,14 +59,260 @@ byz_column_1 = {
 					
 		}
 		ai_weight = {
-			factor = 400	#Byzantium is basically Ottomans in its conquest behavior
+			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		} 
 	}
-	
+}
+byz_start_2 = {
+slot = 2
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	build_army_byz = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } 
+		position = 1
+		trigger = {
+			army_size_percentage = 0.9
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+		ai_weight = {
+			factor = 10 # AI will go (up to) this many percent above army budget in order to reach the army size needed
+		}
+	}
+}
+byz_start_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	claim_to_pontus = {
+	icon = claim_pontus
+	required_missions = {build_army_byz}
+	position = 2
+	trigger = { 
+		AND {
+				is_year = 1460
+			OR {
+				AND {
+					reverse_has_opinion = {
+						who = TRE
+						value = 200
+					}
+					alliance_with = TRE
+				}
+			is_rival = TRE
+			}
+		}
+	}
+	effect = {
+		country_event = {
+			id = custom_byz_events.1
+			}
+		custom_tooltip = " "
+		custom_tooltip = byz_event_insights
+		custom_tooltip = " "
+		custom_tooltip = byz_event_option_a
+		custom_tooltip = byz_event1_opta
+		custom_tooltip = " "
+		custom_tooltip = byz_event1_opta2
+		custom_tooltip = byz_event_option_b
+		custom_tooltip = byz_event1_optb
+		custom_tooltip = " "
+		custom_tooltip = byz_event1_optb2
+		custom_tooltip = byz_event_option_c
+		custom_tooltip = byz_event1_optc
+		custom_tooltip = " "
+		custom_tooltip = byz_event1_optc2
+		}
+	ai_weight = {
+		factor= 300
+		}
+	}
+}
+byz_city_4 = {
+slot = 4
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	repair_city = {
+		icon = repair_city
+		required_missions {}
+		position = 1
+		provinces_to_highlight = {
+			province_id = 151 
+			OR = {
+				NOT = {	owned_by = ROOT } 
+				NOT = {	development = 40 }
+			}
+		}
+	trigger = {
+		151 = {
+			OR {
+				AND {
+				owned_by = ROOT
+				NOT = {devastation = 1}
+				}
+				AND {
+				owned_by = ROOT
+				development = 27
+				}
+				}
+			}
+		}
+	effect = {
+		thrace_area = {
+			add_prosperity = 50
+			}
+		}
+	}
+}
+byz_city_5 = {
+slot = 5
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	corinth_hexa = {
+		icon = pacify_the_albanian_lands
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			province_id = 4701
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { base_manpower = 4 }
+			}
+		}
+		trigger = {
+			4701 = {
+				base_manpower = 4
+				owned_by = ROOT
+			}
+			employed_advisor = { category = mil }
+		}
+		effect = {
+			country_event = {
+				id = custom_byz_events.3
+			}
+			custom_tooltip = " "
+			custom_tooltip = byz_event_insights
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_a
+			custom_tooltip = byz_event3_opta
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_b
+			custom_tooltip = byz_event3_optb
+			custom_tooltip = " "
+		}
+	}
+	constantinople_theo = {
+		icon = byz_reinforce_constantinople
+		required_missions = {repair_city,corinth_hexa}
+		position = 2 
+		provinces_to_highlight = {
+			province_id = 151
+				OR = {
+					NOT = {owned_by = ROOT}
+					NOT = {num_of_times_improved_by_owner = 10}
+				}
+			}
+		trigger = {
+			AND {
+				151 = {
+					num_of_times_improved_by_owner = 10
+				}
+				treasury = 100
+				}
+		}
+		effect = {
+			custom_tooltip = " "
+			thrace_area = {
+				add_prosperity = 50
+				}
+			custom_tooltip = " "
+			country_event = {id = custom_byz_events.4}
+			custom_tooltip = " "
+			custom_tooltip = byz_event_insights
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_a
+			custom_tooltip = byz_event4_opta
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_b
+			custom_tooltip = byz_event4_optb
+			custom_tooltip = " "
+			
+		}
+	}
+}
+byz_balkan_1 = {
+slot = 1
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
 	secure_homeland = {
 		icon = secure_homeland
 		required_missions {reclaim_epirus}
-		position = 3
+		position = 4
 		provinces_to_highlight = {
 			OR = {
 				province_id = 149
@@ -92,7 +344,7 @@ byz_column_1 = {
 	reimpose_bulgaria_vassal = {
 		icon = reimpose_bulgaria_vassal
 		required_missions {secure_homeland}
-		position = 4
+		position = 5
 		provinces_to_highlight = {
 			OR = {
 				area = rascia_area
@@ -135,33 +387,22 @@ byz_column_1 = {
 		}
 	}
 }
-
-byz_column_2 = {
-	slot = 2 #upper left column
-	generic = no #if a mission without generic = yes wants this slot then it overrides this.
-	ai = yes
-	potential = {
-		tag = BYZ
+byz_italy_2 = {
+slot = 2
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
 		NOT = { map_setup = map_setup_random }
 	}
-	has_country_shield = yes
-	build_army_byz = { #Localized as reclaim_maine_title and reclaim_maine_desc
-		icon = mission_build_up_to_force_limit
-		required_missions = {  } #None
-		trigger = {
-			army_size_percentage = 1 #What you need to complete the mission, displayed for mission tooltip
-		}
-		effect = { #This is what you get after you finished your mission.
-			add_country_modifier = {
-				name = "thriving_arms_industry"
-				duration = 9125 #25 years
-			}
-		}
-		ai_weight = {
-			factor = 10 # AI will go (up to) this many percent above army budget in order to reach the army size needed
-		}
-	}
-	
 	deal_crusaders = {
 		icon = deal_crusaders
 		required_missions = {claim_to_pontus, reclaim_epirus}
@@ -188,101 +429,38 @@ byz_column_2 = {
 		}
 	}
 }
-
-byz_column_3 = {
-	slot = 3 #upper left column
-	generic = no #if a mission without generic = yes wants this slot then it overrides this.
-	ai = yes
-	potential = {
-		tag = BYZ
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	claim_to_pontus = {
-	icon = claim_pontus
-	required_missions = {build_army_byz}
-	position = 2
-	trigger = { 
-		AND {
-				is_year = 1460
-			OR {
-				AND {
-					reverse_has_opinion = {
-						who = TRE
-						value = 200
-					}
-					alliance_with = TRE
-				}
-			is_rival = TRE
+byz_caucasia_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
 			}
+			has_country_flag = has_byz_missions
 		}
-	}
-	effect = {
-		country_event = {id = custom_byz_events.1}
-		}
-	ai_weight = {
-		factor= 300
-		}
+		NOT = { map_setup = map_setup_random }
 	}
 }
-	
-
-byz_column_4 = {
-	slot = 4 #upper left column
-	generic = no #if a mission without generic = yes wants this slot then it overrides this.
-	ai = yes
-	potential = {
-		tag = BYZ
+byz_east_4 = {
+slot = 4
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
 		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	dev_city = {
-		icon = dev_city
-		required_missions {}
-		position = 1
-		provinces_to_highlight = {
-			province_id = 151 
-			OR = {
-				NOT = {	owned_by = ROOT } 
-				NOT = {	development = 40 }
-			}
-		}
-	trigger = {
-		151 = {
-			OR {
-				AND {
-				owned_by = ROOT
-				development = 40
-				}
-				NOT = { current_age = age_of_discovery }
-				}
-			}
-		}
-	effect = {
-		if {
-		limit = {
-			 current_age = age_of_discovery 
-			}
-		add_country_modifier = {
-				name = "byz_city"
-				duration = -1
-				desc = until_end_of_age_of_discovery_desc
-			}
-		151 = {
-			add_center_of_trade_level = 1
-			change_trade_goods = gems
-			}
-		thrace_area = {
-			add_prosperity = 100
-			}
-		}
-		if {
-			limit = {
-				NOT = { current_age = age_of_discovery }
-				}
-			add_prestige = -10
-			}
-		}
 	}
 	deny_coast = {
 		icon = deny_coast
@@ -300,21 +478,252 @@ byz_column_4 = {
 			}
 		}
 	effect = {
-		TUR = { 
-			every_owned_province = { 
-				add_permanent_claim = ROOT 
-				} 
+		hidden_effect = {
+			TUR = { 
+				every_owned_province = { 
+					add_permanent_claim = ROOT 
+					} 
+				}
 			}
+		custom_tooltip = byz_claims_turk
 		}
 	}
-	
 }
-byz_column_5 = {
-	slot = 5 #upper left column
-	generic = no #if a mission without generic = yes wants this slot then it overrides this.
-	ai = yes
-	potential = {
-		tag = BYZ
+byz_east_5 = {
+slot = 5
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_1 = {
+slot = 1
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_2 = {
+slot = 2
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_4 = {
+slot = 4
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_5 = {
+slot = 5
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_tall_2 = {
+slot = 2
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_tall_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_tall_4 = {
+slot = 4
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_army_1 = {
+slot = 1
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_army_2 = {
+slot = 2
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_religion_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_religion_4 = {
+slot = 4
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_religion_5 = {
+slot = 5
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 }

@@ -2,6 +2,7 @@
 
 # country
 on_startup = {
+	country_event = {id = custom_byz_events.2}
 	if = {
 		limit = {
 			current_age = age_of_discovery

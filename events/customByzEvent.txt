@@ -13,44 +13,22 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+		if {
+			limit = {
+				is_rival = TRE
+				}
+			add_prestige = -5
+			}
+		else {
 			TRE = {
 				every_core_province = {
 					remove_core = ROOT
 				}
 			}
-			if {
-			limit = {
-				is_rival = TRE
-				}
-			add_prestige = -100
-			}
+		}
 	}
 	option = {
 		name = "custom_byz_events.1.b"
-		ai_chance = {
-			factor = 0
-		}
-		trigger = { 
-		highlight = yes
-			AND {
-				alliance_with = TRE
-				reverse_has_opinion = {
-					who = TRE
-					value = 200
-				}
-				prestige = 50
-			}
-		}
-			vassalize = TRE
-			inherit = TRE
-			add_country_modifier = {
-				name = "byz_annex_pontus"
-				duration = 1826
-			}
-		
-	}
-	option = {
-		name = "custom_byz_events.1.c"
 		ai_chance = {
 			factor = 50
 		}
@@ -65,5 +43,184 @@ country_event = {
 			}
 		}
 		vassalize = TRE
+	}
+	
+	option = {
+		name = "custom_byz_events.1.c"
+		ai_chance = {
+			factor = 0
+		}
+		trigger = { 
+		highlight = yes
+			AND {
+				alliance_with = TRE
+				reverse_has_opinion = {
+					who = TRE
+					value = 200
+				}
+				prestige = 50
+			}
+		}
+		custom_tooltip = byz_annex
+		
+		
+		hidden_effect = {
+			vassalize = TRE
+			inherit = TRE
+			}
+			add_country_modifier = {
+				name = "byz_annex_pontus"
+				duration = 3652.5
+			}
+		
+	}
+	
+}
+
+#sack of constantinople
+country_event = {
+	id = custom_byz_events.2
+	title = custom_byz_events.2.t
+	desc = custom_byz_events.2.d
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		tag = BYZ
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		151 = {
+			add_devastation =50
+		}
+	}
+	
+	option = {
+		name = "custom_byz_events.2.a"
+		custom_tooltip = " "
+		
+	}
+	option = {
+		name = "custom_byz_events.2.b"
+		custom_tooltip = " "
+		
+	}
+	option = {
+		name = "custom_byz_events.2.c"
+		custom_tooltip = " "
+		
+	}
+}
+
+#hexamilion of Corinth 
+
+country_event = {
+	id = custom_byz_events.3
+	title = custom_byz_events.3.t
+	desc = custom_byz_events.3.d
+	picture = FORT_eventPicture
+	
+	is_triggered_only = yes 
+	
+	goto = 4701 #more important than losing in 145
+	
+	option = {
+		name = custom_byz_events.3.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		if = {
+			limit = {
+				145 = {
+					owned_by = ROOT
+					has_building = fort_15th
+				}
+			}
+			145 = {
+				remove_building = fort_15th
+			}
+		}
+		if = {
+			limit = {
+				4701 = {
+					owned_by = ROOT
+					NOT = { has_fort_building_trigger = yes }
+				}
+			}
+			4701 = {
+				add_building = fort_15th
+			}
+		}
+		
+		custom_tooltip = " "
+		
+	}
+	
+	option = {
+		name = custom_byz_events.3.b
+		
+		ai_chance = {
+			factor = 0
+		}
+		151 = {
+			add_province_modifier = {
+				name = "byz_constantinople_fort_cost"
+				duration = -1
+			}
+		}
+	}
+}
+
+#theodosian of constantinople
+country_event = {
+	id = custom_byz_events.4
+	title = custom_byz_events.4.t
+	desc = custom_byz_events.4.d
+	picture = FORT_eventPicture
+	
+	is_triggered_only = yes 
+	
+	goto = 151
+	
+	option {
+		name = "custom_byz_events.4.a"
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = byz_event4_opta_desc
+		custom_tooltip = byz_event4_opta_desc2
+		hidden_effect = {151 = {
+			add_building_construction = {
+				building = fort_16th
+				speed = 1.25
+				cost = 0.50
+		}}
+	}
+	}
+	option {
+		name = "custom_byz_events.4.b"
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 25
+		if {
+			limit = {
+			 current_age = age_of_discovery 
+			}
+				add_country_modifier = {
+					name = "byz_city"
+					duration = -1
+					desc = until_end_of_age_of_discovery_desc
+				}
+			}
 	}
 }
