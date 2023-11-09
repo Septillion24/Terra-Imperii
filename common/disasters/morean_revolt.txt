@@ -1,25 +1,29 @@
 morean_revolt_disaster = {
 
 	potential = {
-		NOT = { has_country_flag = morea_revolt_flag }
-		NOT = { is_year = 1470 }
+		NOT = { has_country_flag = byz_had_morea_revolt}
+		NOT = { has_country_flag = prevent_morean_revolt }
+		NOT = { is_year = 1500 }
 		BYZ = {}
+		NOT = {exists = MOE}
 			}
 	
 	can_start = {
 		has_any_disaster = no
         is_year = 1470
-		northern_greece_area = {
-					NOT = {
-						owned_by = ROOT
-					}
+		custom_trigger_tooltip = {
+			tooltip = byz_prevent_morea
+			Not = {
+				has_country_flag = prevent_morean_revolt
 				}
+			}
 	}
 	
 	can_stop = {
+		
+		has_country_flag = prevent_morean_revolt
 		OR = {
 			has_any_disaster = yes
-			exists = MOE
 			is_year = 1500
 		}
 	}
@@ -52,13 +56,24 @@ morean_revolt_disaster = {
 		}
 	}
 	
-	can_end = {
-		is_year = 1500
-	}
 	
 	modifier = {
 		stability_cost_modifier = 0.25
 	}
 	
+	can_end = {
+		OR {
+			NOT = {exists = MOE}
+			AND = {
+				owns_or_subject_of = 145
+				owns_or_subject_of = 3003
+				owns_or_subject_of = 146
+				owns_or_subject_of = 1773
+				owns_or_subject_of = 4701
+			}
+		}
+	}
 	
+	on_start = disaster_morea.1
+	on_end = disaster_morea.2
 }

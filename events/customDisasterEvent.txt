@@ -1,0 +1,116 @@
+namespace = custom_disaster_events
+
+#Morea breaks away 
+country_event = {
+	id = disaster_morea.1
+	title = disaster_morea.1.t
+	desc = disaster_morea.1.d
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BYZ
+	}
+	
+		immediate = {
+			set_country_flag = morea_revolted
+			every_province = {
+				limit = {
+					culture = peloponnesian_greek
+					}
+				hidden_effect = {add_core = MOE}
+			}
+			
+			release = MOE
+			hidden_effect = {
+			MOE = {
+				random_owned_province = {
+					add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.1
+					cost = 0
+					}
+				}
+				random_owned_province = {
+					add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.1
+					cost = 0
+					}
+				}
+				random_owned_province = {
+					add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.1
+					cost = 0
+					}
+				}
+				random_owned_province = {
+					add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.1
+					cost = 0
+					}
+				}
+				random_owned_province = {
+					add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.1
+					cost = 0
+					}
+				}
+			}
+			}
+	}
+	
+	option = {
+		name = "disaster_morea.1.a"
+		custom_tooltip = " "
+		declare_war_with_cb = {
+			who = MOE
+			casus_belli = cb_core
+			war_goal_province = 145
+		}
+	}
+	option = {
+		name = "disaster_morea.1.b"
+		custom_tooltip = " "
+		switch_tag = MOE
+	}
+}
+
+#end of morean revolt
+country_event = {
+	id = disaster_morea.2
+	title = disaster_morea.2.t
+	desc = disaster_morea.2.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BYZ
+	}
+	
+	immediate = {
+		set_country_flag = byz_had_morea_revolt
+	}
+	option = {
+		name = "disaster_morea.2.a"
+		custom_tooltip = " "
+		add_country_modifier = {
+		name = byz_morea_order
+		duration = 7305
+		}
+	}
+}

@@ -20,13 +20,15 @@
  corinth_hexa_desc:0 "The hexamilion walls have long been neglicted. It had served no purpose in the Empire but now it may prove its worth."
  constantinople_theo_title:0 "Theodosian of Constantinople"
  constantinople_theo_desc:0 "The Theodosian walls are barely on today's standards, it is high time we focus up and elevate our forefather's walls and make it shine once more."
- 
+ prevent_morea_title:0 "Prevent the Morean Revolt"
+ prevent_morea_desc:0 "Morea has long been an isolated part of our empire. They may try to break free from our control if we do not appease them."
  #modifiers
  byz_morale:0 "Revitalized Byzantine Army"
  byz_city:0 "Reputation of a City"
  byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
  byz_legit:0 "Legacy of the Romans"
  byz_constantinople_fort_cost:0 "Theodosian Focus"
+ byz_morea_order:0 "Ordinance of Morea"
  
 #events 
 custom_byz_events.1.t:0 "Fate of Pontus"
@@ -47,10 +49,19 @@ custom_byz_events.4.t:0 "Theodosian of Constantinople"
 custom_byz_events.4.d:0 "These walls have lasted a millennia, erected during the time of Theodosius II have long protected us. It is time for us to determine whether we still need these walls for protection or show that we have stopped cowering behind our walls "
 custom_byz_events.4.a:0 "Call the Architects, these Walls must be upgraded"
 custom_byz_events.4.b:0 "Perhaps we make the city more Majestic"
-
-
+disaster_morea.1.t:0 "Morea breaks away"
+disaster_morea.1.d:0 "The fools have decided that it would be wise to break away from their rightful rulers and rule their own nation"
+disaster_morea.1.a:0 "Put these fools back in their place"
+disaster_morea.1.b:0 "The Morean cause is righteous"
+disaster_morea.2.t:0 "End of the Morean Revolt"
+disaster_morea.2.d:0 "The Moreans has been put down"
+disaster_morea.2.a:0 "Let us restore order to Morea"
 
 #custom tooltips
+
+ #morean revolt tooltips
+ byz_prevent_morea:0 "Has not completed §YPrevent the Morean Revolt§! Mission"
+ 
  #mission tooltips
  byz_event_insights:0 "§GEvent Insights:§!"
  byz_event_option_a:0 "§MOption 1§!"
@@ -60,7 +71,8 @@ custom_byz_events.4.b:0 "Perhaps we make the city more Majestic"
  
     #deny_coast 
     byz_claims_turk:0 "[Root.GetName] gain claims on all §YTurkish§! cultured provinces"
- 
+    #prevent_morea
+    byz_no_more_morea:0 "Prevents §YThe Morean Revolt§! disaster"
  #custom_byz_events.1
   byz_annex:0 "Integrate §YPontus§! as a part of the Empire"
   byz_event1_opta:0 "§RLose all Cores§! on §YPontus§!"
@@ -73,9 +85,12 @@ custom_byz_events.4.b:0 "Perhaps we make the city more Majestic"
  #custom_byz_events.3
  byz_event3_opta:0 "Gain §YCastle§! in §YMorea§!, lose §YCastle§! in §YCorinth§!"
  byz_event3_optb:0 "Gain §YTheodosian Focus§!, giving local fort maintenance §G-50%§! in §YConstantinople§!"
+ 
  #custom_byz-events.4
  byz_event4_opta:0 "Starts construction of §YBastion§! for 125% of the time and 50% of the cost"
  byz_event4_opta_desc:0 "Starts the construction of §YBastion§! in Constantinople"
  byz_event4_opta_desc2:0 "§R-100 Ducats§!"
  byz_event4_optb:0 "Gain §YReputation of a City§! until §YAge of Discovery§! ends"
+ 
+ 
  

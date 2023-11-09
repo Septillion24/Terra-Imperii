@@ -1,0 +1,89 @@
+namespace = turkish_into_greek
+
+
+
+province_event = {
+	id = turkish_into_greek.1
+	title = "turkish_into_greek.2a"
+	desc = "turkish_into_greek.2b"
+	picture = POPE_PREACHING_eventPicture
+	trigger = {
+		owner = {
+			OR = {
+				culture_group = byzantine
+			}
+			has_country_flag = turkish_into_greek_flag
+		}
+		any_neighbor_province = {
+			AND = {
+				culture_group = byzantine
+				NOT = { culture = turkish_greek }
+			}
+		}
+		culture = turkish
+	}
+	mean_time_to_happen = {
+		months = 60
+	}	
+	hidden = yes
+	option = {
+		name = "1"
+		change_culture = turkish_greek
+	}
+}
+
+province_event = {
+	id = turkish_into_greek.2
+	title = "turkish_into_greek.2a"
+	desc = "turkish_into_greek.2b"
+	picture = POPE_PREACHING_eventPicture
+	trigger = {
+		owner = {
+			OR = {
+				culture_group = byzantine				
+			}
+			has_country_flag = turkish_into_greek_flag
+		}
+		any_neighbor_province = {			
+			culture = turkish_greek 
+		}
+		culture = turkish
+	}
+	mean_time_to_happen = {
+		months = 30
+	}	
+	hidden = yes
+	option = {
+		name = "1"
+		change_culture = turkish_greek
+	}
+}
+country_event = {
+	id = turkish_into_greek.3
+	title = "turkish_into_greek.2a"
+	desc = "turkish_into_greek.2b"
+	picture = POPE_PREACHING_eventPicture
+	trigger = {
+		culture_group = byzantine
+		has_country_flag = turkish_into_greek_flag
+		any_owned_province = {
+			culture = turkish
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}	
+	hidden = yes
+	option = {
+		name = "2"
+		random_owned_province = {	
+			limit = {
+				culture = turkish 
+			}
+			change_culture = turkish_greek
+		}
+	}
+}
+
+
+#any_friendly_coast_border_province	any_friendly_coast_border_province = { }	Scopes to one province that shares a border or sea zone with the current scope that is friendly to the current scope (meaning its owner is the same or has positive relations).

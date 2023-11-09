@@ -16,3 +16,6 @@ byz_legit = {
 byz_constantinople_fort_cost = {
 	local_fort_maintenance_modifier = -0.5
 }
+byz_morea_order = {
+	stability_cost_modifier = -0.10
+}
