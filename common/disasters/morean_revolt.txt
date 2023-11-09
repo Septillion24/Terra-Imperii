@@ -4,7 +4,7 @@ morean_revolt_disaster = {
 		NOT = { has_country_flag = byz_had_morea_revolt}
 		NOT = { has_country_flag = prevent_morean_revolt }
 		NOT = { is_year = 1500 }
-		BYZ = {}
+		tag = BYZ
 		NOT = {exists = MOE}
 			}
 	
