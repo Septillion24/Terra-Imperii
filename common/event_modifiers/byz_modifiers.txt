@@ -19,3 +19,9 @@ byz_constantinople_fort_cost = {
 byz_morea_order = {
 	stability_cost_modifier = -0.10
 }
+byz_accept_culture_1 = {
+	num_accepted_cultures = 1
+}
+byz_convert_culture = {
+	culture_conversion_cost = -0.25
+}

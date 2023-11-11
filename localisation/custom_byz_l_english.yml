@@ -22,6 +22,9 @@
  constantinople_theo_desc:0 "The Theodosian walls are barely on today's standards, it is high time we focus up and elevate our forefather's walls and make it shine once more."
  prevent_morea_title:0 "Prevent the Morean Revolt"
  prevent_morea_desc:0 "Morea has long been an isolated part of our empire. They may try to break free from our control if we do not appease them."
+ dominate_illyricum_title:0 "Dominate Illyricum"
+ dominate_illyricum_desc:0 "We have long since lost control of Illyricum but now we have reasserted our dominance in this region."
+ 
  #modifiers
  byz_morale:0 "Revitalized Byzantine Army"
  byz_city:0 "Reputation of a City"
@@ -29,6 +32,8 @@
  byz_legit:0 "Legacy of the Romans"
  byz_constantinople_fort_cost:0 "Theodosian Focus"
  byz_morea_order:0 "Ordinance of Morea"
+ byz_accept_culture_1:0 "Roman Acceptance"
+ byz_convert_culture:0 "A New Hellenization"
  
 #events 
 custom_byz_events.1.t:0 "Fate of Pontus"
@@ -56,7 +61,12 @@ disaster_morea.1.b:0 "The Morean cause is righteous"
 disaster_morea.2.t:0 "End of the Morean Revolt"
 disaster_morea.2.d:0 "The Moreans has been put down"
 disaster_morea.2.a:0 "Let us restore order to Morea"
-
+custom_byz_events.5.t:0 "Southern Slavs in our Empire"
+custom_byz_events.5.d:0 "The slavs have long been a part of our empire, it has been questioned what authority they hold in this empire. We now must decide."
+custom_byz_events.5.a:0 "Elevate Bulgarians"
+custom_byz_events.5.b:0 "Elevate Serbians"
+custom_byz_events.5.c:0 "Elevate Croatians"
+custom_byz_events.5.d:0 "Assimilate them into Greek"
 #custom tooltips
 
  #morean revolt tooltips
@@ -68,6 +78,7 @@ disaster_morea.2.a:0 "Let us restore order to Morea"
  byz_event_option_b:0 "§MOption 2§!"
  byz_event_option_c:0 "§MOption 3§!"
  byz_event_option_d:0 "§MOption 4§!"
+ byz_event_option_e:0 "§MOption 5§!"
  
     #deny_coast 
     byz_claims_turk:0 "[Root.GetName] gain claims on all §YTurkish§! cultured provinces"
@@ -86,11 +97,18 @@ disaster_morea.2.a:0 "Let us restore order to Morea"
  byz_event3_opta:0 "Gain §YCastle§! in §YMorea§!, lose §YCastle§! in §YCorinth§!"
  byz_event3_optb:0 "Gain §YTheodosian Focus§!, giving local fort maintenance §G-50%§! in §YConstantinople§!"
  
- #custom_byz-events.4
+ #custom_byz_events.4
  byz_event4_opta:0 "Starts construction of §YBastion§! for 125% of the time and 50% of the cost"
  byz_event4_opta_desc:0 "Starts the construction of §YBastion§! in Constantinople"
  byz_event4_opta_desc2:0 "§R-100 Ducats§!"
  byz_event4_optb:0 "Gain §YReputation of a City§! until §YAge of Discovery§! ends"
  
- 
+ #custom_byz_events.5
+ byz_bulgarian_no_slot:0 "Accepting §YBulgarian§! culture will not take up a §YAccepted Culture Slot§!."
+ byz_serbian_no_slot:0 "Accepting §YSerbian§! culture will not take up a §YAccepted Culture Slot§!."
+ byz_croatian_no_slot:0 "Accepting §YCroatian§! culture will not take up a §YAccepted Culture Slot§!."
+ byz_event5_opta:0 "Accept §YBulgarian§! culture"
+ byz_event5_optb:0 "Accept §YSerbian§! culture"
+ byz_event5_optc:0 "Accept §YCroatian§! culture"
+ byz_event5_optd:0 "Gain §GCulture Conversion Cost -25%§!"
  

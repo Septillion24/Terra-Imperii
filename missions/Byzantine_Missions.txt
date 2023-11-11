@@ -143,10 +143,12 @@ potential = {
 		custom_tooltip = byz_event1_opta
 		custom_tooltip = " "
 		custom_tooltip = byz_event1_opta2
+		custom_tooltip = " "
 		custom_tooltip = byz_event_option_b
 		custom_tooltip = byz_event1_optb
 		custom_tooltip = " "
 		custom_tooltip = byz_event1_optb2
+		custom_tooltip = " "
 		custom_tooltip = byz_event_option_c
 		custom_tooltip = byz_event1_optc
 		custom_tooltip = " "
@@ -436,6 +438,55 @@ potential = {
 			factor = 300	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
+	dominate_illyricum = {
+		icon = secure_the_sava
+		required_missions = {reimpose_bulgaria_vassal}
+		position = 6 
+		provinces_to_highlight = {
+			AND = {
+				region = balkan_region
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 45
+				region = balkan_region
+			}
+		}
+		effect = {
+			country_event = {
+				id = custom_byz_events.5
+			}
+			custom_tooltip = " "
+			custom_tooltip = byz_event_insights
+			custom_tooltip = byz_event_option_a
+			custom_tooltip = byz_event5_opta
+			custom_tooltip = " "
+			custom_tooltip = byz_bulgarian_no_slot
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_b
+			custom_tooltip = byz_event5_optb
+			custom_tooltip = " "
+			custom_tooltip = byz_serbian_no_slot
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_c
+			custom_tooltip = byz_event5_optc
+			custom_tooltip = " "
+			custom_tooltip = byz_croatian_no_slot
+			custom_tooltip = " "
+			custom_tooltip = byz_event_option_d
+			custom_tooltip = byz_event5_optd
+			custom_tooltip = " "
+			carpathia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 }
 byz_italy_2 = {
 slot = 2
@@ -479,7 +530,41 @@ potential = {
 		}
 	}
 }
-byz_caucasia_3 = {
+byz_caucasia_branching_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_conquer_caucasia_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_vassalize_caucasia_3 = {
 slot = 3
 generic = no
 ai = yes
@@ -556,41 +641,7 @@ potential = {
 		NOT = { map_setup = map_setup_random }
 	}
 }
-byz_roman_1 = {
-slot = 1
-generic = no
-ai = yes
-has_country_shield = yes
-potential = {
-		OR = {
-			tag = BYZ
-			AND = {
-				was_tag = BYZ
-				tag = ROM
-			}
-			has_country_flag = has_byz_missions
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-}
-byz_roman_2 = {
-slot = 2
-generic = no
-ai = yes
-has_country_shield = yes
-potential = {
-		OR = {
-			tag = BYZ
-			AND = {
-				was_tag = BYZ
-				tag = ROM
-			}
-			has_country_flag = has_byz_missions
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-}
-byz_roman_3 = {
+byz_into_rome_3 = {
 slot = 3
 generic = no
 ai = yes
@@ -607,6 +658,54 @@ potential = {
 		NOT = { map_setup = map_setup_random }
 	}
 }
+byz_roman_1 = {
+slot = 1
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_2 = {
+slot = 2
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
+byz_roman_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+}
 byz_roman_4 = {
 slot = 4
 generic = no
@@ -614,7 +713,6 @@ ai = yes
 has_country_shield = yes
 potential = {
 		OR = {
-			tag = BYZ
 			AND = {
 				was_tag = BYZ
 				tag = ROM
@@ -631,7 +729,6 @@ ai = yes
 has_country_shield = yes
 potential = {
 		OR = {
-			tag = BYZ
 			AND = {
 				was_tag = BYZ
 				tag = ROM

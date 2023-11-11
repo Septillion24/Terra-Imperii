@@ -224,3 +224,95 @@ country_event = {
 			}
 	}
 }
+
+#Southern Slavs in our Empire
+country_event = {
+	id = custom_byz_events.5
+	title = custom_byz_events.5.t
+	desc = custom_byz_events.5.d
+	
+	is_triggered_only = yes
+	
+	option {
+		name = "custom_byz_events.5.a"
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				accepted_culture = bulgarian
+			}
+			add_dip_power = 100
+		}
+		else = {
+			add_accepted_culture = bulgarian
+		
+			hidden_effect = {
+				add_country_modifier = {
+					name = byz_accept_culture_1
+					duration = -1
+				}
+			}
+		custom_tooltip = " "
+		custom_tooltip = byz_bulgarian_no_slot
+		}
+	}
+	option {
+		name = "custom_byz_events.5.b"
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				accepted_culture = serbian
+			}
+			add_dip_power = 100
+		}
+		else = {
+		add_accepted_culture = serbian
+		
+			hidden_effect = {
+				add_country_modifier = {
+					name = byz_accept_culture_1
+					duration = -1
+				}
+			}
+		custom_tooltip = " "
+		custom_tooltip = byz_serbian_no_slot
+		}
+	}
+	option {
+		name = "custom_byz_events.5.c"
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				accepted_culture = croatian
+			}
+			add_dip_power = 100
+		}
+		else = {
+			add_accepted_culture = croatian
+		
+			hidden_effect = {
+				add_country_modifier = {
+					name = byz_accept_culture_1
+					duration = -1
+				}
+			}
+		custom_tooltip = " "
+		custom_tooltip = byz_croatian_no_slot
+		}
+	}
+	option {
+		name = "custom_byz_events.5.d"
+		ai_chance = {
+			factor = 0
+		}
+		add_country_modifier = {
+			name = byz_convert_culture
+			duration = 7305
+		}
+	}
+}
