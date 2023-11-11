@@ -1,0 +1,15 @@
+namespace = custom_leon_namespace
+country_event = {
+	id = the_bulgarian_attack.1
+	title = "the_bulgarian_attack.1.t"
+	desc = "the_bulgarian_attack.1.d"
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+	 name = "the_bulgarian_attack.1.a"
+	 ai_chance = {
+			factor = 100
+		}
+	}
+}

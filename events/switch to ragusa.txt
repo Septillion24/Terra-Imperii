@@ -1,0 +1,22 @@
+namespace = custom_leon_event_3_namespace
+country_event = {
+	id = play_revolt.2
+	title = play_revolt.1.t
+	desc = play_revolt.1.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "play_revolt.1.a"
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "play_revolt.1.b"
+		ai_chance = {
+			factor = 0
+			}
+		switch_tag = RAG
+	}
+}
