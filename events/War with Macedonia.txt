@@ -1,69 +1,26 @@
-namespace = custom_byz_events
-
-#claim to pontus
+namespace = custom_leon_event_NO_namespace
 country_event = {
-	id = custom_byz_events.1
-	title = custom_byz_events.1.t
-	desc = custom_byz_events.1.d
-	picture = ADVISOR_eventPicture
+	id = custom_leon_event_NO_namespace.1
+	title = custom_leon_event_NO_namespace.1.t
+	desc = custom_leon_event_NO_namespace.1.d
+	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
-		name = "custom_byz_events.1.a"
+		name = "war_with_macedonia.1.a"
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
-			TRE = {
-				every_core_province = {
-					remove_core = ROOT
-				}
-			}
-			if {
-			limit = {
-				is_rival = TRE
-				}
-			add_prestige = -100
-			}
-	}
-	option = {
-		name = "custom_byz_events.1.b"
-		ai_chance = {
-			factor = 25
+		declare_war_with_cb = {
+		who = RAG
+		casus_belli = cb_core
+		war_goal = take_core
+		war_goal_province = 148
 		}
-		trigger = { 
-		highlight = yes
-			AND {
-				alliance_with = TRE
-				reverse_has_opinion = {
-					who = TRE
-					value = 200
-				}
-				prestige = 50
+		RAG = {
+		country_event = {
+			id = the_bulgarian_attack.1
 			}
 		}
-			vassalize = TRE
-			inherit = TRE
-			add_country_modifier = {
-				name = "byz_annex_pontus"
-				duration = 1826
-			}
-		
-	}
-	option = {
-		name = "custom_byz_events.1.c"
-		ai_chance = {
-			factor = 25
-		}
-		trigger = { 
-		highlight = yes
-			AND {
-				alliance_with = TRE
-				reverse_has_opinion = {
-					who = TRE
-					value = 200
-				}
-			}
-		}
-		vassalize = TRE
 	}
 }

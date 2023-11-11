@@ -1,6 +1,4 @@
-namespace = custom_leon_event_namespace
-
-#claim to pontus
+namespace = custom_leon_event_1_namespace
 country_event = {
 	id = the_bogomilist_question
 	title = the_bogomilist_question.1.t
@@ -20,8 +18,21 @@ country_event = {
 			ai_chance = {
 				factor = 5
 			}
+			hidden_effect = {
 			release = RAG
 			add_truce_with = RAG
+			RAG = {
+			add_truce_with = BYZ
+			add_truce_with = EPI
+			}
+		country_event = {
+			id = custom_leon_event_NO_namespace.1
+			days = 730
+			}
+		country_event = {
+			id = play_revolt.2
+			}
+			}
 		}
 	option = {
 			name = "the_bogomilist_question.1.c"
@@ -60,4 +71,3 @@ country_event = {
 			}
 		}
 }
-	
