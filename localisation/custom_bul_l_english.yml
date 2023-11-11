@@ -1,11 +1,25 @@
 ﻿l_english:
-#missions
- the_bogomilist_question_title:0 "Bogomilists in Macedonia"
- the_bogomilist_question_desc:0 "The bogomilists have lived in Macedonia for centuries under byzantine rule, thanks to our aid they have been able to break free and decided to join our nation. Now the time has come, what do we do with them?"
+ #missions
+  the_bogomilist_question_title:0 "Bogomilists in Macedonia"
+  the_bogomilist_question_desc:0 "The bogomilists have lived in Macedonia for centuries under byzantine rule, thanks to our aid they have been able to break free and decided to join our nation. Now the time has come, what do we do with them?"
  
-#events
- the_bogomilist_question.1.t:0 "Bogomilists in Macedonia"
- the_bogomilist_question.1.d:0 "The Bogomilists have lived peacefully under our nation for the past few decades, now we need to decide what to do with them."
- the_bogomilist_question.1.a:0 "Convert them by force"
- the_bogomilist_question.1.b:0 "We shall embrace them"
- the_bogomilist_question.1.c:0 "Let them stay"
+ #events
+  #bogomilist question
+   the_bogomilist_question.1.t:0 "Bogomilists in Macedonia"
+   the_bogomilist_question.1.d:0 "The Bogomilists have lived peacefully under our nation for the past few decades, now we need to decide what to do with them."
+   the_bogomilist_question.1.a:0 "Convert them by force"
+   the_bogomilist_question.1.b:0 "We shall embrace them"
+   the_bogomilist_question.1.c:0 "Let them stay"
+  #war with Macedonia
+   custom_leon_event_NO_namespace.1.t:0 "The Bogomilists strike back"
+   custom_leon_event_NO_namespace.1.d:0 "The Bogomilists have decided that they will not be converted and have launched a revolt against the great bulgarian kingdom and declared independence."
+   war_with_macedonia.1.a:0 "Fools, they shall all be slaughtered!"
+  #play as Macedonia
+   play_revolt.1.t:0 "Revolt of the Bogomilists"
+   play_revolt.1.d:0 "The Bogomilists have decided to start gathering up and prepare a revolution sire, would you like to join them?"
+   play_revolt.1.a:0 "Afraid not my loyal servent, i shall stay with my kingdom!"
+   play_revolt.1.b:0 "Gladly"
+  #the bulgarian attack
+   the_bulgarian_attack.1.t:0 "Revolution!"
+   the_bulgarian_attack.1.d:0 "The bulgarians have assaulted our revolutionaries, it is time to show them who is right!"
+   the_bulgarian_attack.1.a:0 "TO WAR!"
