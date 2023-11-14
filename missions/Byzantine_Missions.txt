@@ -530,7 +530,7 @@ potential = {
 		}
 	}
 }
-byz_caucasia_branching_3 = {
+byz_caucasia_base_3 = {
 slot = 3
 generic = no
 ai = yes
@@ -545,6 +545,121 @@ potential = {
 			has_country_flag = has_byz_missions
 		}
 		NOT = { map_setup = map_setup_random }
+	}
+	question_trebizond = {
+		icon = capture_adriatic_ports
+		required_missions = {claim_to_pontus}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 330
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		trigger = {
+			OR {
+				custom_trigger_tooltip = {
+					tooltip = byz_who_owns_trebizond
+					any_country= {
+						NOT = { total_development = ROOT }
+						owns = 330
+						}
+					}
+				owns_or_non_sovereign_subject_of = 330
+			}
+		}
+		effect = {
+			country_event = {
+				id = custom_byz_events.6
+			}
+			custom_tooltip = " "
+			custom_tooltip = byz_event_insights
+			custom_tooltip = " "
+			custom_tooltip = byz_path_a
+			custom_tooltip = byz_event6_opta
+			custom_tooltip = " "
+			custom_tooltip = byz_path_b
+			custom_tooltip = byz_event6_optb
+			custom_tooltip = " "
+		}
+	}
+}
+byz_caucasia_branching_3 = {
+slot = 3
+generic = no
+ai = yes
+has_country_shield = yes
+potential = {
+		OR = {
+			tag = BYZ
+			AND = {
+				was_tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = has_byz_missions
+			
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = {
+			OR = {
+				has_country_flag = byz_conquest_path
+				has_country_flag = byz_vassalization_path
+			}
+		}
+	}
+	branching_dummy_1 = {
+		icon = mission_unknown_mission
+		required_missions = {question_trebizond}
+		position = 4
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = byz_branching_msg
+				always = no
+				}
+		}
+		effect = {
+			custom_tooltip = byz_branching_msg
+		}
+	}
+	branching_dummy_2 = {
+		icon = mission_unknown_mission
+		required_missions = {branching_dummy_1}
+		position = 5
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = byz_branching_msg
+				always = no
+				}
+		}
+		effect = {
+			custom_tooltip = byz_branching_msg
+		}
+	}
+	branching_dummy_3 = {
+		icon = mission_unknown_mission
+		required_missions = {branching_dummy_2}
+		position = 6
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = byz_branching_msg
+				always = no
+				}
+		}
+		effect = {
+			custom_tooltip = byz_branching_msg
+		}
+	}
+	branching_dummy_4 = {
+		icon = mission_unknown_mission
+		required_missions = {branching_dummy_3}
+		position = 7
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = byz_branching_msg
+				always = no
+				}
+		}
+		effect = {
+			custom_tooltip = byz_branching_msg
+		}
 	}
 }
 byz_conquer_caucasia_3 = {
@@ -562,6 +677,19 @@ potential = {
 			has_country_flag = has_byz_missions
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = byz_conquest_path
+		NOT = {has_country_flag = byz_vassalization_path}
+	}
+	demand_trebizond = {
+		icon = capture_adriatic_ports
+		required_missions = {question_trebizond}
+		position = 4
+		trigger = {
+			#owns pontus
+		}
+		effect = {
+			#event pontus or war
+		}
 	}
 }
 byz_vassalize_caucasia_3 = {
@@ -579,6 +707,19 @@ potential = {
 			has_country_flag = has_byz_missions
 		}
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = byz_vassalization_path
+		NOT = {has_country_flag = byz_conquest_path}
+	}
+	purchase_trebizond = {
+		icon = capture_adriatic_ports
+		required_missions = {question_trebizond}
+		position = 4
+		trigger = {
+			#owns pontus
+		}
+		effect = {
+			#event purchase of trebizond event chain
+		}
 	}
 }
 byz_east_4 = {

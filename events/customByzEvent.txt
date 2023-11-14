@@ -230,6 +230,7 @@ country_event = {
 	id = custom_byz_events.5
 	title = custom_byz_events.5.t
 	desc = custom_byz_events.5.d
+	picture = MERCHANTS_TALKING_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -275,6 +276,7 @@ country_event = {
 				add_country_modifier = {
 					name = byz_accept_culture_1
 					duration = -1
+					hidden = yes
 				}
 			}
 		custom_tooltip = " "
@@ -299,10 +301,12 @@ country_event = {
 				add_country_modifier = {
 					name = byz_accept_culture_1
 					duration = -1
+					hidden = yes
 				}
 			}
 		custom_tooltip = " "
 		custom_tooltip = byz_croatian_no_slot
+		hidden = yes
 		}
 	}
 	option {
@@ -314,5 +318,33 @@ country_event = {
 			name = byz_convert_culture
 			duration = 7305
 		}
+	}
+}
+#question of trebizond
+country_event = {
+	id = custom_byz_events.6
+	title = custom_byz_events.6.t
+	desc = custom_byz_events.6.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 330
+	
+	option {
+		name = custom_byz_events.6.a
+		set_country_flag = byz_conquest_path
+		custom_tooltip = byz_event6_opta_desc
+		custom_tooltip = " "
+		custom_tooltip = byz_new_missions_msg
+		swap_non_generic_missions = yes
+	}
+	option {
+		name = custom_byz_events.6.b
+		set_country_flag = byz_vassalization_path
+		custom_tooltip = byz_event6_optb_desc
+		custom_tooltip = " "
+		custom_tooltip = byz_new_missions_msg
+		swap_non_generic_missions = yes
 	}
 }

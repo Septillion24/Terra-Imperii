@@ -24,6 +24,22 @@
  prevent_morea_desc:0 "Morea has long been an isolated part of our empire. They may try to break free from our control if we do not appease them."
  dominate_illyricum_title:0 "Dominate Illyricum"
  dominate_illyricum_desc:0 "We have long since lost control of Illyricum but now we have reasserted our dominance in this region."
+ question_trebizond_title:0 "The Question of Trebizond"
+ question_trebizond_desc:0 "We must decide on how to retake the city of Trebizond."
+ branching_dummy_1_title:0 "§YBranching Mission§!"
+ branching_dummy_1_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
+ branching_dummy_2_title:0 "§YBranching Mission§!"
+ branching_dummy_2_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
+ branching_dummy_3_title:0 "§YBranching Mission§!"
+ branching_dummy_3_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
+ branching_dummy_4_title:0 "§YBranching Mission§!"
+ branching_dummy_4_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
+ 
+  #branching conquest missions
+  demand_trebizond_title:0 "§ODemand Trebizond§!"
+  demand_trebizond_desc:0 "It is time we reassert our dominance and demand the city of Trebizond from their usurpers."
+  purchase_trebizond_title:0 "§OPurchase of Trebizond§!"
+  purchase_trebizond_desc:0 "Usurpers can easily be bribed by some money. It is in our best interest to peacefully resolve this conflict."
  
  #modifiers
  byz_morale:0 "Revitalized Byzantine Army"
@@ -67,6 +83,10 @@ custom_byz_events.5.a:0 "Elevate Bulgarians"
 custom_byz_events.5.b:0 "Elevate Serbians"
 custom_byz_events.5.c:0 "Elevate Croatians"
 custom_byz_events.5.d:0 "Assimilate them into Greek"
+custom_byz_events.6.t:0 "Question of Trebizond"
+custom_byz_events.6.d:0 "When Pontus has broken away from our Empire, they have taken Trebizond with them. However they have too lost Trebizond, now we must question the status of the city and how we should approach with retaking it."
+custom_byz_events.6.a:0 "Caucasia has always been an integral part of the Empire"
+custom_byz_events.6.b:0 "Caucasia only needs to pay homage to the Empire"
 #custom tooltips
 
  #morean revolt tooltips
@@ -84,6 +104,16 @@ custom_byz_events.5.d:0 "Assimilate them into Greek"
     byz_claims_turk:0 "[Root.GetName] gain claims on all §YTurkish§! cultured provinces"
     #prevent_morea
     byz_no_more_morea:0 "Prevents §YThe Morean Revolt§! disaster"
+    #question_trebizond
+    byz_who_owns_trebizond:0 "Country who owns §YTrebizond§! have less development than §Y[Root.GetName]§!"
+    
+    
+ #branching tooltips
+  byz_path_a:0 "§MPath 1§!"
+  byz_path_b:0 "§MPath 2§!"
+  byz_branching_msg:0 "This is a §YBranching Mission§!."
+  byz_new_missions_msg:0 "Obtain New Missions"
+  
  #custom_byz_events.1
   byz_annex:0 "Integrate §YPontus§! as a part of the Empire"
   byz_event1_opta:0 "§RLose all Cores§! on §YPontus§!"
@@ -112,3 +142,8 @@ custom_byz_events.5.d:0 "Assimilate them into Greek"
  byz_event5_optc:0 "Accept §YCroatian§! culture"
  byz_event5_optd:0 "Gain §GCulture Conversion Cost -25%§!"
  
+ #custom_byz_events.6
+  byz_event6_opta:0 "Conquer and manage Caucasia"
+  byz_event6_opta_desc:0 "Enables Caucasia Conquest Path"
+  byz_event6_optb:0 "Create vassals in Caucasia"
+  byz_event6_optb_desc:0 "Enables Caucasia Vassalization Path"
