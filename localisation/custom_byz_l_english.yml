@@ -1,7 +1,7 @@
 ﻿l_english:
 #missions
- build_army_byz_title:0 "Build up our Armies"
- build_army_byz_desc:0 "We must seek to return to power and not show any form of weakness"
+ build_army_byz_title:0 "Dreams of Redemption"
+ build_army_byz_desc:0 "After being crushed by our enemies, our Empire have been destroyed and they have usurped half of our lands. We must seek to return to power and not show any signs of weakness."
  reclaim_epirus_title:0 "Reclaim Epirus"
  reclaim_epirus_desc:0 "Epirus shocked us when they attacked us and seized our lands. We today shall return this favor and the balkans shall see the ripples of our very actions."
  secure_homeland_title:0 "Secure our Homeland"
@@ -42,6 +42,7 @@
   purchase_trebizond_desc:0 "Usurpers can easily be bribed by some money. It is in our best interest to peacefully resolve this conflict."
  
  #modifiers
+ byz_rome_resilience:0 "Roman Resilience"
  byz_morale:0 "Revitalized Byzantine Army"
  byz_city:0 "Reputation of a City"
  byz_annex_pontus:0 "Aggressive Byzantine Manuevers"
@@ -50,6 +51,7 @@
  byz_morea_order:0 "Ordinance of Morea"
  byz_accept_culture_1:0 "Roman Acceptance"
  byz_convert_culture:0 "A New Hellenization"
+ 
  
 #events 
 custom_byz_events.1.t:0 "Fate of Pontus"

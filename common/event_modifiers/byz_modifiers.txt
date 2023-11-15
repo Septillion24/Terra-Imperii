@@ -25,3 +25,7 @@ byz_accept_culture_1 = {
 byz_convert_culture = {
 	culture_conversion_cost = -0.25
 }
+byz_rome_resilience = {
+	land_morale = 0.10
+	morale_damage_received = -0.02
+}

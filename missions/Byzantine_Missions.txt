@@ -40,7 +40,7 @@ potential = {
 		effect = {
 			add_country_modifier = {
 				name = "byz_morale"
-				duration = -1
+				duration = 9125
 			}
 			thrace_area = {
 				limit = {
@@ -80,7 +80,7 @@ potential = {
 		NOT = { map_setup = map_setup_random }
 	}
 	build_army_byz = { 
-		icon = mission_build_up_to_force_limit
+		icon = mission_plc_purple_phoenix
 		required_missions = {  } 
 		position = 1
 		trigger = {
@@ -88,8 +88,8 @@ potential = {
 		}
 		effect = { 
 			add_country_modifier = {
-				name = "thriving_arms_industry"
-				duration = 9125 #25 years
+				name = "byz_rome_resilience"
+				duration = -1
 			}
 		}
 		ai_weight = {
