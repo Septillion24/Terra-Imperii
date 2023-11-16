@@ -519,13 +519,102 @@ potential = {
 			}
 		}
 		effect = {
+			
+			add_country_modifier = {
+				name = "byz_legit"
+				duration = -1
+			}
+			163 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4905 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4953 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			321 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4949 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			126 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mediterranean_sphere = {
+		icon = mission_galleys_in_port
+		required_missions = {deal_crusaders}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				province_id = 163
+				province_id = 4905
+				province_id = 4953
+				province_id = 321
+				province_id = 4949
+				province_id = 126
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 163
+			owns_or_non_sovereign_subject_of = 4905
+			owns_or_non_sovereign_subject_of = 4953
+			owns_or_non_sovereign_subject_of = 321
+			owns_or_non_sovereign_subject_of = 4949
+			owns_or_non_sovereign_subject_of = 126
+		}
+		effect = {
 			add_country_modifier = {
 				name = "byzantium_resurgent"
 				duration = 5475
 			}
-			add_country_modifier = {
-				name = "byz_legit"
-				duration = -1
+			
+			custom_tooltip = byz_claim_sicily
+			
+			hidden_effect = {
+				sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				
+				western_sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}

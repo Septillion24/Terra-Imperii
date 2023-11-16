@@ -26,6 +26,9 @@
  dominate_illyricum_desc:0 "We have long since lost control of Illyricum but now we have reasserted our dominance in this region."
  question_trebizond_title:0 "The Question of Trebizond"
  question_trebizond_desc:0 "We must decide on how to retake the city of Trebizond."
+ mediterranean_sphere_title:0 "Mediterranean Sphere"
+ mediterranean_sphere_desc:0 "It is of utmost importance that we reestablish our influence in the Mediterranean. One of the most effective tactics has always been to control the islands."
+ #branching dummies
  branching_dummy_1_title:0 "§YBranching Mission§!"
  branching_dummy_1_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
  branching_dummy_2_title:0 "§YBranching Mission§!"
@@ -108,7 +111,8 @@ custom_byz_events.6.b:0 "Caucasia only needs to pay homage to the Empire"
     byz_no_more_morea:0 "Prevents §YThe Morean Revolt§! disaster"
     #question_trebizond
     byz_who_owns_trebizond:0 "Country who owns §YTrebizond§! have less development than §Y[Root.GetName]§!"
-    
+    #mediterranean_sphere
+    byz_claim_sicily:0 "§Y[Root.GetName]§! gain permanent claims on §YSicily§!"
     
  #branching tooltips
   byz_path_a:0 "§MPath 1§!"
