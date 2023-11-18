@@ -618,6 +618,24 @@ potential = {
 			}
 		}
 	}
+	redeem_syracuse = {
+		icon = overshadow_venice
+		required_missions = {mediterranean_sphere}
+		position = 5
+		provinces_to_highlight = {
+			province_id = 124
+		}
+		trigger = {
+			124 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = custom_byz_events.7
+			}
+		}
+	}
 }
 byz_caucasia_base_3 = {
 slot = 3

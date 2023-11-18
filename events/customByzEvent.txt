@@ -61,8 +61,7 @@ country_event = {
 				prestige = 50
 			}
 		}
-		custom_tooltip = byz_annex
-		
+		custom_tooltip = byz_event1_optc_desc
 		
 		hidden_effect = {
 			vassalize = TRE
@@ -125,7 +124,7 @@ country_event = {
 	id = custom_byz_events.3
 	title = custom_byz_events.3.t
 	desc = custom_byz_events.3.d
-	picture = FORT_eventPicture
+	picture = BYZ_FORT_eventPicture
 	
 	is_triggered_only = yes 
 	
@@ -185,7 +184,7 @@ country_event = {
 	id = custom_byz_events.4
 	title = custom_byz_events.4.t
 	desc = custom_byz_events.4.d
-	picture = FORT_eventPicture
+	picture = BYZ_FORT_eventPicture
 	
 	is_triggered_only = yes 
 	
@@ -346,5 +345,67 @@ country_event = {
 		custom_tooltip = " "
 		custom_tooltip = byz_new_missions_msg
 		swap_non_generic_missions = yes
+	}
+}
+#redeem syracuse
+country_event = {
+	id = custom_byz_events.7
+	title = custom_byz_events.7.t
+	desc = custom_byz_events.7.d
+	picture = PORT_BLOCKADED_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 124
+	
+	option = {
+		name = custom_byz_events.7.a
+		hidden_effect = {
+			124 = {
+				cede_province = ROOT
+			}
+			125 = {
+				cede_province = ROOT
+			}
+			2982 = {
+				cede_province = ROOT
+			}
+			4736 = {
+				cede_province = ROOT
+			}
+			4737 = {
+				cede_province = ROOT
+			}
+		}
+		custom_tooltip = byz_event7_opta_desc2
+		hidden_effect = {
+			124 = {
+				owner = { 
+					white_peace = ROOT
+					}
+			}
+		}
+		custom_tooltip = byz_event7_opta_desc
+	}
+	option = {
+		name = custom_byz_events.7.b
+		hidden_effect = {
+			124 = {
+				add_core = ROOT
+			}
+			125 = {
+				add_core = ROOT
+			}
+			2982 = {
+				add_core = ROOT
+			}
+			4736 = {
+				add_core = ROOT
+			}
+			4737 = {
+				add_core = ROOT
+			}
+		}
+		custom_tooltip = byz_event7_optb_desc
 	}
 }

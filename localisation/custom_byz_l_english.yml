@@ -28,6 +28,8 @@
  question_trebizond_desc:0 "We must decide on how to retake the city of Trebizond."
  mediterranean_sphere_title:0 "Mediterranean Sphere"
  mediterranean_sphere_desc:0 "It is of utmost importance that we reestablish our influence in the Mediterranean. One of the most effective tactics has always been to control the islands."
+ redeem_syracuse_title:0 "Redeem Syracuse"
+ redeem_syracuse_desc:0 "Syracuse was the cause of the infamous Punic Wars and it truly revolutionized Rome into an expansive state. We as the true heirs to Rome shall reclaim Syracuse and all of Sicily and take back our Homelands in Italy."
  #branching dummies
  branching_dummy_1_title:0 "§YBranching Mission§!"
  branching_dummy_1_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
@@ -92,6 +94,10 @@ custom_byz_events.6.t:0 "Question of Trebizond"
 custom_byz_events.6.d:0 "When Pontus has broken away from our Empire, they have taken Trebizond with them. However they have too lost Trebizond, now we must question the status of the city and how we should approach with retaking it."
 custom_byz_events.6.a:0 "Caucasia has always been an integral part of the Empire"
 custom_byz_events.6.b:0 "Caucasia only needs to pay homage to the Empire"
+custom_byz_events.7.t:0 "Reclaiming Sicily"
+custom_byz_events.7.d:0 "Syracuse was the cause of the infamous Punic Wars and it truly revolutionized Rome into an expansive state. We as the true heirs to Rome shall reclaim Syracuse and all of Sicily and take back our Homelands in Italy."
+custom_byz_events.7.a:0 "Negotiate for Sicily"
+custom_byz_events.7.b:0 "The War Shall Wage On"
 #custom tooltips
 
  #morean revolt tooltips
@@ -113,6 +119,7 @@ custom_byz_events.6.b:0 "Caucasia only needs to pay homage to the Empire"
     byz_who_owns_trebizond:0 "Country who owns §YTrebizond§! have less development than §Y[Root.GetName]§!"
     #mediterranean_sphere
     byz_claim_sicily:0 "§Y[Root.GetName]§! gain permanent claims on §YSicily§!"
+   
     
  #branching tooltips
   byz_path_a:0 "§MPath 1§!"
@@ -120,36 +127,50 @@ custom_byz_events.6.b:0 "Caucasia only needs to pay homage to the Empire"
   byz_branching_msg:0 "This is a §YBranching Mission§!."
   byz_new_missions_msg:0 "Obtain New Missions"
   
- #custom_byz_events.1
-  byz_annex:0 "Integrate §YPontus§! as a part of the Empire"
-  byz_event1_opta:0 "§RLose all Cores§! on §YPontus§!"
-  byz_event1_opta2:0 "If we are §Rrivaled§! against §YPontus§!, we instead §Rlose 5 prestige§! "
-  byz_event1_optb:0 "If we are §Gallied§! to §YPontus§! and they have §G200 opinion§! of us "
-  byz_event1_optb2:0 "§YPontus§! can return to us as a vassal"
-  byz_event1_optc:0 "If we are allied to §YPontus§!, they have §G200 opinion§! of us and have at least §G50 prestige§!"
-  byz_event1_optc2:0 "We can immediately integrate §YPontus§! and receive §YAggressive Byzantine Manuevers§!, §R-3 diplomatic reputation§! for §Y10 years§!"
-  
- #custom_byz_events.3
- byz_event3_opta:0 "Gain §YCastle§! in §YMorea§!, lose §YCastle§! in §YCorinth§!"
- byz_event3_optb:0 "Gain §YTheodosian Focus§!, giving local fort maintenance §G-50%§! in §YConstantinople§!"
- 
- #custom_byz_events.4
- byz_event4_opta:0 "Starts construction of §YBastion§! for 125% of the time and 50% of the cost"
- byz_event4_opta_desc:0 "Starts the construction of §YBastion§! in Constantinople"
- byz_event4_opta_desc2:0 "§R-100 Ducats§!"
- byz_event4_optb:0 "Gain §YReputation of a City§! until §YAge of Discovery§! ends"
- 
- #custom_byz_events.5
- byz_bulgarian_no_slot:0 "Accepting §YBulgarian§! culture will not take up a §YAccepted Culture Slot§!."
- byz_serbian_no_slot:0 "Accepting §YSerbian§! culture will not take up a §YAccepted Culture Slot§!."
- byz_croatian_no_slot:0 "Accepting §YCroatian§! culture will not take up a §YAccepted Culture Slot§!."
- byz_event5_opta:0 "Accept §YBulgarian§! culture"
- byz_event5_optb:0 "Accept §YSerbian§! culture"
- byz_event5_optc:0 "Accept §YCroatian§! culture"
- byz_event5_optd:0 "Gain §GCulture Conversion Cost -25%§!"
- 
- #custom_byz_events.6
-  byz_event6_opta:0 "Conquer and manage Caucasia"
-  byz_event6_opta_desc:0 "Enables Caucasia Conquest Path"
-  byz_event6_optb:0 "Create vassals in Caucasia"
-  byz_event6_optb_desc:0 "Enables Caucasia Vassalization Path"
+ #event preview tooltips 
+     #custom_byz_events.1
+      byz_event1_opta:0 "§RLose all Cores§! on §YPontus§!"
+      byz_event1_opta2:0 "If we are §Rrivaled§! against §YPontus§!, we instead §Rlose 5 prestige§! "
+      byz_event1_optb:0 "If we are §Gallied§! to §YPontus§! and they have §G200 opinion§! of us "
+      byz_event1_optb2:0 "§YPontus§! can return to us as a vassal"
+      byz_event1_optc:0 "If we are allied to §YPontus§!, they have §G200 opinion§! of us and have at least §G50 prestige§!"
+      byz_event1_optc2:0 "We can immediately integrate §YPontus§! and receive §YAggressive Byzantine Manuevers§!, §R-3 diplomatic reputation§! for §Y10 years§!"
+      
+     #custom_byz_events.3
+     byz_event3_opta:0 "Gain §YCastle§! in §YMorea§!, lose §YCastle§! in §YCorinth§!"
+     byz_event3_optb:0 "Gain §YTheodosian Focus§!, giving local fort maintenance §G-50%§! in §YConstantinople§!"
+     
+     #custom_byz_events.4
+     byz_event4_opta:0 "Starts construction of §YBastion§! for 125% of the time and 50% of the cost"
+     
+     byz_event4_optb:0 "Gain §YReputation of a City§! until §YAge of Discovery§! ends"
+     
+     #custom_byz_events.5
+     byz_bulgarian_no_slot:0 "Accepting §YBulgarian§! culture will not take up a §YAccepted Culture Slot§!."
+     byz_serbian_no_slot:0 "Accepting §YSerbian§! culture will not take up a §YAccepted Culture Slot§!."
+     byz_croatian_no_slot:0 "Accepting §YCroatian§! culture will not take up a §YAccepted Culture Slot§!."
+     byz_event5_opta:0 "Accept §YBulgarian§! culture"
+     byz_event5_optb:0 "Accept §YSerbian§! culture"
+     byz_event5_optc:0 "Accept §YCroatian§! culture"
+     byz_event5_optd:0 "Gain §GCulture Conversion Cost -25%§!"
+     
+     #custom_byz_events.6
+      byz_event6_opta:0 "Conquer and manage Caucasia"
+      
+      byz_event6_optb:0 "Create vassals in Caucasia"
+     
+
+      
+ #event effect description tooltips
+     #custom_byz_events.1
+     byz_event1_optc_desc:0 "Integrate §YPontus§! as a part of the Empire"
+     #custom_byz_events.4
+     byz_event4_opta_desc:0 "Starts the construction of §YBastion§! in Constantinople"
+     byz_event4_opta_desc2:0 "§R-100 Ducats§!"
+     #custom_byz_events.6
+     byz_event6_opta_desc:0 "Enables Caucasia Conquest Path" 
+     byz_event6_optb_desc:0 "Enables Caucasia Vassalization Path"       
+     #custom_byz_events.7
+     byz_event7_opta_desc:0 "§Y[124.Owner.GetName]§! white peaces with §Y[Root.GetName]§!"
+     byz_event7_opta_desc2:0 "§Y[Root.GetName]§! annexes §YSicily Island§!"
+     byz_event7_optb_desc:0 "§Y[Root.GetName]§! gain cores on all of §YSicily Island§!"
