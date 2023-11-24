@@ -409,3 +409,55 @@ country_event = {
 		custom_tooltip = byz_event7_optb_desc
 	}
 }
+#East Reclaims Rome
+country_event = {
+	id = custom_byz_events.8
+	title = custom_byz_events.8.t
+	desc = custom_byz_events.8.d
+	picture = ST_PETERS_CHURCH_eventPicture
+	
+	goto = 118
+	
+	major = yes 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = custom_byz_events.8.a
+		add_patriarch_authority = 0.2
+		if = {
+			limit = {
+				religion = orthodox
+			}
+			hidden_effect = {
+				every_country = {
+						limit = { 
+							religion = catholic 
+							knows_country = BYZ
+						}
+						country_event = { 
+							id = custom_byz_events.9
+							}
+					}
+				}
+			custom_tooltip = byz_event7_opta_desc
+			}
+		}
+}
+#Orthodox Dominance
+country_event = {
+	id = custom_byz_events.9
+	title = custom_byz_events.9.t
+	desc = custom_byz_events.9.d
+	picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = custom_byz_events.9.a
+		add_country_modifier = {
+			name = byz_took_rome
+			duration = -1
+		}
+	}
+}

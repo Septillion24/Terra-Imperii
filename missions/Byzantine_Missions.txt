@@ -17,7 +17,7 @@ potential = {
 	}
 	reclaim_epirus = {
 		icon = reclaim_epirus
-		required_missions = {build_army_byz} 
+		required_missions = {army_byz} 
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -79,7 +79,7 @@ potential = {
 		}
 		NOT = { map_setup = map_setup_random }
 	}
-	build_army_byz = { 
+	army_byz = { 
 		icon = mission_plc_purple_phoenix
 		required_missions = {  } 
 		position = 1
@@ -115,7 +115,7 @@ potential = {
 	}
 	claim_to_pontus = {
 	icon = claim_pontus
-	required_missions = {build_army_byz}
+	required_missions = {army_byz}
 	position = 2
 	trigger = { 
 		AND {
@@ -220,7 +220,8 @@ potential = {
 		trigger = {
 			AND {
 				151 = {
-					num_of_times_improved_by_owner = 10
+					owned_by = ROOT
+					num_of_times_improved = 10
 				}
 				treasury = 100
 				}
@@ -619,7 +620,7 @@ potential = {
 		}
 	}
 	redeem_syracuse = {
-		icon = overshadow_venice
+		icon = arb_sicily
 		required_missions = {mediterranean_sphere}
 		position = 5
 		provinces_to_highlight = {
@@ -633,6 +634,96 @@ potential = {
 		effect = {
 			country_event = {
 				id = custom_byz_events.7
+			}
+			apulia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+		}
+	}
+	retake_magna = {
+		icon = dalmatian_conquest
+		required_missions = {redeem_syracuse}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = apulia_area
+				area = calabria_area
+				area = naples_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lazio_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+		}
+	}
+	reverse_451 = {
+		icon = answer_the_roman_question
+		required_missions = {retake_magna}
+		position = 7
+		provinces_to_highlight = {
+			province_id = 118
+		}
+		trigger = {
+			118 = {
+				owned_by = ROOT
+				is_state = yes
+			}
+		}
+		effect = {
+			country_event = {
+				id = custom_byz_events.8
+			}
+			italy_region = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 ﻿l_english:
 #missions
- build_army_byz_title:0 "Dreams of Redemption"
- build_army_byz_desc:0 "After being crushed by our enemies, our Empire have been destroyed and they have usurped half of our lands. We must seek to return to power and not show any signs of weakness."
+ army_byz_title:0 "Dreams of Redemption"
+ army_byz_desc:0 "After being crushed by our enemies, our Empire have been destroyed and they have usurped half of our lands. We must seek to return to power and not show any signs of weakness."
  reclaim_epirus_title:0 "Reclaim Epirus"
  reclaim_epirus_desc:0 "Epirus shocked us when they attacked us and seized our lands. We today shall return this favor and the balkans shall see the ripples of our very actions."
  secure_homeland_title:0 "Secure our Homeland"
@@ -30,6 +30,10 @@
  mediterranean_sphere_desc:0 "It is of utmost importance that we reestablish our influence in the Mediterranean. One of the most effective tactics has always been to control the islands."
  redeem_syracuse_title:0 "Redeem Syracuse"
  redeem_syracuse_desc:0 "Syracuse was the cause of the infamous Punic Wars and it truly revolutionized Rome into an expansive state. We as the true heirs to Rome shall reclaim Syracuse and all of Sicily and take back our Homelands in Italy."
+ retake_magna_title:0 "Retake Magna Graecia"
+ retake_magna_desc:0 "Magna Graecia was the first province beyond Rome, such history have taken place here. We will retake the peninsula from the bottom up."
+ reverse_451_title:0 "Reverse 451"
+ reverse_451_desc:0 "In 451, Rome had defied the leadership of the True Empire and asserted their foolish claims of their sovereignty. On the edge of reclaiming the legacy of Rome, we shall reverse this decision to leave the citizens of Rome be."
  #branching dummies
  branching_dummy_1_title:0 "§YBranching Mission§!"
  branching_dummy_1_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'The Question of Trebizond' mission."
@@ -56,6 +60,7 @@
  byz_morea_order:0 "Ordinance of Morea"
  byz_accept_culture_1:0 "Roman Acceptance"
  byz_convert_culture:0 "A New Hellenization"
+ byz_took_rome:0 "Delegitimatization of Catholicism"
  
  
 #events 
@@ -98,6 +103,12 @@ custom_byz_events.7.t:0 "Reclaiming Sicily"
 custom_byz_events.7.d:0 "Syracuse was the cause of the infamous Punic Wars and it truly revolutionized Rome into an expansive state. We as the true heirs to Rome shall reclaim Syracuse and all of Sicily and take back our Homelands in Italy."
 custom_byz_events.7.a:0 "Negotiate for Sicily"
 custom_byz_events.7.b:0 "The War Shall Wage On"
+custom_byz_events.8.t:0 "The East Reclaims Rome"
+custom_byz_events.8.d:0 "As the East encroaches upon Italy and the holy city of Rome, many lay in fear. As we retake Rome, it will destablize all of the Catholic World. We shake the world with our actions."
+custom_byz_events.8.a:0 "GLORY TO GOD"
+custom_byz_events.9.t:0 "Orthodox Dominance"
+custom_byz_events.9.d:0 "The Eastern Split, Orthodox having taken Rome. This spells disaster for us Catholics, as they continue to encroach on us we should not just stand by and watch."
+custom_byz_events.9.a:0 "When have we earned this punishment."
 #custom tooltips
 
  #morean revolt tooltips
@@ -174,3 +185,5 @@ custom_byz_events.7.b:0 "The War Shall Wage On"
      byz_event7_opta_desc:0 "§Y[124.Owner.GetName]§! white peaces with §Y[Root.GetName]§!"
      byz_event7_opta_desc2:0 "§Y[Root.GetName]§! annexes §YSicily Island§!"
      byz_event7_optb_desc:0 "§Y[Root.GetName]§! gain cores on all of §YSicily Island§!"
+     #custom_byz_events.8
+     byz_event7_opta_desc:0 "The event '§YOrthodox Dominance§!' happens to all §YCatholic§! Nations."
