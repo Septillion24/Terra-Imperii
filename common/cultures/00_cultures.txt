@@ -3418,6 +3418,28 @@ byzantine = {
 	epirote = {
 		primary = EPI
 	}
+	graecoturkish = {
+		primary = TUR
+		dynasty_names = {
+			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
+			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
+			"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
+			"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu" "Konstantınoğlu" 
+			"Theodosiyeoğlu" "Melekzade" "Turcopolu"
+		}
+		male_names = {
+			Andrey Yannis Mihail Gavriil Nikolas Dimitri Georgi Panayiotis Stefan Elias Yakup Petrus Toma
+			Ferhat Yorgo Markus Pavel Timur Demir Ilyas Yaser Savas Akif Zeki Serdar Baris Erol Riza Tolga Cemal
+			Metin Deniz Serkan Bora Alp Aydin Tarik Cihan Erdem Yusuf Levent Tuncay Cenar Koray Cemil Bedirhan
+			Cengiz Orhan Tarcan Ismail Arman Aslan Tayfun Taylan Umit Hakan Yabuz Andreas Nijoloas Dimitros Panagiotis
+			Gergios Antonios Constantinos Spyridon Vasilios Ioannis Theodoros Alexandros Konstantinos Evangelos 
+			Stavros Christos Kyrakos Apostolos "Konstantin"
+		}
+		female_names = {
+			Mariya Sofya Anastasyia Elena Theodora Kristina Despina "Ayşe" Elif  "İrina" Suzan Meltem Lale Ayla 
+			Gulizar "Nilgün" "Şehrazat" Melek Cemile Nalan
+		}
+	}
 
 		male_names = {
 			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 

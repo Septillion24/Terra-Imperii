@@ -129,7 +129,7 @@ custom_byz_events.9.a:0 "When have we earned this punishment."
     #question_trebizond
     byz_who_owns_trebizond:0 "Country who owns §YTrebizond§! have less development than §Y[Root.GetName]§!"
     #mediterranean_sphere
-    byz_claim_sicily:0 "§Y[Root.GetName]§! gain permanent claims on §YSicily§!"
+    byz_claim_sicily:0 "§Y[Root.GetName]§! gain permanent claim on §YSicily§! Areas"
    
     
  #branching tooltips
@@ -142,10 +142,10 @@ custom_byz_events.9.a:0 "When have we earned this punishment."
      #custom_byz_events.1
       byz_event1_opta:0 "§RLose all Cores§! on §YPontus§!"
       byz_event1_opta2:0 "If we are §Rrivaled§! against §YPontus§!, we instead §Rlose 5 prestige§! "
-      byz_event1_optb:0 "If we are §Gallied§! to §YPontus§! and they have §G200 opinion§! of us "
+      byz_event1_optb:0 "If we are §Gallied§! to §YPontus§! and they have §G200§! opinion of us "
       byz_event1_optb2:0 "§YPontus§! can return to us as a vassal"
-      byz_event1_optc:0 "If we are allied to §YPontus§!, they have §G200 opinion§! of us and have at least §G50 prestige§!"
-      byz_event1_optc2:0 "We can immediately integrate §YPontus§! and receive §YAggressive Byzantine Manuevers§!, §R-3 diplomatic reputation§! for §Y10 years§!"
+      byz_event1_optc:0 "If we are allied to §YPontus§!, they have §G200§! opinion of us and have at least §G50§! §Yprestige§!"
+      byz_event1_optc2:0 "[Root.GetName] immediately vassalize and integrates §YPontus§!\n[Root.GetName] gets §YAggressive Byzantine Manuevers§! for §Y10 years§!, giving the following effects: \nDiplomatic Reputation: §R-3.00§! "
       
      #custom_byz_events.3
      byz_event3_opta:0 "Gain §YCastle§! in §YMorea§!, lose §YCastle§! in §YCorinth§!"

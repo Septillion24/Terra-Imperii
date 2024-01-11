@@ -97,7 +97,7 @@ country_event = {
 	
 	immediate = {
 		151 = {
-			add_devastation =50
+			add_devastation = 69
 		}
 	}
 	

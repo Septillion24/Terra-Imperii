@@ -43,6 +43,7 @@
  upper_bavarian:0 "Upper Bavarian"
  bavarian:0 "Lower Bavarian" 
  scottish:0 "Anglo-Scots"
+ transylvaniansaxon:0 "Transylvanian Saxon"
  
  #french
  outremer:0 "Outremer"
@@ -65,6 +66,8 @@
  peloponnesian_greek:0 "Peloponnesian"
  greek:0 "Thessalonikian"
  epirote:0 "Epirote"
+ graecoturkish:0 "Turcopolish"
+
  #Arabic
  aramic:0 "Assyrian"
  tripoler:0 "Libyan"

@@ -11,7 +11,7 @@ byz_city = {
 }
 byz_legit = {
 	core_creation = -0.1
-	legitimacy = 1
+	legitimacy = 0.5
 }
 byz_constantinople_fort_cost = {
 	local_fort_maintenance_modifier = -0.5

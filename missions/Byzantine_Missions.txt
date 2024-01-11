@@ -188,17 +188,12 @@ potential = {
 		}
 	trigger = {
 		151 = {
-			OR {
-				AND {
-				owned_by = ROOT
-				NOT = {devastation = 1}
+			owned_by = ROOT
+				OR {
+					NOT = {devastation = 1}
+					development = 25
+					}
 				}
-				AND {
-				owned_by = ROOT
-				development = 27
-				}
-				}
-			}
 		}
 	effect = {
 		thrace_area = {
@@ -525,6 +520,27 @@ potential = {
 				name = "byz_legit"
 				duration = -1
 			}
+			apulia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
 			163 = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -585,12 +601,17 @@ potential = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 163
-			owns_or_non_sovereign_subject_of = 4905
-			owns_or_non_sovereign_subject_of = 4953
-			owns_or_non_sovereign_subject_of = 321
-			owns_or_non_sovereign_subject_of = 4949
-			owns_or_non_sovereign_subject_of = 126
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				OR = {
+					province_id = 163
+					province_id = 4905
+					province_id = 4953
+					province_id = 321
+					province_id = 4949
+					province_id = 126
+				}
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -617,6 +638,13 @@ potential = {
 					add_permanent_claim = ROOT
 				}
 			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	redeem_syracuse = {
@@ -635,27 +663,7 @@ potential = {
 			country_event = {
 				id = custom_byz_events.7
 			}
-			apulia_area = {
-				limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-			}
-			calabria_area = {
-				limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-			}
-			naples_area = {
-				limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-			}
+			
 		}
 	}
 	retake_magna = {
@@ -671,17 +679,13 @@ potential = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			apulia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			calabria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			naples_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7 
+				OR = {
+					area = apulia_area
+					area = calabria_area
+					area = naples_area
+				}
 			}
 		}
 		effect = {
@@ -886,7 +890,7 @@ potential = {
 			#owns pontus
 		}
 		effect = {
-			#event pontus or war
+			#event trebizond or war
 		}
 	}
 }
