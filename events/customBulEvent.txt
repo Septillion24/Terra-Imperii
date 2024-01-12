@@ -1,6 +1,6 @@
 namespace = custom_leon_event_namespace
 
-#claim to pontus
+#bogomilist question
 country_event = {
 	id = the_bogomilist_question
 	title = the_bogomilist_question.1.t
@@ -21,7 +21,10 @@ country_event = {
 				factor = 5
 			}
 			release = RAG
-			add_truce_with = RAG
+			declare_war_with_cb = {
+				who = RAG
+				casus_belli = cb_heretic
+			}
 		}
 	option = {
 			name = "the_bogomilist_question.1.c"
