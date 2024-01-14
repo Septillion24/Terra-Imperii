@@ -1,66 +1,263 @@
-namespace = custom_leon_event_namespace
+﻿namespace = custom_bul_events
 
-#bogomilist question
+#religions in bulgaria
 country_event = {
-	id = the_bogomilist_question
-	title = the_bogomilist_question.1.t
-	desc = the_bogomilist_question.1.d
-	picture = ADVISOR_eventPicture
+	id = bul_event.1
+	title = bul_event.1.t
+	desc = bul_event.1.d
+	picture = WITCHBURNING_eventPicture
+	
 	is_triggered_only = yes
 
 	option = {
-			name = "the_bogomilist_question.1.b"
+			name = "bul_event.1.a"
 			ai_chance = {
-			factor = 5
+				factor = 0
+			}
+			highlight = yes
+			trigger = {
+				any_owned_province = {
+					religion = bogomilism
+				}
+			}
+			add_prestige = -100
+			change_religion = bogomilism
+			set_country_flag = bul_bogomilist_path
+	}
+	option = {
+		name = "bul_event.1.b"
+		ai_chance = {
+			factor = 0
+		}
+		random_owned_province = {
+			limit = {
+				NOT = {
+					province_id = 148
+					province_id = 3001
+					province_id = 4702
+					province_id = 4703
+					province_id = 4780
+				}
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 3
+				should_take_capital = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				religion = bogomilism
+			}
+			add_province_modifier = {
+				name = bogo_autonomy
+				duration = -1
+			}
+		}
+		set_country_flag = allow_bogo_spread
+		set_country_flag = bul_tolerance_path
+	}
+	option = {
+		name = "bul_event.1.c"
+		ai_chance = {
+			factor = 100
+		}
+		release = RAG
+		declare_war_with_cb = {
+			who = RAG
+			casus_belli = cb_heretic
+		}
+		RAG = {
+			random_owned_province = {
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+			}
+			random_owned_province = {
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+			}
+			random_owned_province = {
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+				infantry = RAG
+			}
+		}
+		set_country_flag = bul_intolerance_path
+	}
+}
+
+#Courts of Bulgaria
+country_event = {
+	id = bul_event.2
+	title = bul_event.2.t
+	desc = bul_event.2.des
+	picture = easterngfx_COURT_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bul_event.2.a
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = court_adm
+			duration = -1
+		}
+	}
+	option = {
+		name = bul_event.2.b
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = court_dip
+			duration = -1
+		}
+	}
+	option = {
+		name = bul_event.2.c
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = court_mil
+			duration = -1
+		}
+	}
+	option = {
+		name = bul_event.2.d
+		ai_chance = {
+			factor = 50
+		}
+		highlight = yes
+		trigger = {
+			any_owned_province = {
+				AND = {
+					has_owner_accepted_culture = yes
+					culture = wallachian
+				}
+			}
+		}
+		add_country_modifier = {
+			name = court_int
+			duration = -1
+		}
+	}
+	option = {
+		name = bul_event.2.e
+		ai_chance = {
+			factor = 50
+		}
+		highlight = yes
+		trigger = {
+			any_owned_province = {
+				AND = {
+					has_owner_accepted_culture = yes
+					culture = moldavian
+				}
+			}
+		}
+		add_country_modifier = {
+			name = court_sch
+			duration = -1
+		}
+	}
+}
+
+#fate of byzantium
+country_event = {
+	id = bul_event.3
+	title = bul_event.3.t
+	desc = bul_event.3.d
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bul_event.3.a
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = bul_bulgarian_path
+		custom_tooltip = bul_bulgarian_enable
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = bul_event.3.b
+		ai_chance = {
+			factor = 0
+		}
+		set_country_flag = bul_roman_path
+		custom_tooltip = bul_roman_enable
+		swap_non_generic_missions = yes
+	}
+}
+
+#Expanding Bogomilism
+country_event = {
+	id = bul_event.4
+	title = bul_event.4.t
+	desc = bul_event.4.d
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		has_country_flag = allow_bogo_spread
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.5
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 2
+		}
+		modifier = {
+			factor = 1.0
+			stability = 1
+		}
+		modifier = {
+			factor = 1.2
+			stability = 0
+		}
+		modifier = {
+			factor = 1.4
+			stability = -1
+		}
+		modifier = {
+			factor = 1.8
+			stability = -2
+		}
+		modifier = {
+			factor = 2.0
+			stability = -3
+		}
+	}
+	option = {
+		name = bul_event.4.a 
+		random_owned_province = {
+			limit = {
+				owned_by = ROOT
+				NOT = {
+					religion = bogomilism
+				}
+				any_neighbor_province = {
+					religion = bogomilism
+				}
 			}
 			change_religion = bogomilism
 		}
-	option = {
-			name = "the_bogomilist_question.1.a"
-			ai_chance = {
-				factor = 5
-			}
-			release = RAG
-			declare_war_with_cb = {
-				who = RAG
-				casus_belli = cb_heretic
-			}
-		}
-	option = {
-			name = "the_bogomilist_question.1.c"
-			ai_chance = {
-			factor = 90
-			}
-			148 = { 
-			add_province_modifier = {
-                name = estate_dhimmi_guaranteed_autonomy_mod
-                duration = -1
-				}
-				}
-				3001 = { 
-			add_province_modifier = {
-                name = estate_dhimmi_guaranteed_autonomy_mod
-                duration = -1
-				}
-				}
-				4702 = { 
-			add_province_modifier = {
-                name = estate_dhimmi_guaranteed_autonomy_mod
-                duration = -1
-				}
-				}
-				4703 = { 
-			add_province_modifier = {
-                name = estate_dhimmi_guaranteed_autonomy_mod
-                duration = -1
-				}
-				}
-				4780 = { 
-			add_province_modifier = {
-                name = estate_dhimmi_guaranteed_autonomy_mod
-                duration = -1
-				}
-			}
-		}
+	}
 }
-	

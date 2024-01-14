@@ -32,8 +32,8 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		trigger = { 
 		highlight = yes
+		trigger = { 
 			AND {
 				alliance_with = TRE
 				reverse_has_opinion = {
