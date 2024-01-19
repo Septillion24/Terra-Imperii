@@ -37,6 +37,8 @@
  bul_bulgarian_enable:0 "Enable the §YBulgarian Empire§! Path.\nThis Path is heavily focused on Military Bonuses."
  bul_roman_enable:0 "Enable the §YRoman Empire§! Path.\nThis Path is heavily focused on Trade and Monarch Point Generation."
  fate_byz_preview1:0 "This Event allows us to choose between Proclaiming a §MBulgarian Empire§! or Succeeding the §MRoman Empire§!."
+ religions_bulgaria_preview1:0 "This Event allows us to decide our policy on religion.\n\nIf we have any Bogomilist province, we can choose to embrace §YBogomilism§!.\n\nOtherwise we can tolerate their existence or declare war on the heretics."
+ war_with_macedonia_tt:0 "Release §Y[MAC.GetName]§! with all Bogomilist provinces as an independent state"
 #modifiers
  safe_west:0 "Safeguarding the West"
  bulgarian_knights:0 "Knights of Bulgaria"

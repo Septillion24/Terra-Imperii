@@ -62,33 +62,42 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		release = RAG
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = bogomilism
+				}
+				add_core = MAC
+			}
+			release = MAC
+		}
+		custom_tooltip = war_with_macedonia_tt
 		declare_war_with_cb = {
-			who = RAG
+			who = MAC
 			casus_belli = cb_heretic
 		}
-		RAG = {
+		MAC = {
 			random_owned_province = {
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
 			}
 			random_owned_province = {
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
 			}
 			random_owned_province = {
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
-				infantry = RAG
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
+				infantry = MAC
 			}
 		}
 		set_country_flag = bul_intolerance_path

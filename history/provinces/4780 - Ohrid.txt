@@ -2,7 +2,6 @@ capital = "Ohrid"
 owner = BUL
 controller = BUL
 add_core = BUL
-add_core = RAG
 culture = bulgarian
 religion = bogomilism
 hre = no

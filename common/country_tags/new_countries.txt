@@ -12,6 +12,7 @@ PLN = "countries/Polania.txt"
 WKR = "countries/Ukrainewhite.txt"
 GKR= "countries/Ukrainegreen.txt"
 RKR= "countries/Ukrainered.txt"
+MAC= "countries/Macedonia.txt"
 
 #Germany
 SXA = "countries/Saxonia.txt"

@@ -70,7 +70,6 @@ bul_carpathia_1 = {
 			}
 			custom_tooltip = " "
 			custom_tooltip = common_event_insight
-			custom_tooltip = " "
 			custom_tooltip = common_option1
 			custom_tooltip = courts_preview1
 			custom_tooltip = " "
@@ -296,6 +295,8 @@ bul_religion = {
 			country_event = {
 				id = bul_event.1
 			}
+			custom_tooltip = common_event_insight
+			custom_tooltip = religions_bulgaria_preview1
 		}
 		ai_weight = {
 			factor = 500	
@@ -563,6 +564,28 @@ bul_branching_bogomilist_5 = {
 		}
 	}
 	has_country_shield = yes
+	bogomilist_bulgaria = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			religious_unity = 0.6
+		}
+		effect = {
+		
+		}
+	}
+	peace_time = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			religious_unity = 1
+		}
+		effect = {
+		
+		}
+	}
 }
 bul_branching_tolerance_5 = {
 	slot = 2
@@ -578,6 +601,31 @@ bul_branching_tolerance_5 = {
 		}
 	}
 	has_country_shield = yes
+	dangerous_toleration = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			is_year = 1460
+		}
+		effect = {
+		
+		}
+	}
+	unorthodox_teaching = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			is_year = 1470
+			NOT = {
+				patriarch_authority = 0.50
+			}
+		}
+		effect = {
+		
+		}
+	}
 }
 bul_branching_intolerance_5 = {
 	slot = 2
@@ -593,4 +641,28 @@ bul_branching_intolerance_5 = {
 		}
 	}
 	has_country_shield = yes
+	destroy_bogo = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			NOT = {
+				exists = RAG
+			}
+		}
+		effect = {
+			
+		}
+	}
+	orthodox_fanaticism = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			religious_unity = 0.9
+		}
+		effect = {
+			
+		}
+	}
 }
