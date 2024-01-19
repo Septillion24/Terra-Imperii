@@ -1,0 +1,231 @@
+namespace = flavor_turcopoles
+
+
+country_event = { 
+	id = flavor_turcopoles.2a
+	title = flavor_turcopoles.2b
+	desc = flavor_turcopoles.2c
+	picture = DIPLOMACY_eventPicture
+	major = yes 
+	major_trigger = {
+		OR = {
+			tag = BYZ
+			tag = BUL
+			tag = EPI
+			tag = CRT
+			tag = CIL
+			tag = MLK
+			tag = KOJ 
+			tag = KNI
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name "flavor_turcopoles.2d"
+		custom_tooltip = "tur_tre_union_tur"
+		TRE = {
+			country_event = { id = flavor_turcopoles.3a}
+		}
+		ai_chance = { 
+			factor = 90
+		}
+	}
+	option = {
+		name "flavor_turcopoles.2e"
+		custom_tooltip = "tur_tre_union_decline_tur"
+		hidden_effect = { 
+			every_province = {
+				limit = {
+					is_core = TRE
+				}
+				add_core = TUR
+			}
+			TRE = {
+				remove_historical_friend = TUR
+				
+			}
+			TUR = {
+				remove_historical_friend = TRE
+				add_historical_rival = TRE
+			}
+			declare_war_with_cb = {
+				who = TRE
+				casus_belli = cb_core
+			}
+		}
+		
+	}
+}
+
+country_event = { 
+	id = flavor_turcopoles.3a
+	title = flavor_turcopoles.3b
+	desc = flavor_turcopoles.3c
+	picture = DIPLOMACY_eventPicture
+	major = yes 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name "flavor_turcopoles.3d"
+		custom_tooltip = "tur_tre_union_tre"
+		TUR = {
+			create_union = TRE
+		}
+		ai_chance = { 
+			factor = 50
+			modifier = {	
+				reverse_has_opinion = {
+				who = TUR
+				value = 150
+				}
+				factor = 70
+			}
+		}
+	}
+	option = {
+		name "flavor_turcopoles.3e"
+		custom_tooltip = "tur_tre_union_decline_trz"
+		hidden_effect = { 
+			every_province = {
+				limit = {
+					is_core = TRE
+				}
+				add_core = TUR
+			}
+			TRE = {
+				remove_historical_friend = TUR
+			}
+			TUR = {
+				remove_historical_friend = TRE
+				add_historical_rival = TRE
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_turcopoles.4a
+	title = flavor_turcopoles.4b
+	desc = flavor_turcopoles.4c
+	picture = DIPLOMACY_eventPicture
+	major = yes 
+	picture = CONSTANTINOPLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_core = 151
+		if = {
+			limit = {
+				NOT = { has_global_flag = constantinople_restored }
+			}
+			151 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 3
+			}
+			set_global_flag = constantinople_restored
+		}
+		add_stability = 1
+		country_event = { id = flavor_turcopoles.6a }
+	}
+}
+
+country_event = { 
+	id = flavor_turcopoles.5a
+	title = flavor_turcopoles.5b
+	desc = flavor_turcopoles.5c
+	major = yes 
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		set_government_rank = 3
+		add_stability = 1
+		override_country_name = ottoman_empire_mc
+	}
+}
+
+country_event = { #greekturkishculture
+	id = flavor_turcopoles.6a
+	title = flavor_turcopoles.6b
+	desc = flavor_turcopoles.6c
+	major = yes 
+	picture = BYZ_ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		
+	}
+	option = {
+		
+	}
+}
+
+country_event = { #rival_the_franks_tur
+	id = flavor_turcopoles.7a
+	title = flavor_turcopoles.7b
+	desc = flavor_turcopoles.7c
+	major = yes 
+	picture = BYZ_ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_country_modifier = {
+			name = "march_forwads_tur"
+			duration = -1
+		}
+	}
+
+}
+country_event = { #rival_the_franks_tur
+	id = flavor_turcopoles.8a
+	title = flavor_turcopoles.8b
+	desc = flavor_turcopoles.8c
+	major = yes 
+	picture = BYZ_ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_country_modifier = {
+			name = "decline_of_empire_tur"
+			duration = 7300
+		}
+	}
+
+}
+
+country_event = { #rival_the_franks_tur_emperor
+	id = flavor_turcopoles.9a
+	title = flavor_turcopoles.9b
+	desc = flavor_turcopoles.9c
+	major = yes 
+	picture = BYZ_ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_country_modifier = {
+			name = "decline_of_empire_tur"
+			duration = 7300
+		}
+	}
+
+}
+country_event = { #roman patriach
+	id = flavor_turcopoles.10a
+	title = flavor_turcopoles.10b
+	desc = flavor_turcopoles.10c
+	major = yes 
+	picture = BYZ_ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_country_modifier = {
+			name = ""
+			duration = 7300
+		}
+	}
+
+}

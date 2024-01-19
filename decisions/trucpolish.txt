@@ -1,0 +1,75 @@
+country_decisions = {
+	make_constantinople_capital = {
+		potential = {
+			tag = TUR
+			has_country_flag = relocated_capital_constantinople11
+		}
+		allow = {
+			is_at_war = no
+			controls = 151
+		}
+		effect = {
+			set_country_flag = relocated_capital_constantinople
+			set_global_flag = greek_need_restore_constantinople
+			add_stability = 1
+			add_core = 151
+			151 = {
+				move_capital_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = constantinople_restored }
+				}
+				151 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		do_not_core = 151 # Constantinople
+	}
+	make_constantinople_capital2 = {
+		potential = {
+			tag = TUR
+			NOT = { has_global_flag = relocated_capital_constantinople2 }
+		}
+		allow = {
+			is_at_war = no
+			controls = 151
+		}
+		effect = {
+			set_country_flag = relocated_capital_constantinople
+			set_country_flag = relocated_capital_constantinople2
+			set_global_flag = greek_need_restore_constantinople
+			add_stability = 1
+			add_core = 151
+			151 = {
+				move_capital_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = constantinople_restored }
+				}
+				151 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		do_not_core = 151 # Constantinople
+	}
+	
+
+}

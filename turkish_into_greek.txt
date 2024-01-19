@@ -1,0 +1,94 @@
+namespace = turkish_into_greek
+
+province_event = {
+	id = turkish_into_greek.1
+	title = turkish_into_greek.1a
+	desc = turkish_into_greek.1b
+	picture = POPE_PREACHING_eventPicture
+	trigger = {
+		culture_group = turkish
+		any_friendly_coast_border_province = {
+			owned_by = ROOT
+			AND = {
+				culture_group = byzantine
+				NOT = { culture = graeco_turkish }
+			}
+		}
+		owner = {
+			has_country_flag = turkish_into_greek_flag 
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	hidden = yes
+	option = {
+		name = turkish_into_greek.1.a
+		change_culture = graeco_turkish
+		change_original_culture = graeco_turkish
+	}
+}
+
+province_event = {
+	id = turkish_into_greek.2
+	title = turkish_into_greek.1a
+	desc = turkish_into_greek.1b
+	picture = POPE_PREACHING_eventPicture
+	trigger = {
+		culture_group = turkish
+		any_friendly_coast_border_province = {
+			owned_by = ROOT
+			AND = {
+				culture_group = byzantine
+				NOT = { culture = graeco_turkish }
+			}
+		}
+		owner = {
+			has_country_flag = turkish_into_greek_flag 
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	hidden = yes
+	option = {
+		name = turkish_into_greek.1.a
+		change_culture = graeco_turkish
+		change_original_culture = graeco_turkish
+	}
+}
+
+country_event = {
+	id = turkish_into_greeks.3a
+	title = "turkish_into_greeks.2b"
+	desc = "turkish_into_greeks.2c"
+	picture = POPE_PREACHING_eventPicture
+	#trigger = {
+	#	culture_group = byzantine
+	#	has_country_flag = turkish_into_greek_flag
+	#	any_owned_province = {
+	#		culture = turkish
+	#	}
+	#}
+	#mean_time_to_happen = {
+	#	months = 240
+	#}	
+	is_only_triggerd = yes
+	#hidden = yes
+	option = {
+		name = "2"
+		#random_owned_province = {	
+		#	limit = {
+		#		culture = turkish 
+		#	}
+		#	change_culture = graeco_turkish
+		#}
+		set_country_flag = turkish_into_greek_flag
+		if = {
+			limit = {
+				tag = TUR
+			}
+			change_primary_culture = graeco_turkish
+		}
+	}
+}

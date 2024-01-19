@@ -29,7 +29,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = POL }
+			NOT = { exists = BYZ }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
@@ -53,7 +53,7 @@ country_decisions = {
 			#	limit = {
 			#		NOT = { owned_by = ROOT }
 			#	}
-			#	add_permanent_claim = POL
+			#	add_permanent_claim = BYZ
 			#}
 			add_country_modifier = {
 				name = "centralization_modifier"

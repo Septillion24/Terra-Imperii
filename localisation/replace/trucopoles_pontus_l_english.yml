@@ -1,0 +1,28 @@
+﻿l_english:
+ #Anatolian Weddning
+ flavor_turcopoles.1b:0 "The Anatolian Wedding"
+ flavor_turcopoles.1c:0 "Anna I, queen of Pontus, was married to the King Nikolas II of Turcopolier in Sinope in March 1480. This was a marriage of political opportunism, not romance. The court of Pontus dreamed of a unification with the Turcopolier, and Nikolas II needed help to gain a stronger foothold in Anatolia. The marriage was one of the first strategic moves of the Turcopolier to unite all of the East under there rule."
+ flavor_turcopoles.1d:0 "Let us bind their Dynasty to ours"
+ flavor_turcopoles.1e:0 "No let us marry a local talent instead"
+ flavor_turcopoles.2b:0 "Fate of the Ponuts" 
+ flavor_turcopoles.2c:0 "Description stuff"
+ flavor_turcopoles.2d:0 "Propose a Union to them"
+ 
+ 
+ #Turcopolish Missions
+ turcopolish_empire:" We will get an eventchain focusing about a new capital, culture and our realm."
+ royal_army_tur_title:0 "The Royal Army"
+ secure_nicea_tur_title:0 "Secure Nicea"
+ city_of_worlds_desire_tur_title:0 "The City of World's Desire"
+ weaken_bulgaria_tur_title:0 "Weaken Bulgaria"
+ destroy_bulgars_tur_title:0 "Destroy the Bulgars"
+ secure_the_balkans_tur_title:0 "Secure the Balkans"
+ rival_the_franks_tur_title:0 "Rival the Franks"
+ secure_macedonia_tur_title:0 "Push into Greece"
+ secure_greece_tur_title:0 "Reign in Greece"
+ foothold_in_italy_tur_title:0 "Foothold in Italy"
+ roman_succesion_tur_title:0 "The Roman Succession"
+ rebuild_hagia_sophia_tur_title:0 "Restore the Hagia Sophia"
+ develop_constantinople_tur_title:0 "Rebuild Constantinople"
+ grand_fleet_tur_title:0 "Build a great Fleet"
+ agea_secured_tur_title:0 "Establish Dominance in Agea"

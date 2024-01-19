@@ -605,9 +605,11 @@ skaneland_area = { #4
 }
 
 gotaland_area = { #3 Östra Götaland
-	2 3 25 4166 4942 4963 4957
+	2 3  4166 4942  
 } 
-
+gotland_area = {
+	25 4957 4963
+}
 vastra_gotaland_area = { #Västra Götaland #4
 	7 16 4163 4164
 }
@@ -1041,10 +1043,10 @@ weser_area = { #4
 }
 
 holstein_area = { #3 
-	1775 4141 44 45 1857 4943 
+	1775  44 45 1857  
 }
 schleswig_area = {
-	4944 13
+	4944 13 4141 4943
 }
 lower_saxony_area = { #4
 	54 55 1874 4771 53 4772
@@ -1059,15 +1061,17 @@ mecklenburg_area = { #5
 ########################################
 
 macedonia_area = { #5 (Macedonia)
-	148 3001 4702 4780
+	148 3001 4702 4780 1853
 }
 
 morea_area = { #4 Central Greece & Crete
-	145 146 163 1773 4701 4953
+	145 146  1773 4701 
 }
-
+eastern_mediterranean_islands = {
+	163 320 4953 321 4949
+}
 northern_greece_area = { #3 #Northern Greece
-	142 144 147 4699 4698 1853 143
+	142 144 147 4699 4698 
 }
 
 thrace_area = { #5
@@ -1079,11 +1083,11 @@ bulgaria_area = { #5
 }
 
 silistria_area = {
-	4704 150 159
+	4704 150 159 4706
 }
 
 wallachia_area = { #5
-	160 161 2998 4531 4532 4706
+	160 161 2998 4531 4532 
 }
 
 moldavia_area = { #5
@@ -1103,7 +1107,7 @@ slovakia_area = { #5
 }
 
 serbia_area = { #5
-	138 141 1827 4754 4239 4757
+	138 141 1827 4239 4757
 }
 
 rascia_area = { #4
@@ -1111,7 +1115,7 @@ rascia_area = { #4
 }
 
 albania_area = { #4
-	4174 4175 4750
+	4174 4175 4750 143
 }
 
 bosnia_area = { #5
@@ -1128,7 +1132,7 @@ slavonia_area = { #4
 }
 
 east_adriatic_coast_area = { #3
-	136 137 4753
+	136 137 4753 4754
 }
 
 alfold_area = { #4
@@ -1206,7 +1210,7 @@ ankara_area = { #3
 }
 
 aegean_archipelago_area = { #4
-	164 320 2348 3003 4700 4952
+	164 2348 3003 4700 4952
 }
 
 kastamonu_area = { #4
@@ -1219,7 +1223,7 @@ karaman_area = { #4
 
 cukurova_area = { #3
 	color = { 50 177 200 }
-	321 327 2302 4949
+	 327 2302 
 }
 
 aleppo_area = { #4

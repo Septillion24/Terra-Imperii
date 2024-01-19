@@ -240,199 +240,7 @@ germanic = {
 			"von Liebenau" "von Loeben" "von Logau" "von L ttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" W hrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
 		}
 	}
-	franconian = {
-		primary = FKN
-	}
-	swabian = {
-		primary = SWA
-	}
-	alemannic = {
-		primary = BAD
-	}
-	swiss = {
-		primary = SWI
-		male_names = {
-			Friedrich Otto Heinrich Werner Ferdinand Karl Alfred Benedikt Christoph Dietrich Engelbert 
-			Florian Gerhard Immanuel Johan Leonhard Markus Nikolaus Paul Ruprecht Stefan Thomas Ulrich 
-			Vinzenz Andr  Charles Didier Emmanuel Fr d ric G rard Henri Jules Matthieu Nicolas Pascal 
-			Vincent Claudio Edmondo Leonardo Timoteo
-		}
-		female_names = {
-			Angela Marlene Hanna Anastasia Christina Adelina Adriana Afina Alexandra Alexia Ana Anna Arina 
-		}
-	}
-	bavarian = {
-		primary = LBV
-		male_names = {
-			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
-			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
-			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard 
-			Raphael Karl Kajetan Clemens
-		}
-		female_names = {
-			Hiltraud Friede Juliane
-		}
-		dynasty_names = {
-			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
-			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
-			"von W rttemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
-			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
-			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
-			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
-			"von Kn ringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
-			"von Parsberg" "Pf ffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
-			"von Reitzenstein" "von Rohr"
-			"Rotenhan" "R dt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
-			"von Thuengen" "von Th rheim" "von Thurn und Taxis" "von Toerring"
-			"von Koenigsegg"
-		}
-	}
-	upper_bavarian = {
-		primary = UBV
-		male_names = {
-			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
-			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
-			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard 
-			Raphael Karl Kajetan Clemens
-		}
-		female_names = {
-			Hiltraud Friede Juliane
-		}
-		dynasty_names = {
-			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
-			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
-			"von W rttemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
-			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
-			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
-			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
-			"von Kn ringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
-			"von Parsberg" "Pf ffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
-			"von Reitzenstein" "von Rohr"
-			"Rotenhan" "R dt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
-			"von Thuengen" "von Th rheim" "von Thurn und Taxis" "von Toerring"
-			"von Koenigsegg"
-		}
-	}
-	austrian = {
-		primary = HAB
-		male_names = {
-			Albrecht Maximilian Friedrich Ladislav Matthias Ernst Ferdinand Wenzel Georg Philipp Joseph 
-			Rudolf Gerhard Wolfgang Leopold Florian
-			Alexander Anton Franz Karl Johann Ludwig Rainer Adolf Alfred Benno Bruno Cristoph Clemens  
-			G nther Heinrich Jakob Joachim J rg Michael Oskar Otto Siegfried Stefan Ulrich Viktor Wilhelm 
-		}
-		female_names = {
-			Maria Theresia Viktoria
-		}
-		dynasty_names = {
-			"Gabelkofen" "von und zu Goldegg und Lindenburg" "von Haunsperger" "von Pranckh" "von Rohr" "von Aichen" "Enenkel" "Geymann" "von Eggendorf" "von 			Albrechtsburg"
-			"von Th rheim" "von Thurn und Taxis" "von Tippelskirch" "von Falkenberg" "von Polheim"
-			"von Wagrain" "von Tollet" "Fieger" "Ennenkel" "Hayden von Dorff" Volkenstorfer "von Tannberg" H tzenberg Moser "von Felsach" "von Daun" "von 				Unverzagt"
-		}
-	}
-	tirolisch = {
-		primary = TIR
-		male_names = {
-			Albrecht Maximilian Friedrich Ladislav Matthias Ernst Ferdinand Wenzel Georg Philipp Joseph 
-			Rudolf Gerhard Wolfgang Leopold Florian
-			Alexander Anton Franz Karl Johann Ludwig Rainer Adolf Alfred Benno Bruno Cristoph Clemens  
-			G nther Heinrich Jakob Joachim J rg Michael Oskar Otto Siegfried Stefan Ulrich Viktor Wilhelm 
-		}
-		female_names = {
-			Maria Theresia Viktoria
-		}
-		dynasty_names = {
-			"Gabelkofen" "von und zu Goldegg und Lindenburg" "von Haunsperger" "von Pranckh" "von Rohr" "von Aichen" "Enenkel" "Geymann" "von Eggendorf" "von 			Albrechtsburg"
-			"von Th rheim" "von Thurn und Taxis" "von Tippelskirch" "von Falkenberg" "von Polheim"
-			"von Wagrain" "von Tollet" "Fieger" "Ennenkel" "Hayden von Dorff" Volkenstorfer "von Tannberg" H tzenberg Moser "von Felsach" "von Daun" "von 				Unverzagt"
-		}
-	}
-	dutch = {
-		primary = NED
-		male_names = {
-			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
-			Barnaerd Bernard Bartolomeus Bartolomeus
-			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
-			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
-			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
-			Gerulf
-			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
-			Gwijde Hendrik Henry Herman Herman Hubert
-			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
-			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
-			Marquart Niclaes Nicholas
-			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
-			Robert Robert Robert Rodulf 
-			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
-			Waelram Walter Walter
-			Wicher Willem William Wolfard Hendrik Maurits
-			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
-			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
-			Roeland Rogier Thomas Vincent Zacharias
-		}
-		female_names = {
-			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
-			Badeloge Bava Beatrijs Beatrice Benedicta
-			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
-			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
-			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
-			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
-			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
-			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
-			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
-			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
-			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
-		}
-		dynasty_names = {
-			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
-			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
-			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J lich-Hengebach"
-			# CKII
-			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
-			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
-			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
-			"van Renesse" "van Wassenaer" "van Bronckhorst"
-			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
-			"van Diest" "van Montfoort"
-			# Frisian
-			"van Serooskerken"
-		}
-	}
-	flemish = {
-		primary = FLA
-			dynasty_names = {
-			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
-			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
-			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J lich-Hengebach"
-			# CKII
-			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
-			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
-			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
-			"van Renesse" "van Wassenaer" "van Bronckhorst"
-			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
-			"van Diest" "van Montfoort"
-			# Frisian
-			"van Serooskerken"
-		}
-		male_names = {
-			Filips Jan Boudewijn Arnolf Lodewijk Robrecht Willem Diederik Gwijde Karel Antoon Abraham Alexander Alfons 
-			Andries Balthasar Bartholomeus Christoffel Constantijn Cornelis Dani l David Ernst Erwin Ewoud Floris 
-			Gabriel Godfried Hans Jacob Kasper Ludger Luuk Marinus Pieter Renate Rodolf Roeland Valentijn
-		}
-		female_names = {
-			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
-			Badeloge Bava Beatrijs Beatrice Benedicta
-			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
-			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
-			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
-			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
-			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
-			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
-			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
-			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
-			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
-		}
-	}
+	
 	frisian = {
 		primary = FRI
 		male_names = {
@@ -563,45 +371,7 @@ germanic = {
 		#Hannoveran
 		"von Schack" "von Fabrice" "von Hardenberg" "von Welf" "von Schauenburg" "von Holstein-Gottorp" "Askanier" "von Oldenburg"
 	}
-	grazer = {
-		primary = STY
-	}
-	palatinean = {
-		primary = PAL
-		male_names = {
-			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
-			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
-			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
-		}
-		female_names = {
-			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
-			Christa Christel Christiane Christina Christine Clara Claudia Constanze
-		}
-	}
-	koelsch = {
-		primary = KOL
-		male_names = {
-			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
-			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
-			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
-		}
-		female_names = {
-			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
-			Christa Christel Christiane Christina Christine Clara Claudia Constanze
-		}
-	}
-	moselle = {
-		primary = LUX
-		male_names = {
-			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
-			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
-			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
-		}
-		female_names = {
-			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
-			Christa Christel Christiane Christina Christine Clara Claudia Constanze
-		}
-	}
+	
 	goths = {
 		primary = FEO
 		dynasty_names = { 
@@ -3418,7 +3188,7 @@ byzantine = {
 	epirote = {
 		primary = EPI
 	}
-	graecoturkish = {
+	graeco_turkish = {
 		primary = TUR
 		dynasty_names = {
 			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
@@ -10544,6 +10314,241 @@ lost_cultures_group = {
 	}
 }
 
+south_germanic = {
+	franconian = {
+		primary = FKN
+	}
+	swabian = {
+		primary = SWA
+	}
+	alemannic = {
+		primary = BAD
+	}
+	swiss = {
+		primary = SWI
+		male_names = {
+			Friedrich Otto Heinrich Werner Ferdinand Karl Alfred Benedikt Christoph Dietrich Engelbert 
+			Florian Gerhard Immanuel Johan Leonhard Markus Nikolaus Paul Ruprecht Stefan Thomas Ulrich 
+			Vinzenz Andr  Charles Didier Emmanuel Fr d ric G rard Henri Jules Matthieu Nicolas Pascal 
+			Vincent Claudio Edmondo Leonardo Timoteo
+		}
+		female_names = {
+			Angela Marlene Hanna Anastasia Christina Adelina Adriana Afina Alexandra Alexia Ana Anna Arina 
+		}
+	}
+	bavarian = {
+		primary = LBV
+		male_names = {
+			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
+			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
+			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard 
+			Raphael Karl Kajetan Clemens
+		}
+		female_names = {
+			Hiltraud Friede Juliane
+		}
+		dynasty_names = {
+			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
+			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
+			"von W rttemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
+			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
+			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
+			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
+			"von Kn ringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
+			"von Parsberg" "Pf ffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
+			"von Reitzenstein" "von Rohr"
+			"Rotenhan" "R dt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
+			"von Thuengen" "von Th rheim" "von Thurn und Taxis" "von Toerring"
+			"von Koenigsegg"
+		}
+	}
+	upper_bavarian = {
+		primary = UBV
+		male_names = {
+			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
+			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
+			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard 
+			Raphael Karl Kajetan Clemens
+		}
+		female_names = {
+			Hiltraud Friede Juliane
+		}
+		dynasty_names = {
+			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
+			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
+			"von W rttemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
+			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
+			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
+			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
+			"von Kn ringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
+			"von Parsberg" "Pf ffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
+			"von Reitzenstein" "von Rohr"
+			"Rotenhan" "R dt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
+			"von Thuengen" "von Th rheim" "von Thurn und Taxis" "von Toerring"
+			"von Koenigsegg"
+		}
+	}
+	austrian = {
+		primary = HAB
+		male_names = {
+			Albrecht Maximilian Friedrich Ladislav Matthias Ernst Ferdinand Wenzel Georg Philipp Joseph 
+			Rudolf Gerhard Wolfgang Leopold Florian
+			Alexander Anton Franz Karl Johann Ludwig Rainer Adolf Alfred Benno Bruno Cristoph Clemens  
+			G nther Heinrich Jakob Joachim J rg Michael Oskar Otto Siegfried Stefan Ulrich Viktor Wilhelm 
+		}
+		female_names = {
+			Maria Theresia Viktoria
+		}
+		dynasty_names = {
+			"Gabelkofen" "von und zu Goldegg und Lindenburg" "von Haunsperger" "von Pranckh" "von Rohr" "von Aichen" "Enenkel" "Geymann" "von Eggendorf" "von 			Albrechtsburg"
+			"von Th rheim" "von Thurn und Taxis" "von Tippelskirch" "von Falkenberg" "von Polheim"
+			"von Wagrain" "von Tollet" "Fieger" "Ennenkel" "Hayden von Dorff" Volkenstorfer "von Tannberg" H tzenberg Moser "von Felsach" "von Daun" "von 				Unverzagt"
+		}
+	}
+	tirolisch = {
+		primary = TIR
+		male_names = {
+			Albrecht Maximilian Friedrich Ladislav Matthias Ernst Ferdinand Wenzel Georg Philipp Joseph 
+			Rudolf Gerhard Wolfgang Leopold Florian
+			Alexander Anton Franz Karl Johann Ludwig Rainer Adolf Alfred Benno Bruno Cristoph Clemens  
+			G nther Heinrich Jakob Joachim J rg Michael Oskar Otto Siegfried Stefan Ulrich Viktor Wilhelm 
+		}
+		female_names = {
+			Maria Theresia Viktoria
+		}
+		dynasty_names = {
+			"Gabelkofen" "von und zu Goldegg und Lindenburg" "von Haunsperger" "von Pranckh" "von Rohr" "von Aichen" "Enenkel" "Geymann" "von Eggendorf" "von 			Albrechtsburg"
+			"von Th rheim" "von Thurn und Taxis" "von Tippelskirch" "von Falkenberg" "von Polheim"
+			"von Wagrain" "von Tollet" "Fieger" "Ennenkel" "Hayden von Dorff" Volkenstorfer "von Tannberg" H tzenberg Moser "von Felsach" "von Daun" "von 				Unverzagt"
+		}
+	}
+	dutch = {
+		primary = NED
+		male_names = {
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
+			Gerulf
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
+			Gwijde Hendrik Henry Herman Herman Hubert
+			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
+			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes Nicholas
+			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Robert Robert Rodulf 
+			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
+			Waelram Walter Walter
+			Wicher Willem William Wolfard Hendrik Maurits
+			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
+			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
+			Roeland Rogier Thomas Vincent Zacharias
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J lich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+	}
+	flemish = {
+		primary = FLA
+			dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J lich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+		male_names = {
+			Filips Jan Boudewijn Arnolf Lodewijk Robrecht Willem Diederik Gwijde Karel Antoon Abraham Alexander Alfons 
+			Andries Balthasar Bartholomeus Christoffel Constantijn Cornelis Dani l David Ernst Erwin Ewoud Floris 
+			Gabriel Godfried Hans Jacob Kasper Ludger Luuk Marinus Pieter Renate Rodolf Roeland Valentijn
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+	}
+	grazer = {
+		primary = STY
+	}
+	palatinean = {
+		primary = PAL
+		male_names = {
+			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
+			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
+			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
+		}
+		female_names = {
+			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
+			Christa Christel Christiane Christina Christine Clara Claudia Constanze
+		}
+	}
+	koelsch = {
+		primary = KOL
+		male_names = {
+			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
+			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
+			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
+		}
+		female_names = {
+			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
+			Christa Christel Christiane Christina Christine Clara Claudia Constanze
+		}
+	}
+	moselle = {
+		primary = LUX
+		male_names = {
+			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
+			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
+			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
+		}
+		female_names = {
+			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
+			Christa Christel Christiane Christina Christine Clara Claudia Constanze
+		}
+	}
+}
+
 slavic = {
 	
 	new_ruthenian = {
@@ -10586,3 +10591,4 @@ slavic = {
 		Vseslava Viacheslava Yaroslava Zabava Zvenislava
 	}
 }
+

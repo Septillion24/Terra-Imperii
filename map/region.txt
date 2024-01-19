@@ -43,6 +43,7 @@ scandinavia_region = {
 		ostra_svealand_area
 		holstein_area
 		schleswig_area
+		gotland_area
 	}
 }
 
@@ -174,6 +175,7 @@ anatolia_region = {
 		ankara_area
 		aegean_archipelago_area
 		germiyan_area
+		eastern_mediterranean_islands
 	}
 } 
 

@@ -14,8 +14,6 @@ discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim
 is_city = yes
-
-
 1440.9.1 = {
 	controller = SWE
 }

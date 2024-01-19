@@ -1,3 +1,48 @@
 rise_turcopolier = {
 	monthly_turcopolier_rise = 0.5
+	ae_impact = -0.25
+	province_warscore_cost = -0.25
+}
+turcopoles_grand_army = {
+	land_morale = 0.10
+	land_maintenance_modifier = -0.20
+}
+turcopoles_conquest_constantinople = {
+	prestige = 0.5
+	legitimacy = 0.5
+}
+victory_over_bulgaria_tur = {
+	land_morale = 0.15
+}
+bulgarian_resistance_destroyed_tur = {
+	global_unrest = -2
+}
+convert_bogomolist_tur = {
+	global_heretic_missionary_strength = 0.05
+	missionaries = 1
+}
+march_forwads_tur = {
+	legitimacy = 1
+	discipline = 0.05
+}
+decline_of_empire_tur = {
+	global_unrest = 5
+	land_morale = -0.2
+}
+greek_administration_tur = { 
+	governing_capacity_modifier = 0.2
+	governing_capacity = 100
+}
+agean_conquest_tur = {
+	galley_power = 0.2
+}
+adopt_greek_fire_tur = {
+	heavy_ship_power = 0.1
+	galley_power = 0.1
+}
+develop_constantinople_tur_modifier = {
+	local_development_cost = -0.30
+}
+rebuild_hagia_sophia_tur_modifier = {
+	global_tax_modifier = -0.2
 }

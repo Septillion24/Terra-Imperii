@@ -6,6 +6,7 @@ bulgarian_tsardom_reform = {
 	potential = {
 		has_dlc = "Domination"
 		has_country_flag = new_bulgarian_reform
+		primary_culture = bulgarian
 	}
 	nation_designer_trigger = {
 		has_dlc = "Domination"
