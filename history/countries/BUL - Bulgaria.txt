@@ -4,3 +4,34 @@ technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
 capital = 150	# Sofia
+historical_rival = CRO
+historical_rival = TUR
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Johann"
+		dynasty = "Ivanovich"
+		culture = bulgarian
+		birth_date = 1423.5.12			
+		adm = 4
+		mil = 5
+		dip = 1
+		add_ruler_personality = inspiring_leader_personality
+		death_date = 1471.2.22
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Jovann"
+		dynasty = "Ivanovich"
+		birth_date = 1438.2.22
+		death_date = 1471.2.22
+		claim = 100
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}

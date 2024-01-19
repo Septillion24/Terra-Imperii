@@ -26,6 +26,8 @@
  portugese:0 "Lusitanian"
  
  #German
+ germanic:0 "Saxonic"
+ south_germanic:0 "Rhine-Danubian Germanic"
  grazer:0 "Styrian"
  east_hannoveria:0 "Eastphalian"
  jute_saxon:0 "Jute-Saxon"
@@ -43,6 +45,7 @@
  upper_bavarian:0 "Upper Bavarian"
  bavarian:0 "Lower Bavarian" 
  scottish:0 "Anglo-Scots"
+ transylvaniansaxon:0 "Transylvanian-Saxon"
  
  #french
  outremer:0 "Outremer"
@@ -65,6 +68,8 @@
  peloponnesian_greek:0 "Peloponnesian"
  greek:0 "Thessalonikian"
  epirote:0 "Epirote"
+ graeco_turkish:0 "Toúrkish"
+ 
  #Arabic
  aramic:0 "Assyrian"
  tripoler:0 "Libyan"

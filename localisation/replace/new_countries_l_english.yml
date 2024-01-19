@@ -9,11 +9,14 @@
  CIL_ideas_bonus:0 "Lower Armenian Ambitions"
  
  TUR:0 "Turcopolier"
- TUR_ADJ:0 "Turcopolier"
- TUR_ADJ2:0 "Turcopolier"
- TUR_ideas:0 "Turcopolier Ideas"
- TUR_ideas_start:0 "Turcopolier Tradition"
- TUR_ideas_bonus:0 "Turcopolier Ambitions"
+ TUR_ADJ:0 "Turcopolish"
+ TUR_ADJ2:0 "Turcopolish"
+ TUR_ideas:0 "Turcopolish Ideas"
+ TUR_ideas_start:0 "Turcopolish Tradition"
+ TUR_ideas_bonus:0 "Turcopolish Ambitions"
+ ottoman_empire_mc:0 "Turcopolish Empire"
+ ottoman_empire_mc_ADJ:0 "Turcopolish"
+ ottoman_empire_mc_ADJ2:0 "Turcopolish"
  
  MLK:0 "Upper Armenia"
  MLK_ADJ:0 "Upper Armenian"
@@ -226,7 +229,6 @@
  ADU:0 "Al-Andalus"
  
  SPA:0 "Hispania"
- SPA:0 "Hispanian"
  SPA_ADJ:0 "Hispanian"
  SPA_ADJ2:0 "Hispanian"
  SPA_ideas:0 "Hispanian Ideas"

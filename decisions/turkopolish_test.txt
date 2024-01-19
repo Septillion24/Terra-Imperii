@@ -1,0 +1,25 @@
+country_decisions = {
+	ponuts_event = {
+		major = yes
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = relocated_capital_constantinople11 }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = relocated_capital_constantinople11
+
+			add_stability = 1
+			country_event = { id = flavor_turcopoles.2a}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}

@@ -26,3 +26,9 @@
  
  #Scandinavia
  schleswig_area:0 "Schleswig"
+ gotland_area:0 "Gotland"
+ holstein_area:0 "Holstein"
+ 
+ #anatolia
+ eastern_mediterranean_islands:0 "Eastern Mediterranean Islands"
+ 
