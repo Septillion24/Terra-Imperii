@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = Levantine_Emirates_government 
+primary_culture = al_suryah_arabic
+religion = sunni
+technology_group = muslim
+capital = 382	# Damascus
+religious_school = shafii_school
+add_accepted_culture = bedouin_arabic
+historical_rival = TUR
+historical_rival = KOJ
+historical_rival = KNI
+add_ruler_personality = strict_personality
+
+1440.1.10 = {
+    monarch = {
+        name = "Muhammed"
+        dynasty = "Rasha"
+        birth_date = 1420.1.5
+        dip = 2
+        adm = 3
+        mil = 4
+    }
+}
+}
+
+1444.10.1 = {
+	set_estate_privilege = estate_noble_emirate_of_petra
+}
+1444.10.1 = {
+	set_estate_privilege = estate_noble_emirate_of_jazirah
+}
+1444.10.1 = {
+	set_estate_privilege = estate_noble_emirate_of_tabuk
+}

@@ -10,3 +10,6 @@
 4298 = "Gaziantep"
 4302 = "Dogubayazit"
 4310 = "Tevrik"
+2313 = "Antiok"
+330 = "Trapizon
+

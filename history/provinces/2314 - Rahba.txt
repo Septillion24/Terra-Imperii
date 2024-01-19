@@ -1,13 +1,12 @@
 capital = "Deir ez-Zor"
-owner = QAR
-controller = QAR
+owner = SYR
+controller = SYR
 add_core = SYR
-add_core = QAR
-culture = al_iraqiya_arabic
+culture = al_suryah_arabic
 religion = sunni
 hre = no
 base_tax = 1
-base_production = 1
+base_production = 2
 base_manpower = 1
 trade_goods = grain
 discovered_by = ottoman
@@ -17,11 +16,7 @@ discovered_by = east_african
 discovered_by = nomad_group
 discovered_by = byz
 is_city = yes
-1411.1.1 = {
-	owner = QAR
-	controller = QAR
-	add_core = QAR
-	add_claim = MAM
+
 }
 1469.2.4 = {
 	owner = AKK

@@ -1,0 +1,79 @@
+morean_revolt_disaster = {
+
+	potential = {
+		NOT = { has_country_flag = byz_had_morea_revolt}
+		NOT = { has_country_flag = prevent_morean_revolt }
+		NOT = { is_year = 1500 }
+		tag = BYZ
+		NOT = {exists = MOE}
+			}
+	
+	can_start = {
+		has_any_disaster = no
+        is_year = 1470
+		custom_trigger_tooltip = {
+			tooltip = byz_prevent_morea
+			Not = {
+				has_country_flag = prevent_morean_revolt
+				}
+			}
+	}
+	
+	can_stop = {
+		
+		has_country_flag = prevent_morean_revolt
+		OR = {
+			has_any_disaster = yes
+			is_year = 1500
+		}
+	}
+	
+	progress = {	
+		# progress happens as a result of tensions that actually exist in your country
+		modifier = {
+			factor = 1
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 10
+			NOT = { stability = -3 }
+		}
+	}
+	
+	
+	modifier = {
+		stability_cost_modifier = 0.25
+	}
+	
+	can_end = {
+		OR {
+			NOT = {exists = MOE}
+			AND = {
+				owns_or_subject_of = 145
+				owns_or_subject_of = 3003
+				owns_or_subject_of = 146
+				owns_or_subject_of = 1773
+				owns_or_subject_of = 4701
+			}
+		}
+	}
+	
+	on_start = disaster_morea.1
+	on_end = disaster_morea.2
+}

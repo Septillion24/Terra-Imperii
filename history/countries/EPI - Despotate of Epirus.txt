@@ -7,7 +7,8 @@ add_accepted_culture = albanian
 religion = catholic
 capital = 4699
 fixed_capital = 4699 # Cannot move capital away from this province & no power cost to move to it
-
+historical_rival = TUR
+historical_rival = TRE
 1385.1.1 = {
 	monarch = {
 		name = "Esau I"

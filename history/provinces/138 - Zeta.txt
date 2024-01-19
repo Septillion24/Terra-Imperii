@@ -1,7 +1,8 @@
-capital = "Zabljak"
-owner = SER
-controller = SER
+capital = "Zalbjak"
+owner = MON
+controller = MON
 add_core = SER
+add_core = MON
 culture = serbian
 religion = orthodox
 hre = no
@@ -19,34 +20,3 @@ discovered_by = gol
 discovered_by = ast
 discovered_by = qas
 is_city = yes
-1421.1.1 = {
-	owner = SER
-	controller = SER
-	add_core = SER
-}
-1451.1.1 = {
-	owner = MON
-	controller = MON
-	remove_core = SER
-}
-1478.1.1 = {
-	add_core = TUR
-}
-1482.1.1 = {
-	capital = Cetinje
-}
-1499.1.1 = {
-	owner = TUR
-	controller = TUR
-}
-1515.1.1 = {
-	owner = MON
-	controller = MON
-	remove_core = TUR
-}
-1709.1.1 = {
-	unrest = 5
-}
-1712.1.1 = {
-	unrest = 2
-}

@@ -1,0 +1,36 @@
+byz_morale = {
+	land_morale = 0.10
+	recover_army_morale_speed = 0.10
+}
+byz_annex_pontus = {
+	diplomatic_reputation = -3
+	country_diplomatic_power = -2
+}
+byz_city = {
+	diplomatic_reputation = 2
+}
+byz_legit = {
+	core_creation = -0.1
+	legitimacy = 0.5
+}
+byz_constantinople_fort_cost = {
+	local_fort_maintenance_modifier = -0.5
+}
+byz_morea_order = {
+	stability_cost_modifier = -0.10
+}
+byz_accept_culture_1 = {
+	num_accepted_cultures = 1
+}
+byz_convert_culture = {
+	culture_conversion_cost = -0.25
+}
+byz_rome_resilience = {
+	land_morale = 0.10
+	morale_damage_received = -0.02
+}
+byz_took_rome = {
+	stability_cost_modifier = 0.25
+	prestige = -1
+	legitimacy = -1
+}

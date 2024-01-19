@@ -20,7 +20,6 @@ historical_rival = TUR
 		add_ruler_personality = inspiring_leader_personality
 		death_date = 1471.2.22
 	}
-}
 
 
 1444.1.1 = {
@@ -35,3 +34,5 @@ historical_rival = TUR
 		mil = 4
 	}
 }
+
+

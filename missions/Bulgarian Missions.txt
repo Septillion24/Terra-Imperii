@@ -1,0 +1,668 @@
+
+bul_carpathia_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+	}
+	has_country_shield = yes
+	
+	end_serbia = {
+		icon = mission_impaled_soldies
+		required_missions = { } 
+		position = 1
+		provinces_to_highlight = {
+			region = balkan_region
+			country_or_non_sovereign_subject_holds = SER
+		}
+		trigger = {
+			NOT = {
+				exists = SER
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = safe_west
+				duration = -1
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						AND = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							OR = {
+								owned_by = WAL
+								owned_by = MOL
+							}
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = end_serbia_claims
+		}
+	}
+	into_carpathia = {
+		icon = mission_eastern_european_city
+		required_missions = { end_serbia } 
+		position = 2
+		provinces_to_highlight = {
+			AND = {
+				continent = europe
+				OR = {
+					country_or_non_sovereign_subject_holds = WAL
+					country_or_non_sovereign_subject_holds = MOL
+				}
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				region = carpathia_region
+			}
+		}
+		effect = {
+			country_event = {
+				id = bul_event.2
+			}
+			custom_tooltip = " "
+			custom_tooltip = common_event_insight
+			custom_tooltip = common_option1
+			custom_tooltip = courts_preview1
+			custom_tooltip = " "
+			custom_tooltip = common_option2
+			custom_tooltip = courts_preview2
+			custom_tooltip = " "
+			custom_tooltip = common_option3
+			custom_tooltip = courts_preview3
+			custom_tooltip = " "
+			custom_tooltip = common_option4
+			custom_tooltip = courts_preview4
+			custom_tooltip = " "
+			custom_tooltip = common_option5
+			custom_tooltip = courts_preview5
+			custom_tooltip = " "
+			carpathia_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lord_carpathia = {
+		icon = mission_alliances
+		required_missions = { into_carpathia } 
+		position = 3
+		provinces_to_highlight = {
+			region = carpathia_region
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				region = carpathia_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = carpathia_nobles
+				duration = -1
+			}
+		}
+	}
+	
+}
+bul_placeholder_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+	}
+	has_country_shield = yes
+}
+bul_start_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+	}
+	has_country_shield = yes
+	
+	knights_bulgaria = {
+		icon = mission_united_knight_order
+		required_missions = { } 
+		position = 1
+		provinces_to_highlight = {
+			province_id = 150
+		}
+		trigger = {
+			AND = {
+				army_size_percentage = 0.9
+				OR = {
+					national_focus = MIL 
+					monthly_mil = 10
+					commandant = 1
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = bulgarian_knights
+				duration = -1
+			}
+			add_yearly_manpower = 5
+			custom_tooltip = ""
+			balkan_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 1000	
+		}
+	}
+	fate_byzantium = {
+		icon = byz_city_of_worlds_desire
+		required_missions = { knights_bulgaria } 
+		position = 2
+		provinces_to_highlight = {
+			province_id = 151
+		}
+		trigger = {
+			151 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = bul_event.3
+			}
+			custom_tooltip = " "
+			custom_tooltip = common_event_insight
+			custom_tooltip = fate_byz_preview1
+		}
+	}
+}
+bul_placeholder_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+	}
+	has_country_shield = yes
+}
+bul_religion = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+	}
+	has_country_shield = yes
+	
+	religions_bulgaria = {
+		icon = the_bogomilist_question
+		required_missions = { } 
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 4703
+						NOT = {
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					province_id = 4702
+						NOT = {
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					province_id = 148
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					province_id = 3001
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					province_id = 4780
+						NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			AND = {
+				is_year = 1445
+				OR = {
+					AND = {
+						4703 = {
+							owned_by = ROOT
+							religion = bogomilism
+						}
+						4702 = {
+							owned_by = ROOT
+							religion = bogomilism
+						}
+						148 = {
+							owned_by = ROOT
+							religion = bogomilism
+						}
+						3001 = {
+							owned_by = ROOT
+							religion = bogomilism
+						}
+						4780 = {
+							owned_by = ROOT
+							religion = bogomilism
+						}
+					}
+					NOT = {
+						any_owned_province = {
+							religion = bogomilism
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = bul_event.1
+			}
+			custom_tooltip = common_event_insight
+			custom_tooltip = religions_bulgaria_preview1
+		}
+		ai_weight = {
+			factor = 500	
+		}
+	}
+}
+bul_branching_dummy_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		NOT = {
+			OR = {
+				has_country_flag = bul_bulgarian_path
+				has_country_flag = bul_roman_path
+			}
+		}
+	}
+	has_country_shield = yes
+	bulgaria_branching_dummy_1 = {
+		icon = mission_unknown_mission
+		required_missions = { fate_byzantium }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+				}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+}
+bul_branching_dummy_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		NOT = {
+			OR = {
+				has_country_flag = bul_bulgarian_path
+				has_country_flag = bul_roman_path
+			}
+		}
+	}
+	has_country_shield = yes
+	bulgaria_branching_dummy_2 = {
+		icon = mission_unknown_mission
+		required_missions = { fate_byzantium }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+	bulgaria_branching_dummy_3 = {
+		icon = mission_unknown_mission
+		required_missions = { bulgaria_branching_dummy_2 }
+		position = 4
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+	bulgaria_branching_dummy_4 = {
+		icon = mission_unknown_mission
+		required_missions = { bulgaria_branching_dummy_3}
+		position = 5
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+}
+bul_branching_dummy_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		NOT = {
+			OR = {
+				has_country_flag = bul_bulgarian_path
+				has_country_flag = bul_roman_path
+			}
+		}
+	}
+	has_country_shield = yes
+	bulgaria_branching_dummy_5 = {
+		icon = mission_unknown_mission
+		required_missions = { fate_byzantium }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+}
+bul_branching_dummy_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		NOT = {
+			OR = {
+				has_country_flag = bul_bogomilist_path
+				has_country_flag = bul_tolerance_path
+				has_country_flag = bul_intolerance_path
+			}
+		}
+	}
+	has_country_shield = yes
+	bulgaria_branching_dummy_6 = {
+		icon = mission_unknown_mission
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+	bulgaria_branching_dummy_7 = {
+		icon = mission_unknown_mission
+		required_missions = { bulgaria_branching_dummy_6 }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = common_branching_msg
+				always = no
+				}
+		}
+		effect = {
+			custom_tooltip = common_branching_msg
+		}
+	}
+}
+bul_branching_bulgaria_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_bulgarian_path
+		NOT = {
+			has_country_flag = bul_roman_path
+		}
+	}
+	has_country_shield = yes
+}
+bul_branching_bulgaria_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_bulgarian_path
+		NOT = {
+			has_country_flag = bul_roman_path
+		}
+	}
+	has_country_shield = yes
+}
+bul_branching_bulgaria_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_bulgarian_path
+		NOT = {
+			has_country_flag = bul_roman_path
+		}
+	}
+	has_country_shield = yes
+}
+bul_branching_rome_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_roman_path
+		NOT = {
+			has_country_flag = bul_bulgarian_path
+		}
+	}
+	has_country_shield = yes
+}
+bul_branching_rome_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_roman_path
+		NOT = {
+			has_country_flag = bul_bulgarian_path
+		}
+	}
+	has_country_shield = yes
+}
+bul_branching_rome_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_roman_path
+		NOT = {
+			has_country_flag = bul_bulgarian_path
+		}
+	}
+	has_country_shield = yes
+}
+bul_branching_bogomilist_5 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_bogomilist_path
+		NOT = {
+			has_country_flag = bul_tolerance_path
+			has_country_flag = bul_intolerance_path
+		}
+	}
+	has_country_shield = yes
+	bogomilist_bulgaria = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			religious_unity = 0.6
+		}
+		effect = {
+		
+		}
+	}
+	peace_time = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			religious_unity = 1
+		}
+		effect = {
+		
+		}
+	}
+}
+bul_branching_tolerance_5 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_tolerance_path
+		NOT = {
+			has_country_flag = bul_bogomilist_path_path
+			has_country_flag = bul_intolerance_path
+		}
+	}
+	has_country_shield = yes
+	dangerous_toleration = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			is_year = 1460
+		}
+		effect = {
+		
+		}
+	}
+	unorthodox_teaching = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			is_year = 1470
+			NOT = {
+				patriarch_authority = 0.50
+			}
+		}
+		effect = {
+		
+		}
+	}
+}
+bul_branching_intolerance_5 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = BUL
+		has_country_flag = bul_intolerance_path
+		NOT = {
+			has_country_flag = bul_bogomilist_path_path
+			has_country_flag = bul_tolerance_path
+		}
+	}
+	has_country_shield = yes
+	destroy_bogo = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			NOT = {
+				exists = RAG
+			}
+		}
+		effect = {
+			
+		}
+	}
+	orthodox_fanaticism = {
+		icon = 
+		required_missions = { religions_bulgaria }
+		position = 2
+		trigger = {
+			religious_unity = 0.9
+		}
+		effect = {
+			
+		}
+	}
+}

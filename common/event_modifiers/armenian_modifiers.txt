@@ -1,0 +1,3 @@
+bastion_of_the_caucasus = {
+	fort_defense = .10
+}

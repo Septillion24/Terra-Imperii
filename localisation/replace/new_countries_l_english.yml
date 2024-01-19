@@ -1,6 +1,10 @@
 ﻿l_english:
 
  #Anatolia+Balkan
+ MAC:0 "Macedonia"
+ MAC_ADJ:0 "Macedonian"
+ MAC_ADJ2:0 "Macedonian"
+
  CIL:0 "Lower Armenia"
  CIL_ADJ:0 "Lower Armenian"
  CIL_ADJ2:0 "Lower Armenian"

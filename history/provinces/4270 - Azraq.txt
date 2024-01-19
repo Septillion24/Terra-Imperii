@@ -1,7 +1,6 @@
 capital = "Al Azraq"
-owner = FAD
-controller = FAD
-add_core = FAD
+owner = SYR
+controller = SYR
 add_core = SYR
 culture = bedouin_arabic
 religion = sunni

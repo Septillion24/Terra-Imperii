@@ -1,0 +1,10 @@
+﻿l_english:
+#common tags
+ common_event_insight:0 "§GEvent Insight§!"
+ common_option1:0 "§MOption 1§!"
+ common_option2:0 "§MOption 2§!"
+ common_option3:0 "§MOption 3§!"
+ common_option4:0 "§MOption 4§!"
+ common_option5:0 "§MOption 5§!"
+ common_branching_msg:0 "This is a §YBranching Mission§!."
+
