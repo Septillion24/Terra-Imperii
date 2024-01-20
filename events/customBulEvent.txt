@@ -23,6 +23,7 @@ country_event = {
 			add_prestige = -100
 			change_religion = bogomilism
 			set_country_flag = bul_bogomilist_path
+			swap_non_generic_missions = yes
 	}
 	option = {
 		name = "bul_event.1.b"
@@ -56,6 +57,7 @@ country_event = {
 		}
 		set_country_flag = allow_bogo_spread
 		set_country_flag = bul_tolerance_path
+		swap_non_generic_missions = yes
 	}
 	option = {
 		name = "bul_event.1.c"
@@ -101,6 +103,7 @@ country_event = {
 			}
 		}
 		set_country_flag = bul_intolerance_path
+		swap_non_generic_missions = yes
 	}
 }
 
@@ -268,5 +271,64 @@ country_event = {
 			}
 			change_religion = bogomilism
 		}
+	}
+}
+#increased toleration
+country_event = {
+	id = bul_event.5
+	title = bul_event.5.t
+	desc = bul_event.5.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bul_event.5.a
+		add_country_modifier = {
+			name = freedom_people
+			duration = -1 
+		}
+	}
+}
+#Fate of the Patriarchate
+country_event = {
+	id = bul_event.6
+	title = bul_event.6.t
+	desc = bul_event.6.d
+	picture = 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bul_event.6.a
+		highlight = yes
+		trigger = {
+			NOT = {
+				patriarch_authority = 0.50
+			}
+		}
+		add_country_modifier = {
+			name = declining_patriarch
+			duration = -1
+		}
+		if = {
+			limit = {
+				stability = 3
+			}
+			change_government_reform_progress = 100
+		}
+		else = {
+			change_government_reform_progress = 50
+		}
+	}
+	option = {
+		name = bul_event.6.b
+		highlight = yes
+		trigger = {
+			patriarch_authority = 0.50
+			stability = 3
+		}
+		remove_country_modifier = freedom_people
+		change_government_reform_progress = -50
 	}
 }

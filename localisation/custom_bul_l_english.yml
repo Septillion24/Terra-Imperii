@@ -1,33 +1,63 @@
 ﻿l_english:
-#missions
+ #missions
  end_serbia_title:0 "End Serbia"
  end_serbia_desc:0 "lore"
+
  into_carpathia_title:0 "Entrance into Carpathia"
  into_carpathia_desc:0 "lore"
+
  lord_carpathia_title:0 "Lord of Carpathia"
  lord_carpathia_desc:0 "lore"
+
  knights_bulgaria_title:0 "Prepare the Ranks"
  knights_bulgaria_desc:0 "lore"
+
  fate_byzantium_title:0 "Fate of Byzantium"
  fate_byzantium_desc:0 "lore"
+
  religions_bulgaria_title:0 "Religions in Bulgaria"
  religions_bulgaria_desc:0 "The bogomilists were our brothers in arm against rising up against the tyranny of the Byzantine Emperors. Many still hold hatre towards Byzantium for their previous oppression, however for their heretical beliefs tensions are high as they continue to clash with the locals. We must decide on a policy to which we treat the Bogomilists."
+
  bulgaria_branching_dummy_1_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_1_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Fate of Byzantium' mission."
+
  bulgaria_branching_dummy_2_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_2_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Fate of Byzantium' mission."
+
  bulgaria_branching_dummy_3_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_3_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Fate of Byzantium' mission."
+
  bulgaria_branching_dummy_4_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_4_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Fate of Byzantium' mission."
+
  bulgaria_branching_dummy_5_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_5_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Fate of Byzantium' mission."
+
  bulgaria_branching_dummy_6_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_6_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Religions in Bulgaria' mission."
+
  bulgaria_branching_dummy_7_title:0 "§YBranching Mission§!"
  bulgaria_branching_dummy_7_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Religions in Bulgaria' mission."
- 
-#custom tooltips
+
+ bogomilist_bulgaria_title:0 "§YBogomilism in Bulgaria§!"
+ bogomilist_bulgaria_desc:0 "lore"
+
+ peace_time_title:0 "§YPeace at this Time§!"
+ peace_time_desc:0 "lore"
+
+ dangerous_toleration_title:0 "§YDangerous Toleration§!"
+ dangerous_toleration_desc:0 "lore"
+
+ unorthodox_teaching_title:0 "§YUnorthodox Teachings§!"
+ unorthodox_teaching_desc:0 "lore"
+
+ destroy_bogo_title:0 "§YDestroy Macedonia§!"
+ destroy_bogo_desc:0 "lore"
+
+ orthodox_fanaticism_title:0 "§YOrthodox Fanaticism§!"
+ orthodox_fanaticism_desc:0 "lore"
+
+ #custom tooltips
  end_serbia_claims:0 "§Y[Root.GetName]§! gains a permanent claim on all of §YWallachia§!\n§Y[Root.GetName]§! gains a permanent claim on all of §YMoldavia§!"
  courts_preview1:0 "We can choose to embrace '§YAdministrative Court Style§!' until the end of the game, giving the following effects:\nAdministrative Efficiency: §G+5.0%§!\nMonthly Administrative Power: §G+1§!"
  courts_preview2:0 "We can choose to embrace '§YDiplomatic Court Style§!' until the end of the game, giving the following effects:\nDiplomatic Reputation: §G+2.00§!\nMonthly Diplomatic Power: §G+1§!"
@@ -39,7 +69,8 @@
  fate_byz_preview1:0 "This Event allows us to choose between Proclaiming a §MBulgarian Empire§! or Succeeding the §MRoman Empire§!."
  religions_bulgaria_preview1:0 "This Event allows us to decide our policy on religion.\n\nIf we have any Bogomilist province, we can choose to embrace §YBogomilism§!.\n\nOtherwise we can tolerate their existence or declare war on the heretics."
  war_with_macedonia_tt:0 "Release §Y[MAC.GetName]§! with all Bogomilist provinces as an independent state"
-#modifiers
+ fate_patriarchy_preview1:0 "If we have 50 §Ypatriarch authority§! we can regain authority else we will continue losing central authority of the church."
+ #modifiers
  safe_west:0 "Safeguarding the West"
  bulgarian_knights:0 "Knights of Bulgaria"
  bogo_autonomy:0 "Bogomilist Autonomy"
@@ -49,7 +80,12 @@
  court_int:0 "Wallachian Court of Intrigue"
  court_sch:0 "Moldavian Court of Scholars"
  carpathia_nobles:0 "Lords of Carpathia"
-#events
+ bogo_dom:0 "Bogomilist Domination"
+ bogo_peace:0 "Under One Faith"
+ freedom_people:0 "Freedom of the People"
+ declining_patriarch:0 "Decline of the Patriarchate"
+ orthodox_fanatics:0 "Fanatical Orthodoxy"
+ #events
  bul_event.1.t:0 "Religion in Bulgaria"
  bul_event.1.d:0 "The Bogomilists having been exiled and seen as heretic from the Byzantine Empire, we at that moment accepted them into our lands. They were our brothers in arm against rising up against the tyranny of the Byzantine Emperors. Many still hold hatre towards Byzantium for their previous oppression, however for their heretical beliefs tensions are high as they continue to clash with the locals.\n\n We must decide on a policy to which we treat the Bogomilists."
  bul_event.1.a:0 "Bogomilism is the True Faith"
@@ -69,3 +105,11 @@
  bul_event.4.t:0 "The Expanding Bogomilism"
  bul_event.4.d:0 "Peaceful Times in our Realm has allowed the Bogomilists who were accepted into our realm as an enemy's enemy to expand. With Bogomilism expanding, more and more people are starting to join the heresey."
  bul_event.4.a:0 "Population of the Bogomilists grow..."
+ bul_event.5.t:0 "Increased Toleration"
+ bul_event.5.d:0 "Due to our recent policy of tolerance, people have been given more and more liberties. Thing may likely continue to reform and move in this way with more freedoms to the people. With less centralized authority what dangers may arise?"
+ bul_event.5.a:0 "More freedoms to our peoples"
+ bul_event.6.t:0 "Fate of the Patriarchate"
+ bul_event.6.d:0 "With the recent decentralization of our authority over the church, many situations have become estranging to people. What we once held within our palms now can no longer be grasped. Should we let the church decline or should we recentralize our authority in the church?"
+ bul_event.6.a:0 "Let us reform society and abandon the church"
+ bul_event.6.b:0 "Revoke the privileges of the people and regain control in our state"
+ 
