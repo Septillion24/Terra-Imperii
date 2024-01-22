@@ -45,7 +45,7 @@ bul_carpathia_1 = {
 	into_carpathia = {
 		icon = mission_eastern_european_city
 		position = 2
-		required_missions = { end_serbia } 
+		required_missions = { end_serbia, end_epirus, knights_bulgaria } 
 		provinces_to_highlight = {
 			AND = {
 				continent = europe
@@ -65,23 +65,23 @@ bul_carpathia_1 = {
 
 		effect = {
 			country_event = { id = bul_event.2 } 
-			custom_tooltip =  
+			custom_tooltip = " "
 			custom_tooltip = common_event_insight
 			custom_tooltip = common_option1
 			custom_tooltip = courts_preview1
-			custom_tooltip =  
+			custom_tooltip = " "
 			custom_tooltip = common_option2
 			custom_tooltip = courts_preview2
-			custom_tooltip =  
+			custom_tooltip = " "
 			custom_tooltip = common_option3
 			custom_tooltip = courts_preview3
-			custom_tooltip =  
+			custom_tooltip = " "
 			custom_tooltip = common_option4
 			custom_tooltip = courts_preview4
-			custom_tooltip =  
+			custom_tooltip = " "
 			custom_tooltip = common_option5
 			custom_tooltip = courts_preview5
-			custom_tooltip =  
+			custom_tooltip = " "
 			carpathia_region = {
 				type = all
 				limit = {
@@ -117,7 +117,7 @@ bul_carpathia_1 = {
 		}
 	}
 }
-bul_placeholder_2 = {
+bul_greece_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -126,7 +126,23 @@ bul_placeholder_2 = {
 		NOT = { map_setup = map_setup_random } 
 		tag = BUL
 	}
+	end_epirus = {
+		icon = reclaim_epirus
+		position = 1
+		provinces_to_highlight = {
+			region = balkan_region
+			country_or_non_sovereign_subject_holds = EPI
+		}
 
+		trigger = { NOT = { exists = EPI }  } 
+
+		effect = {
+			add_country_modifier = {
+				name = "reclaiming_epirus"
+				duration = -1
+			}
+		}
+	}
 }
 bul_start_3 = {
 	slot = 3
@@ -141,15 +157,20 @@ bul_start_3 = {
 	knights_bulgaria = {
 		icon = mission_united_knight_order
 		position = 1
-		provinces_to_highlight = { province_id = 150 } 
+		provinces_to_highlight = { province_id = capital_scope } 
 
 		trigger = {
 			AND = {
 				army_size_percentage = 0.9
-				OR = {
-					national_focus = MIL
-					monthly_mil = 10
-					commandant = 1
+				if = {
+					limit = { 
+						ai = no 
+					}
+					OR = {
+						national_focus = MIL
+						monthly_mil = 10
+						commandant = 1
+					}
 				}
 			}
 		}
@@ -159,8 +180,8 @@ bul_start_3 = {
 				name = "bulgarian_knights"
 				duration = -1
 			}
-			add_yearly_manpower = 5
-			custom_tooltip = 
+			add_yearly_manpower = 3
+			custom_tooltip = " "
 			balkan_region = {
 				type = all
 				limit = {
@@ -169,6 +190,9 @@ bul_start_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 100
 		}
 	}
 
@@ -182,7 +206,7 @@ bul_start_3 = {
 
 		effect = {
 			country_event = { id = bul_event.3 } 
-			custom_tooltip =  
+			custom_tooltip = " "
 			custom_tooltip = common_event_insight
 			custom_tooltip = fate_byz_preview1
 		}
@@ -293,8 +317,8 @@ bul_branching_dummy_2 = {
 
 	bulgaria_branching_dummy_1 = {
 		icon = mission_unknown_mission
-		position = 3
-		required_missions = { fate_byzantium } 
+		position = 4
+		required_missions = { bulgaria_branching_dummy_2, lord_carpathia } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -358,7 +382,7 @@ bul_branching_dummy_3 = {
 	bulgaria_branching_dummy_4 = {
 		icon = mission_unknown_mission
 		position = 5
-		required_missions = { bulgaria_branching_dummy_3 } 
+		required_missions = { bulgaria_branching_dummy_3, bulgaria_branching_dummy_1 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {

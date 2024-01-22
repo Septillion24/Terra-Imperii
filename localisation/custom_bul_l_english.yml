@@ -1,19 +1,19 @@
 ﻿l_english:
  #missions
- end_serbia_title:0 "End Serbia"
- end_serbia_desc:0 "lore"
+ end_serbia_title:0 "End The Serbian Threat"
+ end_serbia_desc:0 "Since before our independence from the Romans, the Serbians have always been a thorn in our side. However those days have long since been gone, now Serbia is simply a minor state we must finish them off and fortify our west."
 
  into_carpathia_title:0 "Entrance into Carpathia"
- into_carpathia_desc:0 "lore"
+ into_carpathia_desc:0 "Wallachia on our borders hold the key of our advance into the greater region of carpathia. Both Wallachia and Moldavia contain valuable lands we can take advantage of, their existence have outlived their uses."
 
  lord_carpathia_title:0 "Lord of Carpathia"
- lord_carpathia_desc:0 "lore"
+ lord_carpathia_desc:0 "The various lords of Carpathia can be useful allies to our campaigns against our enemies. If we show them our strengths and leading capabilities they may choose to join our ranks."
 
  knights_bulgaria_title:0 "Prepare the Ranks"
- knights_bulgaria_desc:0 "lore"
+ knights_bulgaria_desc:0 "With our independence, the previously messy organization of the military will not work. We must restructure the ranks of knights and prepare them for our grand conquests."
 
  fate_byzantium_title:0 "Fate of Byzantium"
- fate_byzantium_desc:0 "lore"
+ fate_byzantium_desc:0 "Constantinople lay in our control, along with the most important city we control the fate of these so called Romans."
 
  religions_bulgaria_title:0 "Religions in Bulgaria"
  religions_bulgaria_desc:0 "The bogomilists were our brothers in arm against rising up against the tyranny of the Byzantine Emperors. Many still hold hatre towards Byzantium for their previous oppression, however for their heretical beliefs tensions are high as they continue to clash with the locals. We must decide on a policy to which we treat the Bogomilists."
@@ -40,22 +40,25 @@
  bulgaria_branching_dummy_7_desc:0 "This is a Branching Mission. Its Triggers and effects will be based on our choice in 'Religions in Bulgaria' mission."
 
  bogomilist_bulgaria_title:0 "§YBogomilism in Bulgaria§!"
- bogomilist_bulgaria_desc:0 "lore"
+ bogomilist_bulgaria_desc:0 "Bogomilism, some consider as a heresy is the true faith. With unity under the faith we will enlighten them."
 
  peace_time_title:0 "§YPeace at this Time§!"
- peace_time_desc:0 "lore"
+ peace_time_desc:0 "Unity under one faith will surely lead us to a prosperous time. Previously the people have been long since divided by religion, we have now enlightened them and corrected them onto following the true path. The future of peace is not far off as it seems."
 
  dangerous_toleration_title:0 "§YDangerous Toleration§!"
- dangerous_toleration_desc:0 "lore"
+ dangerous_toleration_desc:0 "High amounts of Tolerance allowed for much reforms and we are slowly losing control over religion."
 
  unorthodox_teaching_title:0 "§YUnorthodox Teachings§!"
- unorthodox_teaching_desc:0 "lore"
+ unorthodox_teaching_desc:0 "Orthodoxy of our religion has collapsed. Our authority has crumbled what will come from this tragedy."
 
  destroy_bogo_title:0 "§YDestroy Macedonia§!"
- destroy_bogo_desc:0 "lore"
+ destroy_bogo_desc:0 "Destroy the unjust heretics along with their heresy of Bogomilism."
 
  orthodox_fanaticism_title:0 "§YOrthodox Fanaticism§!"
- orthodox_fanaticism_desc:0 "lore"
+ orthodox_fanaticism_desc:0 "Orthodoxed Teachings and Preaching has led many to become almost if not fanatical."
+ 
+ end_epirus_title:0 "Advance on Greece"
+ end_epirus_desc:0 "Let us advance onto Greece with Epirus only standing in our way before Morea."
 
  #custom tooltips
  end_serbia_claims:0 "§Y[Root.GetName]§! gains a permanent claim on all of §YWallachia§!\n§Y[Root.GetName]§! gains a permanent claim on all of §YMoldavia§!"
@@ -85,6 +88,7 @@
  freedom_people:0 "Freedom of the People"
  declining_patriarch:0 "Decline of the Patriarchate"
  orthodox_fanatics:0 "Fanatical Orthodoxy"
+ reclaiming_epirus:0 "Reclaiming Greece"
  #events
  bul_event.1.t:0 "Religion in Bulgaria"
  bul_event.1.d:0 "The Bogomilists having been exiled and seen as heretic from the Byzantine Empire, we at that moment accepted them into our lands. They were our brothers in arm against rising up against the tyranny of the Byzantine Emperors. Many still hold hatre towards Byzantium for their previous oppression, however for their heretical beliefs tensions are high as they continue to clash with the locals.\n\n We must decide on a policy to which we treat the Bogomilists."
