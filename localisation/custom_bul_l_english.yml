@@ -59,6 +59,37 @@
  
  end_epirus_title:0 "Advance on Greece"
  end_epirus_desc:0 "Let us advance onto Greece with Epirus only standing in our way before Morea."
+ 
+ end_rome_title:0 "§YEnd the Roman Rule§!"
+ end_rome_desc:0 "lore"
+ 
+ new_rome_title:0 "§YClaim A New Rome§!"
+ new_rome_desc:0 "lore"
+ 
+ bulgar_empire_title:0 "§YThe Bulgar's Empire§!"
+ bulgar_empire_desc:0 "lore"
+ 
+ people_empire_title:0 "§YEmpire for the People§!"
+ people_empire_desc:0 "lore"
+ 
+ extend_bulgaria_title:0 "§YExtend Bulgaria§!"
+ extend_bulgaria_desc:0 "lore"
+ 
+ reclaim_east_title:0 "§YReclaim the East§!"
+ reclaim_east_desc:0 "lore"
+ 
+ third_bulgaria_title:0 "§YThird Empire of Bulgaria§!"
+ third_bulgaria_desc:0 "lore"
+ 
+ true_roman_title:0 "§YA True Roman Successor§!"
+ true_roman_desc:0 "lore"
+ 
+ new_constantinople_title:0 "§YA New Constantinople§!"
+ new_constantinople_desc:0 "lore"
+ 
+ true_constantinople_title:0 "§YThe True Constantinople§!"
+ true_constantinople_desc:0 "lore"
+ 
 
  #custom tooltips
  end_serbia_claims:0 "§Y[Root.GetName]§! gains a permanent claim on all of §YWallachia§!\n§Y[Root.GetName]§! gains a permanent claim on all of §YMoldavia§!"

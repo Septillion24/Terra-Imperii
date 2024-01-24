@@ -48,7 +48,7 @@ bul_carpathia_1 = {
 		required_missions = { end_serbia, end_epirus, knights_bulgaria } 
 		provinces_to_highlight = {
 			AND = {
-				continent = europe
+				region = carpathia_region
 				OR = {
 					country_or_non_sovereign_subject_holds = WAL
 					country_or_non_sovereign_subject_holds = MOL
@@ -157,7 +157,9 @@ bul_start_3 = {
 	knights_bulgaria = {
 		icon = mission_united_knight_order
 		position = 1
-		provinces_to_highlight = { province_id = capital_scope } 
+		provinces_to_highlight = { 
+			is_capital_of = ROOT
+		} 
 
 		trigger = {
 			AND = {
@@ -487,7 +489,20 @@ bul_branching_bulgaria_2 = {
 		has_country_flag = bul_bulgarian_path
 		NOT = { has_country_flag = bul_roman_path } 
 	}
+	bulgar_empire = {
+		icon = mission_educated_people
+		position = 4
+		required_missions = { end_rome, lord_carpathia } 
+		provinces_to_highlight = {  } 
 
+		trigger = {
+			
+		}
+
+		effect = { 
+		
+		} 
+	}
 }
 bul_branching_bulgaria_3 = {
 	slot = 3
@@ -500,7 +515,50 @@ bul_branching_bulgaria_3 = {
 		has_country_flag = bul_bulgarian_path
 		NOT = { has_country_flag = bul_roman_path } 
 	}
+	end_rome = {
+		icon = mission_conquer_50_development
+		position = 3
+		required_missions = { fate_byzantium } 
+		provinces_to_highlight = {  } 
 
+		trigger = {
+			
+		}
+
+		effect = { 
+		
+		} 
+	}
+
+	extend_bulgaria = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = { end_rome } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			
+		}
+
+		effect = { 
+		
+		} 
+	}
+
+	third_bulgaria = {
+		icon = mission_war_for_the_crown
+		position = 5
+		required_missions = { extend_bulgaria, bulgar_empire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			
+		}
+
+		effect = {
+
+		} 
+	}
 }
 bul_branching_bulgaria_4 = {
 	slot = 4
@@ -513,7 +571,20 @@ bul_branching_bulgaria_4 = {
 		has_country_flag = bul_bulgarian_path
 		NOT = { has_country_flag = bul_roman_path } 
 	}
+	new_constantinople = {
+		icon = repair_city
+		position = 3
+		required_missions = { fate_byzantium } 
+		provinces_to_highlight = {  } 
 
+		trigger = {
+			
+		}
+
+		effect = { 
+		
+		} 
+	}
 }
 bul_branching_rome_2 = {
 	slot = 2
@@ -526,7 +597,20 @@ bul_branching_rome_2 = {
 		has_country_flag = bul_roman_path
 		NOT = { has_country_flag = bul_bulgarian_path } 
 	}
+	people_empire = {
+		icon = mission_educated_people
+		position = 4
+		required_missions = { new_rome, lord_carpathia } 
+		provinces_to_highlight = {  } 
 
+		trigger = {
+			
+		}
+
+		effect = { 
+
+		} 
+	}
 }
 bul_branching_rome_3 = {
 	slot = 3
@@ -539,7 +623,50 @@ bul_branching_rome_3 = {
 		has_country_flag = bul_roman_path
 		NOT = { has_country_flag = bul_bulgarian_path } 
 	}
+	new_rome = {
+		icon = mission_the_third_rome
+		position = 3
+		required_missions = { fate_byzantium } 
+		provinces_to_highlight = {  } 
 
+		trigger = {
+			
+		}
+
+		effect = { 
+		
+		} 
+	}
+
+	reclaim_east = {
+		icon = byz_avenge_1071
+		position = 4
+		required_missions = { new_rome } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			
+		}
+
+		effect = { 
+
+		} 
+	}
+
+	true_roman = {
+		icon = a_roman_empire
+		position = 5
+		required_missions = { reclaim_east, people_empire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			
+		}
+
+		effect = { 
+
+		} 
+	}
 }
 bul_branching_rome_4 = {
 	slot = 4
@@ -552,7 +679,20 @@ bul_branching_rome_4 = {
 		has_country_flag = bul_roman_path
 		NOT = { has_country_flag = bul_bulgarian_path } 
 	}
+	true_constantinople = {
+		icon = repair_city
+		position = 3
+		required_missions = { fate_byzantium } 
+		provinces_to_highlight = {  } 
 
+		trigger = {
+			
+		}
+
+		effect = { 
+		
+		} 
+	}
 }
 bul_branching_bogomilist_5 = {
 	slot = 5
