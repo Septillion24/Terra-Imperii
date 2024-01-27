@@ -493,14 +493,16 @@ bul_branching_bulgaria_2 = {
 		icon = mission_educated_people
 		position = 4
 		required_missions = { end_rome, lord_carpathia } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			is_capital_of = ROOT
+		} 
 
 		trigger = {
-			
+			army_size = 40
 		}
 
 		effect = { 
-		
+			
 		} 
 	}
 }
@@ -519,14 +521,44 @@ bul_branching_bulgaria_3 = {
 		icon = mission_conquer_50_development
 		position = 3
 		required_missions = { fate_byzantium } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+			owned_by = BYZ
+		} 
 
 		trigger = {
-			
+			151 = {
+				owned_by = ROOT
+			}
+			NOT = {
+				exists = BYZ
+			}
 		}
 
 		effect = { 
-		
+			add_country_modifier = {
+				name = imperial_spirit
+				duration = -1
+			}
+			anatolia_region = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			mashriq_region = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
 		} 
 	}
 
@@ -534,10 +566,18 @@ bul_branching_bulgaria_3 = {
 		icon = mission_assemble_an_army
 		position = 4
 		required_missions = { end_rome } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = anatolia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 	
 
 		trigger = {
-			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = anatolia_region
+			}
 		}
 
 		effect = { 
@@ -549,10 +589,12 @@ bul_branching_bulgaria_3 = {
 		icon = mission_war_for_the_crown
 		position = 5
 		required_missions = { extend_bulgaria, bulgar_empire } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			owned_by = ROOT
+		} 
 
 		trigger = {
-			
+			grown_by_development = 1000
 		}
 
 		effect = {
@@ -575,14 +617,20 @@ bul_branching_bulgaria_4 = {
 		icon = repair_city
 		position = 3
 		required_missions = { fate_byzantium } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			province_id = 4704
+		} 
 
 		trigger = {
-			
+			4704 = {
+				has_state_patriach = yes
+				higher_development_than = 151
+				num_of_buildings_in_province = 3
+			}
 		}
 
 		effect = { 
-		
+			
 		} 
 	}
 }
@@ -601,10 +649,19 @@ bul_branching_rome_2 = {
 		icon = mission_educated_people
 		position = 4
 		required_missions = { new_rome, lord_carpathia } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			is_capital_of = ROOT
+		} 
 
 		trigger = {
-			
+			OR = {
+				innovativeness = 100
+				full_idea_group = innovativeness_ideas
+				AND = {
+					monthly_adm = 10
+					ruler_has_personality = scholar_personality
+				}
+			}
 		}
 
 		effect = { 
@@ -627,14 +684,36 @@ bul_branching_rome_3 = {
 		icon = mission_the_third_rome
 		position = 3
 		required_missions = { fate_byzantium } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			province_id = 151
+		} 
 
 		trigger = {
-			
+			151 = {
+				owned_by = ROOT
+			}
+			NOT = {
+				exists = BYZ
+			}
 		}
 
 		effect = { 
-		
+			anatolia_region = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			mashriq_region = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
 		} 
 	}
 
@@ -642,10 +721,25 @@ bul_branching_rome_3 = {
 		icon = byz_avenge_1071
 		position = 4
 		required_missions = { new_rome } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			OR = {
+				region = anatolia_region
+				region = mashriq_region
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		} 
 
 		trigger = {
-			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = anatolia_region
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = mashriq_region
+			}
 		}
 
 		effect = { 
@@ -657,10 +751,16 @@ bul_branching_rome_3 = {
 		icon = a_roman_empire
 		position = 5
 		required_missions = { reclaim_east, people_empire } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			owned_by = ROOT
+		} 
 
 		trigger = {
-			
+			AND = {
+				monthly_adm = 10
+				monthly_dip = 10
+				monthly_mil = 10
+			}
 		}
 
 		effect = { 
@@ -683,10 +783,16 @@ bul_branching_rome_4 = {
 		icon = repair_city
 		position = 3
 		required_missions = { fate_byzantium } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			area = thrace_area
+		} 
 
 		trigger = {
-			
+			151 = {
+				is_prosperous = yes
+				owned_by = ROOT
+				development = 35
+			}
 		}
 
 		effect = { 

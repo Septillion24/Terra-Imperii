@@ -60,3 +60,7 @@ reclaiming_epirus = {
 	core_creation = -0.10
 	ae_impact = -0.05
 }
+imperial_spirit = {
+	land_morale = 0.15
+	morale_damage_received = -0.05
+}
