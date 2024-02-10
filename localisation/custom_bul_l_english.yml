@@ -104,6 +104,7 @@
  religions_bulgaria_preview1:0 "This Event allows us to decide our policy on religion.\n\nIf we have any Bogomilist province, we can choose to embrace §YBogomilism§!.\n\nOtherwise we can tolerate their existence or declare war on the heretics."
  war_with_macedonia_tt:0 "Release §Y[MAC.GetName]§! with all Bogomilist provinces as an independent state"
  fate_patriarchy_preview1:0 "If we have 50 §Ypatriarch authority§! we can regain authority else we will continue losing central authority of the church."
+ gain_eastern_admin_decisions:0 "Gain Access to Eastern Administration Decisions."
  #modifiers
  safe_west:0 "Safeguarding the West"
  bulgarian_knights:0 "Knights of Bulgaria"
@@ -121,6 +122,11 @@
  orthodox_fanatics:0 "Fanatical Orthodoxy"
  reclaiming_epirus:0 "Reclaiming Greece"
  imperial_spirit:0 "Imperial Spirits"
+ bulgar_tsars:0 "Tsars of Bulgaria"
+ anatolia_admin:0 "Anatolian Administration"
+ mashriq_admin:0 "Mashriqi Administration"
+ egypt_admin:0 "Egyptian Administration"
+ united_bulgars:0 "Bulgars United"
  #events
  bul_event.1.t:0 "Religion in Bulgaria"
  bul_event.1.d:0 "The Bogomilists having been exiled and seen as heretic from the Byzantine Empire, we at that moment accepted them into our lands. They were our brothers in arm against rising up against the tyranny of the Byzantine Emperors. Many still hold hatre towards Byzantium for their previous oppression, however for their heretical beliefs tensions are high as they continue to clash with the locals.\n\n We must decide on a policy to which we treat the Bogomilists."

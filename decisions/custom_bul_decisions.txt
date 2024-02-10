@@ -1,0 +1,99 @@
+country_decisions = {
+	anatolia_administration = {
+		major = yes
+		potential = {
+			tag = BUL
+			has_country_flag = eastern_admin_decisions
+			NOT = {
+				has_country_flag = had_anatolia_administration
+			}
+		}
+		allow = {
+			stab = 3
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = anatolia_region
+			}
+		}
+		effect = {
+			create_general = { 
+				tradition = 50 
+				add_siege = 2
+			}
+			add_country_modifier = {
+				name = anatolia_admin
+				duration = -1
+			}
+			set_country_flag = had_anatolia_administration
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	mashriq_administration = {
+		major = yes
+		potential = {
+			tag = BUL
+			has_country_flag = eastern_admin_decisions
+			NOT = {
+				has_country_flag = had_mashriq_administration
+			}
+		}
+		allow = {
+			stab = 3
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = mashriq_region
+			}
+		}
+		effect = {
+			create_general = { 
+				tradition = 50 
+				add_shock = 1
+				add_fire = 1
+			}
+			add_country_modifier = {
+				name = mashriq_admin
+				duration = -1
+			}
+			set_country_flag = had_mashriq_administration
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	egypt_administration = {
+		major = yes
+		potential = {
+			tag = BUL
+			has_country_flag = eastern_admin_decisions
+			NOT = {
+				has_country_flag = had_egypt_administration
+			}
+		}
+		allow = {
+			stab = 3
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = egypt_region
+			}
+		}
+		effect = {
+			create_general = { 
+				tradition = 50 
+				add_manuever = 2
+			}
+			add_country_modifier = {
+				name = egypt_admin
+				duration = -1
+			}
+			set_country_flag = had_egypt_administration
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

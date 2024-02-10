@@ -64,3 +64,23 @@ imperial_spirit = {
 	land_morale = 0.15
 	morale_damage_received = -0.05
 }
+bulgar_tsars = {
+	country_military_power = 2
+	army_tradition = 0.10
+}
+anatolia_admin = {
+	administrative_efficiency = 0.025
+	core_creation = -0.05
+}
+mashriq_admin = {
+	administrative_efficiency = 0.025
+	core_creation = -0.05
+}
+egypt_admin = {
+	administrative_efficiency = 0.025
+	core_creation = -0.05
+}
+united_bulgars = {
+	discipline = 0.05
+	manpower_in_culture_group_provinces = 0.2
+}

@@ -498,11 +498,18 @@ bul_branching_bulgaria_2 = {
 		} 
 
 		trigger = {
-			army_size = 40
+			army_size = 50
+			OR = {
+				army_professionalism = 0.50
+				army_tradition = 90
+			}
 		}
 
 		effect = { 
-			
+			add_country_modifier = {
+				name = united_bulgars 
+				duration = -1
+			}
 		} 
 	}
 }
@@ -581,7 +588,16 @@ bul_branching_bulgaria_3 = {
 		}
 
 		effect = { 
-		
+			egypt_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = gain_eastern_admin_decisions
+			set_country_flag = eastern_admin_decisions
 		} 
 	}
 
@@ -594,11 +610,48 @@ bul_branching_bulgaria_3 = {
 		} 
 
 		trigger = {
-			grown_by_development = 1000
+			grown_by_development = 800
 		}
 
 		effect = {
-
+			add_government_reform = bulgarian_tsardom_reform
+			set_government_rank = 3
+			add_country_modifier = {
+				name = bulgar_tsars
+				duration = -1 
+			}
+			maghreb_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			france_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			italy_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			south_germany_region = {
+				type = all 
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
 		} 
 	}
 }
@@ -630,7 +683,13 @@ bul_branching_bulgaria_4 = {
 		}
 
 		effect = { 
-			
+			set_capital = 4704
+			4704 = {
+				center_of_trade = 1
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
 		} 
 	}
 }
